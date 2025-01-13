@@ -16,7 +16,7 @@ export default defineNuxtConfig({
       enabled: true
     },
     meta: {
-      title: "Buildr",
+      title: "Buildr - Build the future of your business",
       author: "Marquis",
       mobileAppIOS: false,
       mobileApp: true,

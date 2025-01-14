@@ -78,7 +78,7 @@
             <div>
               <label class="block text-sm text-[#E8E8E8] font-medium mb-2">First name</label>
               <input
-                v-model="form.firstName"
+                v-model="formData.firstName"
                 type="text"
                 class="w-full px-4 py-4 text-sm bg-[#252526] rounded-lg focus:ring-2 focus:ring-blue-500 outline-none"
                 placeholder="First name"
@@ -87,7 +87,7 @@
             <div>
               <label class="block text-sm text-[#E8E8E8] font-medium mb-2">Last name</label>
               <input
-                v-model="form.lastName"
+                v-model="formData.lastName"
                 type="text"
                 class="w-full px-4 py-4 text-sm bg-[#252526] rounded-lg focus:ring-2 focus:ring-blue-500 outline-none"
                 placeholder="Last name"
@@ -98,7 +98,7 @@
           <div>
             <label class="block text-sm text-[#E8E8E8] font-medium mb-2">Email</label>
             <input
-              v-model="form.email"
+              v-model="formData.email"
               type="email"
               class="w-full px-4 py-4 text-sm bg-[#252526] rounded-lg focus:ring-2 focus:ring-blue-500 outline-none"
               placeholder="you@company.com"
@@ -117,7 +117,7 @@
                 <option value="+61">+61</option>
               </select>
               <input
-                v-model="form.phone"
+                v-model="formData.phoneNumber"
                 type="tel"
                 class="flex-1 px-4 py-3 bg-[#252526] rounded-r-lg focus:ring-2 focus:ring-blue-500 outline-none"
                 placeholder="+1 (000) 000-0000"
@@ -128,7 +128,7 @@
           <div>
             <label class="block text-sm text-[#E8E8E8] font-medium mb-2">Message</label>
             <textarea
-              v-model="form.message"
+              v-model="formData.tell_us_more_about_your_project"
               rows="4"
               class="w-full px-4 py-4 text-sm bg-[#252526] resize-none rounded-lg focus:ring-2 focus:ring-blue-500 outline-none"
               placeholder="Enter a message..."
@@ -147,10 +147,11 @@
           </div>
   
           <button
-            type="submit"
-            class="w-full bg-[#0072C6] rounded-full text-white py-3.5 px-6 transition-colors focus:ring-2 focus:ring-offset-2 focus:ring-blue-500"
+            type="submit" 
+             :disabled="!isFormEmpty || processing"
+            class="w-full disabled:cursor-not-allowed disabled:opacity-25 bg-[#0072C6] rounded-full text-white py-3.5 px-6 transition-colors focus:ring-2 focus:ring-offset-2 focus:ring-blue-500"
           >
-            Send message
+          {{ processing ? 'processing' : 'Send message' }}
           </button>
         </form>
     </div>
@@ -159,6 +160,33 @@
         <a href="#" class="text-[#222222] font-bold  hover:text-white">Privacy Policy</a>
         <p class="text-[#222222] font-bold">© 2023 Buildr</p>
       </div>
+
+      <CoreBaseModal :show="showModal" @update:show="showModal = $event">
+            <section class="max-w-2xl px-3 py-6 mx-auto">
+                <main class="mt-8 space-y-6">
+                    <img class="object-cover w-full h-56 rounded-lg md:h-72"
+                        src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80"
+                        alt="">
+
+                    <h2 class="mt-6 text-gray-800 font-semibold text-lg">Hello {{
+                    capitalizeFirstLetter(formData.firstName) }} {{
+                    capitalizeFirstLetter(formData.lastName)
+                        }},</h2>
+
+                    <p class="mt-2 leading-loose text-gray-800 text-sm">
+                        Thank you for contacting Buildr! We’re thrilled to hear from you and are eager to learn more
+                        about how we can accelerate your digital journey. A member of our team will be in touch within
+                        the next 24 hours to discuss your needs and how we can help your business innovate and grow. We
+                        look forward to working together to create something amazing.
+                    </p>
+
+                    <p class="mt-2 text-gray-800 text-sm">
+                        Best regards, <br>
+                        The Buildr Team
+                    </p>
+                </main>
+            </section>
+        </CoreBaseModal>
  </div>
 </template>
 
@@ -173,8 +201,55 @@ const form = ref({
   privacyPolicy: false
 });
 
-const handleSubmit = () => {
-  // Add your form submission logic here
-  console.log('Form submitted:', form.value);
-};
+const processing = ref(false)
+const formData = ref({
+    firstName: '',
+    lastName: '',
+    email: '',
+    phoneNumber: '',
+    tell_us_more_about_your_project: ''
+});
+
+async function handleSubmit() {
+    processing.value = true
+    const url = 'https://buildr-backend.onrender.com/api/auth/signup';  // Your API endpoint
+    try {
+        const response = await fetch(url, {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify(formData.value)
+        });
+
+        if (!response.ok) {
+            throw new Error('Network response was not ok.');
+        }
+
+        const result = await response.json();
+        showModal.value = true
+        formData.value.firstName = ''
+        formData.value.lastName = ''
+        formData.value.email = ''
+        formData.value.phoneNumber = ''
+        formData.value.tell_us_more_about_your_project = ''
+    } catch (error) {
+        if (process.client) {
+            useNuxtApp().$toast('Error submitting form');
+        }
+    } finally {
+        processing.value = false
+    }
+}
+
+const isFormEmpty = computed(() => {
+    return !!(formData.value.firstName && formData.value.lastName && formData.value.email && formData.value.phoneNumber && formData.value.tell_us_more_about_your_project)
+})
+
+const capitalizeFirstLetter = (string: string) => {
+    if (!string) return string; // Handle null, undefined, or empty string
+    return string.charAt(0).toUpperCase() + string.slice(1);
+}
+
+const showModal = ref(false);
 </script>

@@ -32,7 +32,6 @@ const caseStudies = ref([
     title: 'Simplifying Shared Living in Nigeria',
     urlPath: '/projects/black-country',
     image: caseStudy1,
-    urlPath: '/projects/black-country',
     categories: ['PropTech', 'Real Estate', 'Social Enterprise']
   },
   {

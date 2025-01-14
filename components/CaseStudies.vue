@@ -6,11 +6,18 @@
     </div>
 
     <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-      <CaseStudyCard
+     <NuxtLink v-for="(item, idx) in caseStudies" :key="idx"  :to="item.urlPath">
+      <img :src="item.image" class="" />
+     </NuxtLink>
+      <!-- <CaseStudyCard
         v-for="study in caseStudies"
         :key="study.id"
+        :title="study.title"
+        :urlPath="study.urlPath"
+        :image="study.image"
+        :categories="study.categories"
         :studyObj="study"
-      />
+      /> -->
     </div>
 
     <div class="text-center mt-20">
@@ -29,7 +36,7 @@ import caseStudy4 from '@/assets/img/case-study4.png'
 const caseStudies = ref([
   {
     id: '1',
-    title: 'Simplifying Shared Living in Nigeria',
+    title: 'Simplifying Shared Living in Nigeriassss',
     urlPath: '/projects/black-country',
     image: caseStudy1,
     categories: ['PropTech', 'Real Estate', 'Social Enterprise']

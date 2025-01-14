@@ -7,7 +7,7 @@
            data-aos="fade-up"
             v-for="service in services" 
             :key="service.title"
-            class="bg-gray-25 rounded-2xl p-8 hover:shadow-lg transition-shadow duration-300"
+            class="bg-gray-25 rounded-2xl p-6 lg:p-8 hover:shadow-lg transition-shadow duration-300"
           >
             <!-- Icon Container -->
             <div class="bg-white rounded-full w-14 h-14 flex items-center justify-center mb-6">
@@ -24,7 +24,7 @@
             </h3>
             <p class="text-[#222222] leading-relaxed">
               {{ service.description }}
-            </p>
+            </p>x
           </div>
         </div>
   

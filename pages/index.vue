@@ -42,9 +42,9 @@
 
 
     <div class="bg-white">
-      <div data-aos="fade-up" class="max-w-3xl  mx-auto flex-col items-center flex justify-center items-center w-full mt-20">
-            <h2 class="text-3xl font-bold tracking-tight text-[#161616]">Innovation That Accelerates Your Growth</h2>
-            <p class="mt-4 text-[#161616] leading-loose max-w-lg mx-auto text-center">We turn ambitious ideas into high-performing digital products. Through
+      <div data-aos="fade-up" class="max-w-3xl px-6 lg:px-0 mx-auto flex-col items-center flex justify-center items-center w-full mt-20">
+            <h2 class="text-3xl text-center font-bold tracking-tight text-[#161616]">Innovation That Accelerates Your Growth</h2>
+            <p class="mt-4 text-center text-[#161616] leading-loose max-w-lg mx-auto text-center">We turn ambitious ideas into high-performing digital products. Through
               innovative tech and agile development, we help you move faster, scale smarter, and stay ahead of the
               competition.</p>
           </div>
@@ -61,11 +61,11 @@
           <div class="mt-16 grid grid-cols-1 gap-x-6 gap-y-6 lg:grid-cols-3">
             <div data-aos="fade-up" v-for="(item, idx) in offerings" :key="idx" class="sm:flex rounded-xl p-6 bg-gray-25 rounded-lg lg:block">
               <div class="sm:shrink-0">
-                <img class="size-16" src="@/assets/icons/service.svg" alt="">
+                <img class="size-14" src="@/assets/icons/service.svg" alt="">
               </div>
               <div class="mt-4 sm:ml-6 sm:mt-0 lg:ml-0 lg:mt-6">
                 <h3 class="text-lg font-bold text-gray-900">{{ item.title ?? 'Nil' }}</h3>
-                <p class="mt-2 text-sm text-[#222222]">{{ item.desc }}</p>
+                <p class="mt-2 lg:text-sm leading-loose text-[#222222]">{{ item.desc }}</p>
               </div>
             </div>
           </div>

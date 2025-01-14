@@ -61,7 +61,7 @@
     </div>
   </div>
 
-  <p data-aos="fade-up" class="max-w-2xl mx-auto font-medium text-xl text-center text-[#222222] leading-loose pt-16">
+  <p data-aos="fade-up" class="max-w-2xl mx-auto font-medium text-xl px-3 lg:px-0 text-center text-[#222222] leading-loose pt-16">
     Our services are designed to turn your ideas into products. From strategic management to seamless design, robust development, precise and quality assurance, we bring expertise and passion to every project
   </p>
 

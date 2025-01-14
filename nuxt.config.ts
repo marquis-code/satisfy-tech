@@ -10,7 +10,8 @@ export default defineNuxtConfig({
     },
   },
   plugins: ["~/plugins/aos.client.ts"],
-  modules: ['@kevinmarrec/nuxt-pwa'],
+  css: ["/assets/css/main.css"],
+  modules: ['@kevinmarrec/nuxt-pwa', "@nuxtjs/tailwindcss"],
   pwa: {
     workbox: {
       enabled: true

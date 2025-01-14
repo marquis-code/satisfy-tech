@@ -4,11 +4,11 @@
         <div class="max-w-6xl mx-auto">
             <!-- Header -->
             <div class="text-center mb-16 space-y-4">
-                <p
+                <p data-aos="fade-up"
                     class="text-lg md:text-xl text-gray-800 max-w-2xl mx-auto leading-relaxed"
                 >We deliver tailored solutions, seamless collaboration, and unwavering support to bring your vision to life with excellence</p>
 
-                <div class="pt-8">
+                <div data-aos="fade-up" class="pt-8">
                     <h6 class="text-sm uppercase tracking-wider text-[#7C7C7C]">Why Choose Us</h6>
                     <h2
                         class="text-2xl md:text-3xl font-medium text-[#EA4335] mt-2"
@@ -20,7 +20,7 @@
                 <section class="pb-16 px-4 md:px-8">
                     <div class="max-w-6xl mx-auto space-y-32">
                         <!-- Card -->
-                        <div
+                        <div data-aos="fade-up"
                             v-for="(reason, idx) in reasonsArray"
                             :key="idx"
                             class="max-w-4xl mx-auto"

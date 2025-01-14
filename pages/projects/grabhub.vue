@@ -1,0 +1,146 @@
+<template>
+    <div class="min-h-screen bg-white">
+      <WhiteNav />
+  
+      <main class=" max-w-5xl mx-auto">
+        <!-- Header Section -->
+        <div class="px-4 md:px-8 py-12">
+          <div class="flex flex-wrap gap-2 text-[#7C7C7C] text-sm text-gray-600 mb-4">
+            <span>grabhub</span>
+            <span>-</span>
+            <span>FoodTech</span>
+            <span>/</span>
+            <span>E-Commerce</span>
+            <span>/</span>
+            <span>E-Commerce</span>
+          </div>
+  
+          <h1 class="text-2xl font-semibold text-[#222222] mb-12">
+            Addressing Food Waste with an Innovative Marketplace
+          </h1>
+  
+          <!-- Hero Image -->
+          <div class="bg-gray-900 rounded-2xl overflow-hidden mb-20">
+            <img
+              src="@/assets/img/cover-details6.png"
+              alt="BlackCountry Dashboard"
+              class="w-full object-cover"
+            />
+          </div>
+  
+          <!-- Services Section -->
+          <div class="py-12">
+            <h2 class="text-2xl font-semibold mb-8 text-center">
+              Service Provided
+            </h2>
+            <div class="flex flex-wrap justify-center gap-4 max-w-xl mx-auto">
+              <DetailsServiceBadge text="Product Management" color="green" />
+              <DetailsServiceBadge text="Project Management" color="purple" />
+              <DetailsServiceBadge text="Product Design" color="orange" />
+              <DetailsServiceBadge text="Software Development" color="blue" />
+              <DetailsServiceBadge text="Maintenance & Support" color="red" />
+            </div>
+          </div>
+  
+          <!-- About Section -->
+          <section class="py-12">
+            <h2 class="text-2xl font-semibold mb-6 text-[#222222]">About Grabhub</h2>
+            <p class="text-gray-700 leading-relaxed text-[#222222]">
+                Grabhub is a platform dedicated to tackling food waste by connecting retailers with consumers in search of affordable, high-quality groceries and home essentials. Retailers list near-expiry or overstocked items at discounted prices, giving consumers the opportunity to save money while reducing environmental waste. Designed with sustainability at its core, Grabhub addresses one of the world’s pressing issues—food waste—by transforming surplus goods into valuable resources.
+              <!-- IQly is an AI-powered career advancement platform designed to help job seekers sharpen their skills, boost their confidence, and land their dream roles. The platform offers lifelike mock interviews tailored to users’ fields, an AI-driven resume builder to craft compelling career narratives, and a comprehensive resource library packed with expert advice and industry insights. IQly’s real-time feedback system provides users with targeted insights to improve their performance, while its intuitive design ensures preparation is efficient and effective. With a mission to make career readiness accessible and transformative, IQly empowers individuals to excel in competitive job markets, equipping them with the tools they need to stand out and succeed. -->
+            </p>
+          </section>
+  
+          <!-- Challenge Section -->
+          <section class="py-12">
+            <h2 class="text-2xl font-semibold mb-6 text-[#222222]">The Challenge</h2>
+            <p class="text-gray-700 leading-relaxed text-[#222222]">
+                Grabhub, an Ontario-based company, was determined to combat the significant issue of food waste while also addressing the financial strain it places on both retailers and consumers. Retailers often found themselves with surplus food items and home essentials nearing their best-by dates, leading to considerable losses and contributing to environmental degradation through increased landfill waste. 
+              <!--  IQly set out to develop a comprehensive, AI-powered platform that would help job seekers refine their interview skills, craft standout resumes, and access real-time performance insights. They needed a solution that could deliver realistic mock interviews, instant feedback, and personalized resources—all while remaining simple enough for anyone to use. However, building an intelligent system capable of seamlessly integrating these features posed a significant technical and UX challenge. -->
+            </p>
+            <p class="text-gray-700 leading-relaxed text-[#222222]">On the other side, consumers were seeking affordable options for quality groceries and essentials but lacked access to discounted products that were still perfectly usable. Grabhub needed a solution that could bridge this gap, ensuring that excess inventory was efficiently moved while providing cost-effective options for shoppers.</p>
+          </section>
+  
+          <!-- Solution Section with Images -->
+          <section class="py-12">
+            <h2 class="text-2xl font-semibold mb-6 text-[#222222]">Product Solution</h2>
+            <p class="text-gray-700 leading-relaxed text-[#222222] mb-8">
+                Buildr’s team partnered with Grabhub to develop a comprehensive online marketplace tailored to reduce food waste and offer savings to consumers. We designed and built a user-friendly platform that seamlessly connects retailers with consumers, enabling the easy listing and discovery of near-expiry food items, groceries, and home essentials. The platform features intuitive browsing capabilities, secure payment processing, and streamlined logistics management to facilitate smooth transactions. 
+              <!-- We stepped in to architect and develop the platform from the ground up. Leveraging our expertise in machine learning, we created an AI engine capable of simulating diverse interview scenarios and providing immediate, targeted feedback. Our front-end specialists designed an intuitive user interface that guided job seekers through every step—from setting up a mock interview session to polishing their résumés with AI-driven suggestions. Simultaneously, we integrated an extensive resource library that automatically tailored its recommendations based on each user’s progress and performance gaps. -->
+            </p>
+            <p class="text-gray-700 leading-relaxed text-[#222222] mb-8">By creating an accessible and efficient marketplace, Buildr ensured that retailers could quickly offload surplus inventory and consumers could effortlessly find and purchase discounted, quality products.</p>
+           <div class="space-y-2">
+            <img src="@/assets/img/grabhub1.jpg" alt="Property View" class="w-full" />
+            <p class="text-sm text-center text-[#222222]">User can find near by stores</p>
+           </div>
+          </section>
+  
+          <section class="py-12">
+            <h2 class="text-2xl font-semibold mb-6 text-[#222222]">The Outcomes</h2>
+            <p class="text-gray-700 leading-relaxed text-[#222222]">
+                 Since launching the Grabhub platform, the collaboration with Buildr has yielded impressive results. Grabhub successfully diverted thousands of pounds of food from landfills, significantly contributing to environmental sustainability efforts in Ontario. Retailers experienced a notable reduction in waste and financial losses, while consumers enjoyed substantial savings on essential items, enhancing their purchasing power. The platform's ease of use and reliability led to high user engagement and repeat transactions, fostering a thriving community committed to reducing food waste and promoting sustainable consumption. Grabhub’s innovative approach not only addressed immediate economic and environmental challenges but also established a scalable model for ongoing impact.
+            </p>
+           <div>
+            <img src="@/assets/img/grabhub2.jpg" class="border-4 mt-6" alt="Property View" />
+            <p class="text-sm text-center text-[#222222] pt-3">Search screen</p>
+           </div>
+          </section>
+  
+  
+          <section class="max-w-2xl">
+            <svg width="30" height="30" viewBox="0 0 44 35" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M0 22.23C0 13.26 5.07 5.07 12.22 0L18.33 5.07C14.17 7.54 9.88 12.87 8.97 17.29C9.36 17.16 10.4 16.9 11.18 16.9C15.6 16.9 18.98 20.28 18.98 25.09C18.98 30.03 14.95 34.06 10.14 34.06C4.81 34.06 0 29.77 0 22.23ZM24.05 22.23C24.05 13.26 29.12 5.07 36.27 0L42.38 5.07C38.22 7.54 33.93 12.87 33.02 17.29C33.41 17.16 34.45 16.9 35.23 16.9C39.65 16.9 43.03 20.28 43.03 25.09C43.03 30.03 39 34.06 34.19 34.06C28.86 34.06 24.05 29.77 24.05 22.23Z" fill="#222222"/>
+              </svg>
+            <p class="text-gray-700 leading-relaxed font-semibold text-[#222222]">Buildr’s expertise and dedication were crucial in bringing Grabhub to life. Their ability to create a seamless and efficient platform has allowed us to effectively reduce food waste and provide great value to our customers. ”</p>
+          </section>
+          <!-- More Case Studies -->
+        </div>
+      </main>
+      <section class="py-16 container mx-auto p-4 lg:p-0 mb-14">
+            <h2 class="text-2xl text-[#222222] font-semibold mb-8">More case studies</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-3">
+              <DetailsCaseStudyCard
+                name="Grabhub"
+                 href="/projects/grabhub"
+                title="Addressing Food Waste with an Innovative Marketplace"
+                :image="caseStudy2"
+                :tags="['FoodTech', 'E-Commerce', 'Marketplaces']"
+              />
+              <DetailsCaseStudyCard
+                name="Marketsquare"
+                 href="/projects/marketsquare"
+                title="Addressing Food Waste with an Innovative Marketplace"
+                :image="caseStudy3"
+                :tags="['FoodTech', 'E-Commerce', 'Marketplaces']"
+              />
+              <DetailsCaseStudyCard
+                name="Novatoons Inc"
+                 href="/projects/novatoons"
+                title="Addressing Food Waste with an Innovative Marketplace"
+                :image="caseStudy4"
+                :tags="['FoodTech', 'E-Commerce', 'Marketplaces']"
+              />
+              <DetailsCaseStudyCard
+                name="Storipod"
+                 href="/projects/storipod"
+                title="Revolutionizing Microblogging for Storytellers"
+                :image="caseStudy5"
+                :tags="[
+                  'Entertainment',
+                  'Social Media',
+                  'Digital Media',
+                ]"
+              />
+            </div>
+          </section>
+    </div>
+  </template>
+  
+  <script setup lang="ts">
+  import caseStudy1 from "@/assets/img/cover-details7.png";
+  import caseStudy2 from "@/assets/img/cover-details6.png";
+  import caseStudy3 from "@/assets/img/cover-details1.png";
+  import caseStudy4 from "@/assets/img/cover-details3.png";
+  import caseStudy5 from "@/assets/img/cover-details4.png";
+  </script>
+  

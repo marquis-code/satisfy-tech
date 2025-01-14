@@ -1,6 +1,7 @@
 <template>
-	<div>
-        <NuxtPage />
-        <Footer />
-	</div>
+        <div>
+                <NuxtPage />
+                <Footer />
+                 <!-- <ContactForm /> -->
+        </div>
 </template>

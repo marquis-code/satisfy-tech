@@ -1,111 +1,116 @@
 <template>
-    <section class="bg-[#1C1C1C] text-white py-16 px-4 md:px-8">
-      <div class="max-w-7xl mx-auto grid md:grid-cols-2 gap-12">
-        <!-- Left Column - Contact Info -->
-        <div class="bg-[#1D1D1D]">
-          <h2 class="text-4xl font-semibold mb-4">Level up your brand</h2>
-          <p class="text-gray-400 mb-12">
-            We' love to hear from you. Our friendly team is always here to chat.
-          </p>
-  
-          <!-- Contact Methods -->
-          <div class="space-y-8">
-            <!-- Email -->
-            <div class="flex items-start gap-4">
-              <div class="text-[#3B82F6] mt-1">
-                <svg class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
-                </svg>
-              </div>
-              <div>
-                <h3 class="text-lg font-medium mb-1">Email us</h3>
-                <a href="mailto:example@buildr.com" class="text-[#3B82F6] hover:underline">example@buildr.com</a>
-              </div>
+ <div class="">
+  <div class="grid grid-cols-1 lg:grid-cols-3">
+    <div class="bg-[#1D1D1D] p-5 px-10 flex py-16 justify-center items-center">
+      <div class="bg-[#1D1D1D]">
+        <h2 class="text-2xl font-semibold text-[#EBEBEB] mb-4">Level up your brand</h2>
+        <p class="text-[#EBEBEB] mb-12">
+          We' love to hear from you. Our friendly team is always here to chat.
+        </p>
+
+
+        <div class="space-y-8">
+          <!-- Email -->
+          <div class="flex items-start gap-4">
+            <div class="text-[#3B82F6] mt-1">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M22 6C22 4.9 21.1 4 20 4H4C2.9 4 2 4.9 2 6M22 6V18C22 19.1 21.1 20 20 20H4C2.9 20 2 19.1 2 18V6M22 6L12 13L2 6" stroke="#0072C6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+
             </div>
-  
-            <!-- Office -->
-            <div class="flex items-start gap-4">
-              <div class="text-[#3B82F6] mt-1">
-                <svg class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
-                </svg>
-              </div>
-              <div>
-                <h3 class="text-lg font-medium mb-1">Office</h3>
-                <p class="text-[#3B82F6]">100 Smith Street</p>
-                <p class="text-[#3B82F6]">Collingwood VIC 3066 AU</p>
-              </div>
-            </div>
-  
-            <!-- Phone -->
-            <div class="flex items-start gap-4">
-              <div class="text-[#3B82F6] mt-1">
-                <svg class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
-                </svg>
-              </div>
-              <div>
-                <h3 class="text-lg font-medium mb-1">Phone</h3>
-                <p class="text-[#3B82F6]">+1 (555) 000-0000</p>
-              </div>
+            <div>
+              <h3 class="font-medium text-[#E8E8E8] mb-1">Email us</h3>
+              <a href="mailto:example@buildr.com" class="text-[#00BFFF] text-sm hover:underline">example@buildr.com</a>
             </div>
           </div>
-  
-          <!-- Social Links -->
-          <div class="flex gap-4 mt-12">
-            <a href="#" class="text-gray-400 hover:text-white transition-colors">
-              <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
-                <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
-              </svg>
-            </a>
-            <a href="#" class="text-gray-400 hover:text-white transition-colors">
-              <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
-                <path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"/>
-              </svg>
-            </a>
+
+          <!-- Office -->
+          <div class="flex items-start gap-4">
+            <div class="text-[#3B82F6] mt-1">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M21 10C21 17 12 23 12 23C12 23 3 17 3 10C3 7.61305 3.94821 5.32387 5.63604 3.63604C7.32387 1.94821 9.61305 1 12 1C14.3869 1 16.6761 1.94821 18.364 3.63604C20.0518 5.32387 21 7.61305 21 10Z" stroke="#0072C6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M12 13C13.6569 13 15 11.6569 15 10C15 8.34315 13.6569 7 12 7C10.3431 7 9 8.34315 9 10C9 11.6569 10.3431 13 12 13Z" stroke="#0072C6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+
+            </div>
+            <div>
+              <h3 class="font-medium text-[#E8E8E8] mb-1">Office</h3>
+              <p class="text-[#00BFFF] text-sm">100 Smith Street</p>
+              <p class="text-[#00BFFF] text-sm">Collingwood VIC 3066 AU</p>
+            </div>
+          </div>
+
+          <!-- Phone -->
+          <div class="flex items-start gap-4">
+            <div class="text-[#3B82F6] mt-1">
+              <svg width="24" height="26" viewBox="0 0 24 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M22.0004 18.9201V21.9201C22.0016 22.1986 21.9445 22.4743 21.8329 22.7294C21.7214 22.9846 21.5577 23.2137 21.3525 23.402C21.1473 23.5902 20.905 23.7336 20.6412 23.8228C20.3773 23.912 20.0978 23.9452 19.8204 23.9201C16.7433 23.5857 13.7874 22.5342 11.1904 20.8501C8.77425 19.3148 6.72576 17.2663 5.19042 14.8501C3.5004 12.2413 2.44866 9.27109 2.12042 6.1801C2.09543 5.90356 2.1283 5.62486 2.21692 5.36172C2.30555 5.09859 2.44799 4.85679 2.63519 4.65172C2.82238 4.44665 3.05023 4.28281 3.30421 4.17062C3.5582 4.05843 3.83276 4.00036 4.11042 4.0001H7.11042C7.59573 3.99532 8.06621 4.16718 8.43418 4.48363C8.80215 4.80008 9.0425 5.23954 9.11042 5.7201C9.23704 6.68016 9.47187 7.62282 9.81042 8.5301C9.94497 8.88802 9.97408 9.27701 9.89433 9.65098C9.81457 10.0249 9.62928 10.3682 9.36042 10.6401L8.09042 11.9101C9.51398 14.4136 11.5869 16.4865 14.0904 17.9101L15.3604 16.6401C15.6323 16.3712 15.9756 16.1859 16.3495 16.1062C16.7235 16.0264 17.1125 16.0556 17.4704 16.1901C18.3777 16.5286 19.3204 16.7635 20.2804 16.8901C20.7662 16.9586 21.2098 17.2033 21.527 17.5776C21.8441 17.9519 22.0126 18.4297 22.0004 18.9201Z" stroke="#0072C6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+
+            </div>
+            <div>
+              <h3 class="font-medium text-[#E8E8E8] mb-1">Phone</h3>
+              <p class="text-[#00BFFF] text-sm">+1 (555) 000-0000</p>
+            </div>
           </div>
         </div>
-  
-        <!-- Right Column - Contact Form -->
-        <form @submit.prevent="handleSubmit" class="space-y-6 b">
+
+        <!-- Social Links -->
+        <div class="flex justify-between items-center gap-4 mt-12">
+          <a href="#" class="text-gray-400 hover:text-white transition-colors">
+            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+              <path
+                d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" />
+            </svg>
+          </a>
+          <a href="#" class="text-gray-400 hover:text-white transition-colors">
+            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+              <path
+                d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z" />
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-[#161616] lg:col-span-2 py-16 flex justify-center items-center">
+      <form @submit.prevent="handleSubmit" class="space-y-6 w-full px-8 lg:max-w-lg mx-auto">
           <div class="grid md:grid-cols-2 gap-6">
             <div>
-              <label class="block text-sm font-medium mb-2">First name</label>
+              <label class="block text-sm text-[#E8E8E8] font-medium mb-2">First name</label>
               <input
                 v-model="form.firstName"
                 type="text"
-                class="w-full px-4 py-3 bg-[#2C2C2C] rounded-lg focus:ring-2 focus:ring-blue-500 outline-none"
+                class="w-full px-4 py-4 text-sm bg-[#252526] rounded-lg focus:ring-2 focus:ring-blue-500 outline-none"
                 placeholder="First name"
               >
             </div>
             <div>
-              <label class="block text-sm font-medium mb-2">Last name</label>
+              <label class="block text-sm text-[#E8E8E8] font-medium mb-2">Last name</label>
               <input
                 v-model="form.lastName"
                 type="text"
-                class="w-full px-4 py-3 bg-[#2C2C2C] rounded-lg focus:ring-2 focus:ring-blue-500 outline-none"
+                class="w-full px-4 py-4 text-sm bg-[#252526] rounded-lg focus:ring-2 focus:ring-blue-500 outline-none"
                 placeholder="Last name"
               >
             </div>
           </div>
   
           <div>
-            <label class="block text-sm font-medium mb-2">Email</label>
+            <label class="block text-sm text-[#E8E8E8] font-medium mb-2">Email</label>
             <input
               v-model="form.email"
               type="email"
-              class="w-full px-4 py-3 bg-[#2C2C2C] rounded-lg focus:ring-2 focus:ring-blue-500 outline-none"
+              class="w-full px-4 py-4 text-sm bg-[#252526] rounded-lg focus:ring-2 focus:ring-blue-500 outline-none"
               placeholder="you@company.com"
             >
           </div>
   
           <div>
-            <label class="block text-sm font-medium mb-2">Phone number</label>
+            <label class="block text-sm text-[#E8E8E8] font-medium mb-2">Phone number</label>
             <div class="flex">
               <select
                 v-model="form.countryCode"
-                class="px-3 py-3 bg-[#2C2C2C] rounded-l-lg border-r border-gray-600 focus:ring-2 focus:ring-blue-500 outline-none"
+                class="px-3 py-4 text-sm bg-[#252526] rounded-l-lg border-r border-gray-600 focus:ring-2 focus:ring-blue-500 outline-none"
               >
                 <option value="+1">+1</option>
                 <option value="+44">+44</option>
@@ -114,18 +119,18 @@
               <input
                 v-model="form.phone"
                 type="tel"
-                class="flex-1 px-4 py-3 bg-[#2C2C2C] rounded-r-lg focus:ring-2 focus:ring-blue-500 outline-none"
+                class="flex-1 px-4 py-3 bg-[#252526] rounded-r-lg focus:ring-2 focus:ring-blue-500 outline-none"
                 placeholder="+1 (000) 000-0000"
               >
             </div>
           </div>
   
           <div>
-            <label class="block text-sm font-medium mb-2">Message</label>
+            <label class="block text-sm text-[#E8E8E8] font-medium mb-2">Message</label>
             <textarea
               v-model="form.message"
               rows="4"
-              class="w-full px-4 py-3 bg-[#2C2C2C] rounded-lg focus:ring-2 focus:ring-blue-500 outline-none"
+              class="w-full px-4 py-4 text-sm bg-[#252526] resize-none rounded-lg focus:ring-2 focus:ring-blue-500 outline-none"
               placeholder="Enter a message..."
             ></textarea>
           </div>
@@ -134,43 +139,42 @@
             <input
               v-model="form.privacyPolicy"
               type="checkbox"
-              class="w-4 h-4 bg-[#2C2C2C] rounded border-gray-600 text-blue-500 focus:ring-blue-500"
+              class="w-4 h-4 bg-[#252526] rounded border-gray-600 text-blue-500 focus:ring-blue-500"
             >
             <label class="ml-2 text-sm text-gray-400">
-              You agree to our privacy policy.
+              You agree to our <span class="underline">privacy policy</span>
             </label>
           </div>
   
           <button
             type="submit"
-            class="w-full bg-[#3B82F6] text-white py-3 px-6 rounded-lg hover:bg-blue-600 transition-colors focus:ring-2 focus:ring-offset-2 focus:ring-blue-500"
+            class="w-full bg-[#0072C6] rounded-full text-white py-3.5 px-6 transition-colors focus:ring-2 focus:ring-offset-2 focus:ring-blue-500"
           >
             Send message
           </button>
         </form>
+    </div>
+  </div>
+  <div class="max-w-7xl mx-auto flex justify-between py-6 items-center px-5 lg:px-0">
+        <a href="#" class="text-[#222222] font-bold  hover:text-white">Privacy Policy</a>
+        <p class="text-[#222222] font-bold">© 2023 Buildr</p>
       </div>
-  
-      <!-- Footer -->
-      <div class="max-w-7xl mx-auto mt-16 pt-8 border-t border-gray-800 flex justify-between items-center">
-        <a href="#" class="text-gray-400 hover:text-white">Privacy Policy</a>
-        <p class="text-gray-400">© 2023 Buildr</p>
-      </div>
-    </section>
-  </template>
-  
-  <script setup lang="ts">
-  const form = ref({
-    firstName: '',
-    lastName: '',
-    email: '',
-    countryCode: '+1',
-    phone: '',
-    message: '',
-    privacyPolicy: false
-  });
-  
-  const handleSubmit = () => {
-    // Add your form submission logic here
-    console.log('Form submitted:', form.value);
-  };
-  </script>
+ </div>
+</template>
+
+<script setup lang="ts">
+const form = ref({
+  firstName: '',
+  lastName: '',
+  email: '',
+  countryCode: '+1',
+  phone: '',
+  message: '',
+  privacyPolicy: false
+});
+
+const handleSubmit = () => {
+  // Add your form submission logic here
+  console.log('Form submitted:', form.value);
+};
+</script>

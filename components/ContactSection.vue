@@ -66,7 +66,7 @@
                         </dl>
                     </div>
                 </div>
-                <form @submit.prevent="handleSubmit" class="px-6 pb-24 pt-20 sm:pb-32 lg:px-8 lg:py-48"
+                <form @submit.prevent="handleSubmit" class="px-6 pb-24  sm:pb-32 lg:px-8 lg:py-48"
                     data-aos="fade-up">
                     <div class="mx-auto max-w-xl lg:mr-0 lg:max-w-lg">
                         <div class="grid grid-cols-1 gap-x-8 gap-y-6 sm:grid-cols-2">

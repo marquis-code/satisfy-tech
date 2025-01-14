@@ -4,9 +4,10 @@
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           <!-- Service Cards -->
           <div 
+           data-aos="fade-up"
             v-for="service in services" 
             :key="service.title"
-            class="bg-[#F8F8F8] rounded-2xl p-8 hover:shadow-lg transition-shadow duration-300"
+            class="bg-gray-25 rounded-2xl p-8 hover:shadow-lg transition-shadow duration-300"
           >
             <!-- Icon Container -->
             <div class="bg-white rounded-full w-14 h-14 flex items-center justify-center mb-6">
@@ -18,10 +19,10 @@
             </div>
   
             <!-- Content -->
-            <h3 class="text-xl font-semibold text-gray-900 mb-4">
+            <h3 class="text-xl font-semibold text-[#222222] mb-4">
               {{ service.title }}
             </h3>
-            <p class="text-gray-600 leading-relaxed">
+            <p class="text-[#222222] leading-relaxed">
               {{ service.description }}
             </p>
           </div>
@@ -29,24 +30,21 @@
   
         <!-- Bottom Two Cards (Wider) -->
         <div class="grid md:grid-cols-2 gap-8 mt-8">
-          <div 
+          <div  data-aos="fade-up"
             v-for="service in bottomServices" 
             :key="service.title"
             class="bg-[#F8F8F8] rounded-2xl p-8 hover:shadow-lg transition-shadow duration-300"
           >
             <!-- Icon Container -->
             <div class="bg-white rounded-full w-14 h-14 flex items-center justify-center mb-6">
-              <svg class="w-8 h-8" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z" stroke="black" stroke-width="2"/>
-                <path d="M17 12H12M12 12L7 12M12 12V17M12 12V7" stroke="black" stroke-width="2" stroke-linecap="round"/>
-              </svg>
+              <img src="@/assets/icons/service.svg" />
             </div>
   
             <!-- Content -->
-            <h3 class="text-xl font-semibold text-gray-900 mb-4">
+            <h3 class="text-xl font-semibold text-[#222222] mb-4">
               {{ service.title }}
             </h3>
-            <p class="text-gray-600 leading-relaxed">
+            <p class="text-[#222222] leading-relaxed">
               {{ service.description }}
             </p>
           </div>

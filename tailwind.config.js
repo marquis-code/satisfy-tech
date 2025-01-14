@@ -11,6 +11,9 @@ module.exports = {
   ],
   theme: {
     extend: {
+      animation: {
+        marquee: 'marquee linear infinite',
+      },
       colors: {
         gray: {
           25:  "#fafafa",

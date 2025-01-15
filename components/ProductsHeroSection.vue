@@ -1,4 +1,3 @@
-33333333<!-- components/HeroSection.vue -->
 <template>
     <div class="bg-gradient-to-b to-[#444CE7] via-[#824DF8] from-[#26D1FF] pb-60 w-full">
       <WhiteNav shade="coloured" />

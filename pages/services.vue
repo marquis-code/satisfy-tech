@@ -2,7 +2,7 @@
   <main>
     <div class="bg-gradient-to-b to-[#444CE7] via-[#824DF8] from-[#26D1FF] pb-60">
       <WhiteNav shade="coloured" />
-      <div class="mx-auto w-full max-w-7xl px-4 sm:px-6 lg:px-8 pt-44 flex justify-center items-center">
+      <div class="mx-auto w-full max-w-7xl px-4 z-0 sm:px-6 lg:px-8 pt-44 flex justify-center items-center">
         <TextSwitch />
 
         <!-- <img class="h-96" src="@/assets/img/first-iteration.png" />
@@ -35,7 +35,7 @@
     Our services are designed to turn your ideas into products. From strategic management to seamless design, robust development, precise and quality assurance, we bring expertise and passion to every project
   </p> -->
     <p data-aos="fade-up"
-      class="max-w-2xl mx-auto font-medium text-xl px-3 lg:px-0 text-center text-[#222222] leading-loose pt-16">
+      class="max-w-2xl mx-auto font-medium text-xl px-3 z-0 lg:px-0 text-center text-[#222222] leading-loose pt-16">
       <span class="hover:text-yellow-400 transition-colors duration-300">Our </span>
       <span class="hover:text-yellow-400 transition-colors duration-300">services </span>
       <span class="hover:text-yellow-400 transition-colors duration-300">are </span>

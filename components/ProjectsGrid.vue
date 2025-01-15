@@ -10,7 +10,7 @@
           :class="[
             'px-6 py-2 rounded-full text-sm font-medium transition-all',
             activeCategory === category 
-              ? 'bg-black text-white' 
+              ? 'bg-[#222222] text-white' 
               : 'bg-gray-100 text-gray-600 hover:bg-gray-200'
           ]"
         >

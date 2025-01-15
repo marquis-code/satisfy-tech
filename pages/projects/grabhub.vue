@@ -2,7 +2,7 @@
     <div class="min-h-screen bg-white">
       <WhiteNav />
   
-      <main class="mx-auto pt-[60px]  w-full max-w-7xl px-4 sm:px-6 lg:px-8">
+      <main class="mx-auto   w-full max-w-7xl px-4 sm:px-6 lg:px-8">
         <div class="px-4 md:px-8 py-12">
           <div class="flex uppercase flex-wrap gap-2 text-[#7C7C7C] text-sm text-gray-600 mb-4">
             <span>grabhub</span>

@@ -157,7 +157,7 @@
     </div>
   </div>
   <div class="max-w-7xl mx-auto flex justify-between py-6 items-center px-5 lg:px-0">
-        <a href="#" class="text-[#222222] font-bold  hover:text-white">Privacy Policy</a>
+        <NuxtLink to="/privacy-policy" class="text-[#222222] font-bold  hover:text-white">Privacy Policy</NuxtLink>
         <p class="text-[#222222] font-bold">© 2023 Buildr</p>
       </div>
 

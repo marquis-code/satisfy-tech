@@ -24,7 +24,7 @@
             </h3>
             <p class="text-[#222222] leading-relaxed">
               {{ service.description }}
-            </p>x
+            </p>
           </div>
         </div>
   

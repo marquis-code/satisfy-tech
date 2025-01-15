@@ -1,6 +1,6 @@
 <!-- components/TheNavbar.vue -->
 <template>
-    <nav  :class="[shade === 'default' ? 'bg-white' : 'from-blue-300 to-blue-600 w-full']" class="w-full px-4 py-4">
+    <nav  :class="[shade === 'default' ? 'bg-white' : 'from-blue-300 to-blue-600 w-full']" class="w-full fixed w-full z-[999999px] px-4 py-4">
       <div class="container mx-auto">
         <div class="flex items-center justify-between">
           <!-- Logo and Brand -->

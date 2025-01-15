@@ -4,16 +4,16 @@
       <div class="track flex whitespace-nowrap">
         <!-- Original content -->
         <div class="flex items-center space-x-6 min-w-max">
-          <span class="text-[#222222] font-medium text-xl">• the future</span>
+          <span class="text-[#222222] font-medium leading-loose text-xl">Engineer the future</span>
           <span class="text-red-600 font-medium text-xl">■</span>
-          <span class="text-[#222222] font-medium text-xl">Scale with confidence</span>
+          <span class="text-[#222222] font-medium leading-loose text-xl">Scale with confidence</span>
           <span class="text-red-600 font-medium text-xl">■</span>
-          <span class="text-[#222222] font-medium text-xl">Your growth-driven</span>
+          <span class="text-[#222222] font-medium leading-loose text-xl">Your growth-driven</span>
           <span class="text-red-600 font-medium text-xl">■</span>
         </div>
         <!-- Duplicate content -->
         <div class="flex items-center space-x-6 min-w-max">
-          <span class="text-[#222222] font-medium text-xl">• the future</span>
+          <span class="text-[#222222] font-medium text-xl">Engineer the future</span>
           <span class="text-red-600 font-medium text-xl">■</span>
           <span class="text-[#222222] font-medium text-xl">Scale with confidence</span>
           <span class="text-red-600 font-medium text-xl">■</span>
@@ -22,11 +22,11 @@
         </div>
         <!-- Additional duplicate for seamless loop -->
         <div class="flex items-center space-x-6 min-w-max">
-          <span class="text-[#222222] font-medium text-xl">• the future</span>
+          <span class="text-[#222222] font-medium leading-loose text-xl">Engineer the future</span>
           <span class="text-red-600 font-medium text-xl">■</span>
-          <span class="text-[#222222] font-medium text-xl">Scale with confidence</span>
+          <span class="text-[#222222] font-medium leading-loose text-xl">Scale with confidence</span>
           <span class="text-red-600 font-medium text-xl">■</span>
-          <span class="text-[#222222] font-medium text-xl">Your growth-driven</span>
+          <span class="text-[#222222] font-medium leading-loose text-xl">Your growth-driven</span>
           <span class="text-red-600 font-medium text-xl">■</span>
         </div>
       </div>

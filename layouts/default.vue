@@ -1,7 +1,7 @@
 <template>
         <div>
                 <NuxtPage />
-                <Footer />
+                <Footer id="contact-us" />
                  <!-- <ContactForm /> -->
         </div>
 </template>

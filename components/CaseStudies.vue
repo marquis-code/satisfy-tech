@@ -6,10 +6,10 @@
     </div>
 
     <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-     <NuxtLink v-for="(item, idx) in caseStudies" :key="idx"  :to="item.urlPath">
+     <!-- <NuxtLink v-for="(item, idx) in caseStudies" :key="idx"  :to="item.urlPath">
       <img :src="item.image" class="" />
-     </NuxtLink>
-      <!-- <CaseStudyCard
+     </NuxtLink> -->
+      <CaseStudyCard
         v-for="study in caseStudies"
         :key="study.id"
         :title="study.title"
@@ -17,7 +17,7 @@
         :image="study.image"
         :categories="study.categories"
         :studyObj="study"
-      /> -->
+      />
     </div>
 
     <div class="text-center mt-20">
@@ -29,40 +29,46 @@
 </template>
 
 <script setup lang="ts">
-import caseStudy1 from '@/assets/img/case-study1.png'
-import caseStudy2 from '@/assets/img/case-study2.png'
-import caseStudy3 from '@/assets/img/case-study3.png'
-import caseStudy4 from '@/assets/img/case-study4.png'
+import storipod from '@/assets/img/covers/storipod.png'
+import blackcountry from '@/assets/img/covers/blackcountry.png'
+import iqly from '@/assets/img/covers/iqly.png'
+import marketsquare from '@/assets/img/covers/marketsquare.png'
+import novatoons from '@/assets/img/covers/novatoons.png'
+import grabhub from '@/assets/img/covers/grabhub.png'
 const caseStudies = ref([
   {
     id: '1',
-    title: 'Simplifying Shared Living in Nigeriassss',
+    title: 'Simplifying Shared Living in Nigeria',
+    name: "BlackCountry",
     urlPath: '/projects/black-country',
-    image: caseStudy1,
+    image: blackcountry,
     categories: ['PropTech', 'Real Estate', 'Social Enterprise']
   },
   {
     id: '2',
     title: 'Revolutionizing Job Searches with an AI-Driven Career Platform',
+    name: "IQly",
     urlPath: '/projects/iqly',
     subtitle: 'Career Development / EdTech / Artificial Intelligence',
-    image: caseStudy2,
+    image: iqly,
     categories: ['Career Development', 'EdTech', 'Artificial Intelligence']
   },
   {
     id: '3',
     title: 'Addressing Food Waste with an Innovative Marketplace',
+    name: "Grabhub",
     urlPath: '/projects/grabhub',
     subtitle: 'FoodTech / E-Commerce / Marketplaces',
-    image: caseStudy3,
+    image: grabhub,
     categories: ['FoodTech', 'E-Commerce', 'Marketplaces']
   },
   {
     id: '4',
     title: 'Connecting Local Services with Ease',
+    name: "Marketsquare",
     urlPath: '/projects/marketsquare',
     subtitle: 'E-Commerce / Marketplaces',
-    image: caseStudy4,
+    image: marketsquare,
     categories: ['E-Commerce', 'Marketplaces']
   }
 ])

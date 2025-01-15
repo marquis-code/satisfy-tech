@@ -35,12 +35,12 @@
           class=""
         />
         <div class="absolute inset-0 bg-black/50"></div>
-        <p class="text-white text- font-semibold absolute top-6 left-6 mb-4">{{ project.title }}</p>
+        <p class="text-white text-xl font-semibold absolute top-6 left-6 mb-4">{{ project.title }}</p>
         <div class="absolute bottom-0 left-0 p-8 w-full">
-          <h3 class="text-lg font-bold text-white mb-2">{{ project?.description }}</h3>
-          <p class="text-white/80 text-sm">
+          <h3 class="text-2xl font-bold text-white mb-2">{{ project?.description }}</h3>
+          <!-- <p class="text-white/80 text-sm">
             {{ project?.tags.join(' / ') }}
-          </p>
+          </p> -->
         </div>
       </div>
     </div>
@@ -50,13 +50,12 @@
   </template>
   
   <script setup lang="ts">
-             import coverDetails1 from '@/assets/img/cover-details1.png'
-             import coverDetails2 from '@/assets/img/cover-details2.png'
-             import coverDetails3 from '@/assets/img/cover-details3.png'
-             import coverDetails4 from '@/assets/img/cover-details4.png'
-             import coverDetails5 from '@/assets/img/cover-details5.png'
-             import coverDetails6 from '@/assets/img/cover-details6.png'
-              import coverDetails7 from '@/assets/img/cover-details7.png'
+  import storipod from '@/assets/img/covers/storipod.png'
+  import blackcountry from '@/assets/img/covers/blackcountry.png'
+  import iqly from '@/assets/img/covers/iqly.png'
+  import marketsquare from '@/assets/img/covers/marketsquare.png'
+  import novatoons from '@/assets/img/covers/novatoons.png'
+  import grabhub from '@/assets/img/covers/grabhub.png'
   interface Project {
     id: number;
     title: string;
@@ -83,7 +82,7 @@
       id: 1,
       title: 'BlackCountry',
       description: 'Simplifying Shared Living in Nigeria',
-      image: coverDetails5,
+      image: blackcountry,
        urlPath: '/projects/black-country',
       tags: ['PropTech', 'Real Estate', 'Social Enterprise'],
       categories: ['Real Estate']
@@ -92,7 +91,7 @@
       id: 2,
       title: 'IQly',
       description: 'Revolutionizing Job Searches with an AI-Driven Career Platform',
-      image: coverDetails7,
+      image: iqly,
        urlPath: '/projects/iqly',
       tags: ['Career Development', 'EdTech', 'Artificial Intelligence'],
       categories: ['Artificial Intelligence']
@@ -101,7 +100,7 @@
       id: 3,
       title: 'Grabhub',
       description: 'Addressing Food Waste with an Innovative Marketplace',
-      image: coverDetails6,
+      image: grabhub,
       urlPath: '/projects/grabhub',
       tags: ['FoodTech', 'E-Commerce', 'Marketplaces'],
       categories: ['E-Commerce', 'Marketplaces']
@@ -110,7 +109,7 @@
       id: 4,
       title: 'Marketsquare',
       description: 'Connecting Local Services with Ease',
-      image: coverDetails1,
+      image: marketsquare,
       urlPath: '/projects/marketsquare',
       tags: ['E-Commerce', 'Marketplaces'],
       categories: ['E-Commerce', 'Marketplaces']
@@ -119,7 +118,7 @@
       id: 5,
       title: 'Novatoons',
       description: 'Championing Diverse Narratives: The Novatoons Case Study',
-       image: coverDetails2,
+       image: novatoons,
        urlPath: '/projects/novatoons',
       tags: ['Entertainment', 'Digital Media'],
       categories: ['Entertainment']
@@ -128,7 +127,7 @@
       id: 6,
       title: 'Storipod',
       description: 'Revolutionizing Microblogging for Storytellers',
-     image: coverDetails4,
+     image: storipod,
       urlPath: '/projects/storipod',
       tags: ['Entertainment', 'Social Media', 'Digital Media'],
       categories: ['Entertainment']

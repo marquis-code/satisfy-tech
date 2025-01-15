@@ -7,11 +7,12 @@
           class=""
         />
         <div class="absolute inset-0 bg-black/50"></div>
+        <p class="text-xl font-bold text-white mb-2 absolute top-7 left-7">{{ studyObj.name ?? 'Nil' }}</p>
         <div class="absolute bottom-0 left-0 p-8 w-full">
           <h3 class="text-2xl font-bold text-white mb-2">{{ studyObj?.title }}</h3>
-          <p class="text-white/80 text-sm">
+          <!-- <p class="text-white/80 text-sm">
             {{ studyObj?.categories.join(' / ') }}
-          </p>
+          </p> -->
         </div>
       </div>
     </NuxtLink>

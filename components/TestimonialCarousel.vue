@@ -1,7 +1,7 @@
 <template>
   <section class="bg-white py-16 px-4 md:px-8">
     <div class="max-w-6xl mx-auto">
-      <!-- Header -->
+
       <div class="text-center mb-16">
         <p class="text-sm uppercase tracking-wider text-[#7C7C7C]">TESTIMONIALS</p>
         <h2 class="text-3xl md:text-4xl font-semibold text-[#222222] mt-2">
@@ -9,9 +9,9 @@
         </h2>
       </div>
 
-      <!-- Carousel -->
+
       <div class="relative max-w-4xl mx-auto">
-        <!-- Navigation Buttons for Desktop -->
+
         <button @click="prevSlide"
           class="absolute left-0 top-1/2 -translate-y-1/2 -translate-x-16 bg-[#4F46E5] hover:bg-[#4338CA] text-white rounded-full p-4 transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[#4F46E5] hidden md:block"
           :class="{ 'opacity-50 cursor-not-allowed': currentIndex === 0 }" :disabled="currentIndex === 0">
@@ -29,7 +29,7 @@
           </svg>
         </button>
 
-        <!-- Testimonials Container -->
+ 
         <div class="overflow-hidden relative bg-[#161616] rounded-2xl py-10 lg:py-0 px-6 lg:p-10">
           <TransitionGroup name="slide" tag="div" class="relative h-[200px]">
             <div
@@ -37,18 +37,18 @@
               :key="testimonial.id"
               v-show="index === currentIndex"
               class="absolute inset-0 w-full">
-              <!-- Quote Icon -->
+           
               <div class="text-[#4F46E5] mb-6">
                 <img src="@/assets/img/quote.png" class="h-6 w-6" />
               </div>
 
-              <!-- Testimonial Content -->
+
               <div class="space-y-4">
                 <p class="text-white lg:text-xl leading-relaxed">
                   {{ testimonial.content }}
                 </p>
 
-                <!-- Author Info -->
+     
                 <div class="flex items-center space-x-4">
                   <img
                     :src="testimonial.avatar"
@@ -63,7 +63,7 @@
             </div>
           </TransitionGroup>
 
-          <!-- Dot Navigation for Mobile -->
+
           <div class="flex justify-center mt-20 lg:mt-6 md:hidden">
             <button
               v-for="(testimonial, index) in testimonials"

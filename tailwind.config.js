@@ -11,6 +11,9 @@ module.exports = {
   ],
   theme: {
     extend: {
+      backgroundImage: {
+        'custom-bg': "url('/heroBg.png')",
+      },
       animation: {
         marquee: 'marquee linear infinite',
       },

@@ -40,7 +40,7 @@
 
     <MarqueeBanner />
 
-   <section class="mx-auto w-full max-w-7xl px-4 sm:px-6 lg:px-8 border-4">
+   <section class="mx-auto w-full max-w-7xl px-4 sm:px-6 lg:px-8">
     <div class="bg-white">
       <div
         data-aos="fade-up"
@@ -54,85 +54,85 @@
         <p
           class="mt-4 text-center text-[#161616] leading-loose max-w-lg mx-auto text-center"
         >
-          <span class="hover:text-green-500 transition-colors duration-300"
+          <span class="hover:text-[#444CE7] transition-colors duration-300"
             >We
           </span>
-          <span class="hover:text-green-500 transition-colors duration-300"
+          <span class="hover:text-[#444CE7] transition-colors duration-300"
             >turn
           </span>
-          <span class="hover:text-green-500 transition-colors duration-300"
+          <span class="hover:text-[#444CE7] transition-colors duration-300"
             >ambitious
           </span>
-          <span class="hover:text-green-500 transition-colors duration-300"
+          <span class="hover:text-[#444CE7] transition-colors duration-300"
             >ideas
           </span>
-          <span class="hover:text-green-500 transition-colors duration-300"
+          <span class="hover:text-[#444CE7] transition-colors duration-300"
             >into
           </span>
-          <span class="hover:text-green-500 transition-colors duration-300"
+          <span class="hover:text-[#444CE7] transition-colors duration-300"
             >high-performing
           </span>
-          <span class="hover:text-green-500 transition-colors duration-300"
+          <span class="hover:text-[#444CE7] transition-colors duration-300"
             >digital
           </span>
-          <span class="hover:text-green-500 transition-colors duration-300"
+          <span class="hover:text-[#444CE7] transition-colors duration-300"
             >products.
           </span>
-          <span class="hover:text-green-500 transition-colors duration-300"
+          <span class="hover:text-[#444CE7] transition-colors duration-300"
             >Through
           </span>
-          <span class="hover:text-green-500 transition-colors duration-300"
+          <span class="hover:text-[#444CE7] transition-colors duration-300"
             >innovative
           </span>
-          <span class="hover:text-green-500 transition-colors duration-300"
+          <span class="hover:text-[#444CE7] transition-colors duration-300"
             >tech
           </span>
-          <span class="hover:text-green-500 transition-colors duration-300"
+          <span class="hover:text-[#444CE7] transition-colors duration-300"
             >and
           </span>
-          <span class="hover:text-green-500 transition-colors duration-300"
+          <span class="hover:text-[#444CE7] transition-colors duration-300"
             >agile
           </span>
-          <span class="hover:text-green-500 transition-colors duration-300"
+          <span class="hover:text-[#444CE7] transition-colors duration-300"
             >development,
           </span>
-          <span class="hover:text-green-500 transition-colors duration-300"
+          <span class="hover:text-[#444CE7] transition-colors duration-300"
             >we
           </span>
-          <span class="hover:text-green-500 transition-colors duration-300"
+          <span class="hover:text-[#444CE7] transition-colors duration-300"
             >help
           </span>
-          <span class="hover:text-green-500 transition-colors duration-300"
+          <span class="hover:text-[#444CE7] transition-colors duration-300"
             >you
           </span>
-          <span class="hover:text-green-500 transition-colors duration-300"
+          <span class="hover:text-[#444CE7] transition-colors duration-300"
             >move
           </span>
-          <span class="hover:text-green-500 transition-colors duration-300"
+          <span class="hover:text-[#444CE7] transition-colors duration-300"
             >faster,
           </span>
-          <span class="hover:text-green-500 transition-colors duration-300"
+          <span class="hover:text-[#444CE7] transition-colors duration-300"
             >scale
           </span>
-          <span class="hover:text-green-500 transition-colors duration-300"
+          <span class="hover:text-[#444CE7] transition-colors duration-300"
             >smarter,
           </span>
-          <span class="hover:text-green-500 transition-colors duration-300"
+          <span class="hover:text-[#444CE7] transition-colors duration-300"
             >and
           </span>
-          <span class="hover:text-green-500 transition-colors duration-300"
+          <span class="hover:text-[#444CE7] transition-colors duration-300"
             >stay
           </span>
-          <span class="hover:text-green-500 transition-colors duration-300"
+          <span class="hover:text-[#444CE7] transition-colors duration-300"
             >ahead
           </span>
-          <span class="hover:text-green-500 transition-colors duration-300"
+          <span class="hover:text-[#444CE7] transition-colors duration-300"
             >of
           </span>
-          <span class="hover:text-green-500 transition-colors duration-300"
+          <span class="hover:text-[#444CE7] transition-colors duration-300"
             >the
           </span>
-          <span class="hover:text-green-500 transition-colors duration-300"
+          <span class="hover:text-[#444CE7] transition-colors duration-300"
             >competition.
           </span>
         </p>
@@ -152,8 +152,8 @@
         </h2>
       </div>
 
-      <div class="mx-auto max-w-7xl sm:px-2 lg:px-4">
-        <div class="mx-auto max-w-2xl px-4 lg:max-w-none">
+      <div class="">
+        <div class="">
           <div class="mt-16 grid grid-cols-1 gap-x-6 gap-y-6 lg:grid-cols-3">
             <div
               data-aos="fade-up"
@@ -179,7 +179,7 @@
         <div class="text-center mt-20">
           <NuxtLink
             to="/services"
-            class="bg-[#444CE7] bg-[#444CE7] text-white px-8 py-3.5 rounded-full font-medium transition-colors duration-300"
+            class="bg-[#444CE7] hover:bg-[#3A40C9] transition text-white px-8 py-3.5 rounded-full font-medium transition-colors duration-300"
           >
             View more
           </NuxtLink>

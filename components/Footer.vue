@@ -80,7 +80,7 @@
               <input
                 v-model="formData.firstName"
                 type="text"
-                class="w-full px-4 py-4 text-sm bg-[#252526] rounded-lg focus:ring-2 focus:ring-blue-500 outline-none"
+                class="w-full px-4 py-4 text-sm bg-[#252526] text-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 outline-none"
                 placeholder="First name"
               >
             </div>
@@ -89,7 +89,7 @@
               <input
                 v-model="formData.lastName"
                 type="text"
-                class="w-full px-4 py-4 text-sm bg-[#252526] rounded-lg focus:ring-2 focus:ring-blue-500 outline-none"
+                class="w-full px-4 py-4 text-sm bg-[#252526] text-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 outline-none"
                 placeholder="Last name"
               >
             </div>
@@ -100,7 +100,7 @@
             <input
               v-model="formData.email"
               type="email"
-              class="w-full px-4 py-4 text-sm bg-[#252526] rounded-lg focus:ring-2 focus:ring-blue-500 outline-none"
+              class="w-full px-4 py-4 text-sm bg-[#252526] text-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 outline-none"
               placeholder="you@company.com"
             >
           </div>
@@ -110,7 +110,7 @@
             <div class="flex">
               <select
                 v-model="form.countryCode"
-                class="px-3 py-4 text-sm bg-[#252526] rounded-l-lg border-r border-gray-600 focus:ring-2 focus:ring-blue-500 outline-none"
+                class="px-3 py-4 text-sm bg-[#252526] rounded-l-lg text-gray-300 border-r border-gray-600 focus:ring-2 focus:ring-blue-500 outline-none"
               >
                 <option value="+1">+1</option>
                 <option value="+44">+44</option>
@@ -119,7 +119,7 @@
               <input
                 v-model="formData.phoneNumber"
                 type="tel"
-                class="flex-1 px-4 py-3 bg-[#252526] rounded-r-lg focus:ring-2 focus:ring-blue-500 outline-none"
+                class="flex-1 px-4 py-3 bg-[#252526] rounded-r-lg text-gray-300 focus:ring-2 focus:ring-blue-500 outline-none"
                 placeholder="+1 (000) 000-0000"
               >
             </div>
@@ -130,7 +130,7 @@
             <textarea
               v-model="formData.tell_us_more_about_your_project"
               rows="4"
-              class="w-full px-4 py-4 text-sm bg-[#252526] resize-none rounded-lg focus:ring-2 focus:ring-blue-500 outline-none"
+              class="w-full px-4 py-4 text-sm bg-[#252526] text-gray-300 resize-none rounded-lg focus:ring-2 focus:ring-blue-500 outline-none"
               placeholder="Enter a message..."
             ></textarea>
           </div>
@@ -142,14 +142,14 @@
               class="w-4 h-4 bg-[#252526] rounded border-gray-600 text-blue-500 focus:ring-blue-500"
             >
             <label class="ml-2 text-sm text-gray-400">
-              You agree to our <span class="underline">privacy policy</span>
+              You agree to our <NuxtLink class="underline z-50" to="/privacy-policy">privacy policy.</NuxtLink>
             </label>
           </div>
   
           <button
             type="submit" 
              :disabled="!isFormEmpty || processing"
-            class="w-full disabled:cursor-not-allowed disabled:opacity-25 bg-[#0072C6] rounded-full text-white py-3.5 px-6 transition-colors focus:ring-2 focus:ring-offset-2 focus:ring-blue-500"
+            class="w-full disabled:cursor-not-allowed disabled:opacity-100 bg-[#0072C6] rounded-full text-white py-3.5 px-6 transition-colors focus:ring-2 focus:ring-offset-2 focus:ring-blue-500"
           >
           {{ processing ? 'processing' : 'Send message' }}
           </button>

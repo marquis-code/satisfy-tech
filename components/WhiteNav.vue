@@ -1,16 +1,17 @@
 <!-- components/TheNavbar.vue -->
 <template>
-    <nav  :class="[shade === 'default' ? 'bg-white' : 'from-blue-300 to-blue-600 w-full']" class="w-full fixed w-full z-[999999px] px-4 py-4">
-      <div class="mx-auto max-w-7xl sm:px-2 lg:px-4">
-        <div class="flex items-center justify-between">
+    <nav  :class="[shade === 'default' ? 'bg-white' : 'from-blue-300 to-blue-600 w-full']" class="w-full fixed w-full z-[999999px] py-4">
+      <div class="mx-auto w-full max-w-7xl z-[999999px] px-4 sm:px-6 lg:px-8">
+        <div  class="flex items-center justify-between z-[9999999]">
           <!-- Logo and Brand -->
-          <button class="flex block items-center space-x-2">
+          <button @click="router.push('/')" class="flex block items-center space-x-2">
             <img src="@/assets/icons/black-logo.svg" />
           </button>
   
           <!-- Navigation Links -->
-          <div class="hidden md:flex items-center z-20 space-x-8">
+          <div class="hidden md:flex items-center z-20 space-x-4">
             <NuxtLink 
+             v-if="shade === 'default'"
               v-for="link in navigationLinks" 
               :key="link.name"
               :to="link.href"
@@ -19,9 +20,19 @@
             >
               {{ link.name }}
             </NuxtLink>
+            <NuxtLink 
+              v-if="shade === 'coloured'"
+              v-for="link in navigationLinks" 
+              :key="link.name"
+              :to="link.href"
+              class="text-[#222222] text-sm rounded-full px-6 py-2.5 font-bold hover:text-[#222222] z-20 transition-colors duration-200"
+              :class="{ 'font-medium': link.name === 'Projects' }"
+            >
+              {{ link.name }}
+            </NuxtLink>
             <a
               href="#contact-us"
-              class="px-4 py-2 bg-gray-50 text-sm text-[#222222] rounded-full font-semibold transition-colors duration-200"
+              class="px-4 py-2 text-sm text-[#222222] rounded-full font-semibold transition-colors duration-200"
             >
               Contact us
             </a>
@@ -51,10 +62,10 @@
       </div>
   
       <!-- Mobile Menu -->
-      <div v-if="isMenuOpen" class="lg:hidden" role="dialog" aria-modal="true">
+      <div v-if="isMenuOpen" class="lg:hidden z-50" role="dialog" aria-modal="true">
           <div class="fixed inset-0 z-50"></div>
           <div
-            class="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
+            class="fixed inset-y-0 right-0 z-50 w-full z-50 overflow-y-auto bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
             <div class="flex items-center justify-between">
               <a href="#" class="-m-1.5 p-1.5">
                 <span class="sr-only">Your Company</span>
@@ -85,6 +96,7 @@
   
   <script setup lang="ts">
   const isMenuOpen = ref(false)
+  const router = useRouter()
 
   const props = defineProps({
     shade: {

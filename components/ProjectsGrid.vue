@@ -1,8 +1,8 @@
 <template>
-  <ProductsHeroSection />
-    <section class="container mx-auto px-4 py-12">
+  <ProductsHeroSection  />
+    <section class="mx-auto w-full max-w-7xl px-4 sm:px-6 lg:px-8 py-12">
       <!-- Filter Categories -->
-      <div class="flex justify-center items-center flex-wrap gap-4 mb-12">
+      <div class="flex justify-center items-center flex-wrap gap-4 mb-12 z-10">
         <button 
           v-for="category in categories" 
           :key="category"
@@ -20,13 +20,22 @@
   
       <!-- Projects Grid -->
       <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-        <NuxtLink 
+        <CaseStudyCard
+        v-for="project in filteredProjects" 
+        :key="project.id"
+        :title="project.title"
+        :urlPath="project.urlPath"
+        :image="project.image"
+        :categories="project.categories"
+        :studyObj="project"
+      />
+        <!-- <NuxtLink 
           v-for="project in filteredProjects" 
           :key="project.id"
           :to="project.urlPath"
           class="relative block group overflow-hidden rounded-2xl"
         >
-          <!-- Project Card -->
+
           <div class="relative group overflow-hidden rounded-2xl transition-all duration-300 hover:shadow-xl">
       <div class="relative w-full">
         <img 
@@ -38,13 +47,11 @@
         <p class="text-white text-xl font-semibold absolute top-6 left-6 mb-4">{{ project.title }}</p>
         <div class="absolute bottom-0 left-0 p-8 w-full">
           <h3 class="text-2xl font-bold text-white mb-2">{{ project?.description }}</h3>
-          <!-- <p class="text-white/80 text-sm">
-            {{ project?.tags.join(' / ') }}
-          </p> -->
+
         </div>
       </div>
     </div>
-        </NuxtLink>
+        </NuxtLink> -->
       </div>
     </section>
   </template>
@@ -59,7 +66,7 @@
   interface Project {
     id: number;
     title: string;
-    description: string;
+    name: string;
     image: string;
     urlPath: string;
     tags: string[];
@@ -80,8 +87,8 @@
   const projects: Project[] = [
     {
       id: 1,
-      title: 'BlackCountry',
-      description: 'Simplifying Shared Living in Nigeria',
+      name: 'BlackCountry',
+      title: 'Simplifying Shared Living in Nigeria',
       image: blackcountry,
        urlPath: '/projects/black-country',
       tags: ['PropTech', 'Real Estate', 'Social Enterprise'],
@@ -89,8 +96,8 @@
     },
     {
       id: 2,
-      title: 'IQly',
-      description: 'Revolutionizing Job Searches with an AI-Driven Career Platform',
+      name: 'IQly',
+      title: 'Revolutionizing Job Searches with an AI-Driven Career Platform',
       image: iqly,
        urlPath: '/projects/iqly',
       tags: ['Career Development', 'EdTech', 'Artificial Intelligence'],
@@ -98,8 +105,8 @@
     },
     {
       id: 3,
-      title: 'Grabhub',
-      description: 'Addressing Food Waste with an Innovative Marketplace',
+      name: 'Grabhub',
+      title: 'Addressing Food Waste with an Innovative Marketplace',
       image: grabhub,
       urlPath: '/projects/grabhub',
       tags: ['FoodTech', 'E-Commerce', 'Marketplaces'],
@@ -107,8 +114,8 @@
     },
     {
       id: 4,
-      title: 'Marketsquare',
-      description: 'Connecting Local Services with Ease',
+      name: 'Marketsquare',
+      title: 'Connecting Local Services with Ease',
       image: marketsquare,
       urlPath: '/projects/marketsquare',
       tags: ['E-Commerce', 'Marketplaces'],
@@ -116,8 +123,8 @@
     },
     {
       id: 5,
-      title: 'Novatoons',
-      description: 'Championing Diverse Narratives: The Novatoons Case Study',
+      name: 'Novatoons',
+      title: 'Championing Diverse Narratives: The Novatoons Case Study',
        image: novatoons,
        urlPath: '/projects/novatoons',
       tags: ['Entertainment', 'Digital Media'],
@@ -125,8 +132,8 @@
     },
     {
       id: 6,
-      title: 'Storipod',
-      description: 'Revolutionizing Microblogging for Storytellers',
+      name: 'Storipod',
+      title: 'Revolutionizing Microblogging for Storytellers',
      image: storipod,
       urlPath: '/projects/storipod',
       tags: ['Entertainment', 'Social Media', 'Digital Media'],

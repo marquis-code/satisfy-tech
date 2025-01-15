@@ -2,10 +2,10 @@
     <div class="min-h-screen bg-white">
       <WhiteNav />
   
-      <main class=" max-w-5xl mx-auto">
+      <main class="mx-auto pt-[60px]  w-full max-w-7xl px-4 sm:px-6 lg:px-8">
         <!-- Header Section -->
-        <div class="px-4 md:px-8 py-12">
-          <div class="flex flex-wrap gap-2 text-[#7C7C7C] text-sm text-gray-600 mb-4">
+        <div class="px-4  md:px-8 py-12">
+          <div class="flex uppercase flex-wrap gap-2 text-[#7C7C7C] text-sm text-gray-600 mb-4">
             <span>iqly</span>
             <span>-</span>
             <span>Career Development</span>
@@ -83,7 +83,7 @@
               shared living in Nigeria. -->
             </p>
            <div>
-            <img src="@/assets/img/iqly02.png" class="border-4 mt-6" alt="Property View" />
+            <img src="@/assets/img/iqly02.png" class=" mt-6" alt="Property View" />
             <p class="text-sm text-center text-[#222222] pt-3">Bottom left: Mock Interview session</p>
            </div>
           </section>
@@ -98,35 +98,35 @@
           <!-- More Case Studies -->
         </div>
       </main>
-      <section class="py-16 container mx-auto p-4 lg:p-0 mb-14">
+      <section class="mx-auto  w-full max-w-7xl px-4 sm:px-6 lg:px-8 pb-10">
             <h2 class="text-2xl text-[#222222] font-semibold mb-8">More case studies</h2>
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-3">
               <DetailsCaseStudyCard
                 name="Grabhub"
                  href="/projects/grabhub"
                 title="Addressing Food Waste with an Innovative Marketplace"
-                :image="caseStudy2"
+                :image="grabhub"
                 :tags="['FoodTech', 'E-Commerce', 'Marketplaces']"
               />
               <DetailsCaseStudyCard
                 name="Marketsquare"
                  href="/projects/marketsquare"
                 title="Addressing Food Waste with an Innovative Marketplace"
-                :image="caseStudy3"
+                :image="marketsquare"
                 :tags="['FoodTech', 'E-Commerce', 'Marketplaces']"
               />
               <DetailsCaseStudyCard
                 name="Novatoons Inc"
                  href="/projects/novatoons"
                 title="Addressing Food Waste with an Innovative Marketplace"
-                :image="caseStudy4"
+                :image="novatoons"
                 :tags="['FoodTech', 'E-Commerce', 'Marketplaces']"
               />
               <DetailsCaseStudyCard
                 name="Storipod"
                  href="/projects/storipod"
                 title="Revolutionizing Microblogging for Storytellers"
-                :image="caseStudy5"
+                :image="storipod"
                 :tags="[
                   'Entertainment',
                   'Social Media',
@@ -139,10 +139,16 @@
   </template>
   
   <script setup lang="ts">
-  import caseStudy1 from "@/assets/img/cover-details7.png";
-  import caseStudy2 from "@/assets/img/cover-details6.png";
-  import caseStudy3 from "@/assets/img/cover-details1.png";
-  import caseStudy4 from "@/assets/img/cover-details3.png";
-  import caseStudy5 from "@/assets/img/cover-details4.png";
+  // import caseStudy1 from "@/assets/img/cover-details7.png";
+  // import caseStudy2 from "@/assets/img/cover-details6.png";
+  // import caseStudy3 from "@/assets/img/cover-details1.png";
+  // import caseStudy4 from "@/assets/img/cover-details3.png";
+  // import caseStudy5 from "@/assets/img/cover-details4.png";
+  import storipod from '@/assets/img/covers/storipod.png'
+import blackcountry from '@/assets/img/covers/blackcountry.png'
+import iqly from '@/assets/img/covers/iqly.png'
+import marketsquare from '@/assets/img/covers/marketsquare.png'
+import novatoons from '@/assets/img/covers/novatoons.png'
+import grabhub from '@/assets/img/covers/grabhub.png'
   </script>
   

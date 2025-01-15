@@ -1,7 +1,7 @@
 <template>
-    <section class="bg-white py-16 px-4 md:px-8">
+    <section class="bg-white pt-10">
       <div class="max-w-7xl mx-auto">
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 p-5 lg:p-0">
           <!-- Service Cards -->
           <div 
            data-aos="fade-up"
@@ -19,17 +19,17 @@
             </div>
   
             <!-- Content -->
-            <h3 class="text-xl font-semibold text-[#222222] mb-4">
+            <h3 class="text-lg font-semibold text-[#222222] mb-4">
               {{ service.title }}
             </h3>
-            <p class="text-[#222222] leading-relaxed">
+            <p class="text-[#222222] leading-snug">
               {{ service.description }}
             </p>
           </div>
         </div>
   
         <!-- Bottom Two Cards (Wider) -->
-        <div class="grid md:grid-cols-2 gap-8 mt-8">
+        <div class="grid md:grid-cols-2 gap-8 mt-8 p-5 lg:p-0">
           <div  data-aos="fade-up"
             v-for="service in bottomServices" 
             :key="service.title"

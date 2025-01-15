@@ -1,5 +1,5 @@
 <template>
-  <section class="py-16 px-4 max-w-6xl mx-auto">
+  <section class="py-16  mx-auto">
     <div class="text-center mb-12">
       <h2 class="text-sm uppercase tracking-wider text-[#7C7C7C]">PROJECTS</h2>
       <h1 class="text-3xl font-bold text-[#222222]">Case Study</h1>
@@ -21,7 +21,7 @@
     </div>
 
     <div class="text-center mt-20">
-      <NuxtLink to="/projects" class="bg-[#444CE7] bg-[#444CE7] text-white px-8 py-3.5 rounded-full font-medium transition-colors duration-300">
+      <NuxtLink to="/projects" class="bg-[#444CE7] hover:bg-[#3A40C9] text-white px-8 py-3.5 rounded-full font-medium transition-colors duration-300">
         View more
       </NuxtLink>
     </div>

@@ -1,4 +1,4 @@
-<!-- components/HeroSection.vue -->
+33333333<!-- components/HeroSection.vue -->
 <template>
     <div class="bg-gradient-to-b to-[#444CE7] via-[#824DF8] from-[#26D1FF] pb-60 w-full">
       <WhiteNav shade="coloured" />
@@ -26,7 +26,7 @@
       </nav> -->
   
       <!-- Hero content -->
-      <div class="container mx-auto px-4 pt-20 text-center">
+      <div class="container mx-auto px-4 pt-20 text-center pt-44">
         <h1 class="text-white text-4xl md:text-6xl font-bold mb-6 leading-tight">
           Explore our work
         </h1>

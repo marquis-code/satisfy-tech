@@ -55,7 +55,7 @@
                 </div>
                 <div>
                   <h3 class="font-medium mb-1">Phone</h3>
-                  <a href="tel:+15550000000" class="text-blue-400 hover:text-blue-300">
+                  <a href="tel:+15550000000" class="text-blue-400 cursor-pointer hover:text-blue-300">
                     +1 (555) 000-0000
                   </a>
                 </div>
@@ -90,7 +90,7 @@
                   <input
                     v-model="form.firstName"
                     type="text"
-                    class="w-full px-4 py-2 bg-[#262626] rounded border border-gray-700 focus:border-blue-500 focus:ring-1 focus:ring-blue-500 outline-none transition"
+                    class="w-full px-4 pgray-300 bg-[#262626] rounded border border-gray-700 focus:border-blue-500 focus:ring-1 focus:ring-blue-500 outline-none transition"
                     placeholder="First name"
                   />
                 </div>
@@ -99,7 +99,7 @@
                   <input
                     v-model="form.lastName"
                     type="text"
-                    class="w-full px-4 py-2 bg-[#262626] rounded border border-gray-700 focus:border-blue-500 focus:ring-1 focus:ring-blue-500 outline-none transition"
+                    class="w-full px-4 text-gray-300 py-2 bg-[#262626] rounded border border-gray-700 focus:border-blue-500 focus:ring-1 focus:ring-blue-500 outline-none transition"
                     placeholder="Last name"
                   />
                 </div>
@@ -110,7 +110,7 @@
                 <input
                   v-model="form.email"
                   type="email"
-                  class="w-full px-4 py-2 bg-[#262626] rounded border border-gray-700 focus:border-blue-500 focus:ring-1 focus:ring-blue-500 outline-none transition"
+                  class="w-full px-4 py-2 text-gray-300 bg-[#262626] rounded border border-gray-700 focus:border-blue-500 focus:ring-1 focus:ring-blue-500 outline-none transition"
                   placeholder="you@company.com"
                 />
               </div>
@@ -120,7 +120,7 @@
                 <div class="flex">
                   <select
                     v-model="form.countryCode"
-                    class="px-3 py-2 bg-[#262626] rounded-l border-y border-l border-gray-700 focus:border-blue-500 focus:ring-1 focus:ring-blue-500 outline-none transition"
+                    class="px-3 py-2 text-gray-300 bg-[#262626] rounded-l border-y border-l border-gray-700 focus:border-blue-500 focus:ring-1 focus:ring-blue-500 outline-none transition"
                   >
                     <option value="+1">+1</option>
                     <option value="+44">+44</option>
@@ -129,7 +129,7 @@
                   <input
                     v-model="form.phone"
                     type="tel"
-                    class="flex-1 px-4 py-2 bg-[#262626] rounded-r border border-gray-700 focus:border-blue-500 focus:ring-1 focus:ring-blue-500 outline-none transition"
+                    class="flex-1 px-4 py-2 text-gray-300 bg-[#262626] rounded-r border border-gray-700 focus:border-blue-500 focus:ring-1 focus:ring-blue-500 outline-none transition"
                     placeholder="+1 (000) 000-0000"
                   />
                 </div>
@@ -140,7 +140,7 @@
                 <textarea
                   v-model="form.message"
                   rows="4"
-                  class="w-full px-4 py-2 bg-[#262626] rounded border border-gray-700 focus:border-blue-500 focus:ring-1 focus:ring-blue-500 outline-none transition"
+                  class="w-full px-4 text-gray-300 py-2 bg-[#262626] rounded border border-gray-700 focus:border-blue-500 focus:ring-1 focus:ring-blue-500 outline-none transition"
                   placeholder="Enter a message..."
                 ></textarea>
               </div>
@@ -152,7 +152,7 @@
                   class="w-4 h-4 rounded border-gray-700 text-blue-500 focus:ring-blue-500"
                 />
                 <label class="ml-2 text-sm text-gray-300">
-                  You agree to our privacy policy.
+                  You agree to our <NuxtLink class="underline z-50" to="/privacy-policy">privacy policy.</NuxtLink>
                 </label>
               </div>
   

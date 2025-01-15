@@ -146,10 +146,5 @@ import iqly from '@/assets/img/covers/iqly.png'
 import marketsquare from '@/assets/img/covers/marketsquare.png'
 import novatoons from '@/assets/img/covers/novatoons.png'
 import grabhub from '@/assets/img/covers/grabhub.png'
-  // import caseStudy1 from "@/assets/img/cover-details7.png";
-  // import caseStudy2 from "@/assets/img/cover-details6.png";
-  // import caseStudy3 from "@/assets/img/cover-details1.png";
-  // import caseStudy5 from "@/assets/img/cover-details4.png";
-  // import caseStudy4 from "@/assets/img/cover-details3.png";
   </script>
   

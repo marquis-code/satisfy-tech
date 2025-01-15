@@ -1,5 +1,5 @@
 <template>
-  <div class="py-12 px-4 sm:px-6 lg:px-8">
+  <div class="py-32 px-4 sm:px-6 lg:px-8">
     <div class="text-center">
       <h4 class="text-sm font-semibold tracking-wide text-gray-500">TESTIMONIALS</h4>
       <h2 class="mt-2 text-3xl font-medium text-[#222222] text-gray-900 sm:text-4xl">What our clients are saying</h2>
@@ -74,15 +74,21 @@ const testimonials = ref([
     image: avatar
   },
   {
-    message: "This is another fantastic testimonial showcasing the quality of service provided by the team.",
-    name: "John",
-    role: "CEO, TechCorp",
+    message: "Buildr transformed our vision into reality, delivering a seamless app that's now essential to our operation. Their team nailed it from strategy to launch.",
+    name: "Vivien",
+    role: "Co-founder, Grabhub",
     image: avatar
   },
   {
-    message: "Amazing experience! The team was incredibly professional and delivered beyond expectations.",
-    name: "Emma",
-    role: "Manager, BusinessHub",
+    message: "Buildr's expertise in app development propelled our project from an idea to a fully functional tool that's revolutionizing how we do business. Their approach was straightforward and effective.",
+    name: "Winifred",
+    role: "Business Developer, Homely",
+    image: avatar
+  },
+  {
+    message: "Working with Buildr was a game-changer. They took our initial concept and developed a platform that exceeded our expectations, setting us apart in the market.",
+    name: "John",
+    role: "CEO, Novatoons",
     image: avatar
   },
 ]);

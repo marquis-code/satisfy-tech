@@ -1,4 +1,4 @@
-<template>
+<!-- <template>
   <section class="bg-white py-16 px-4 md:px-8">
     <div class="max-w-6xl mx-auto">
 
@@ -185,6 +185,108 @@ onUnmounted(() => {
 
 .slide-enter-to,
 .slide-leave-from {
+  opacity: 1;
+  transform: translateX(0);
+}
+</style> -->
+
+
+<template>
+  <div class="bg-gray-50 py-12 px-4 sm:px-6 lg:px-8">
+    <div class="text-center">
+      <h4 class="text-sm font-semibold tracking-wide text-gray-500">TESTIMONIALS</h4>
+      <h2 class="mt-2 text-3xl font-extrabold text-gray-900 sm:text-4xl">What our clients are saying</h2>
+    </div>
+    <div class="relative mt-10 max-w-3xl mx-auto flex items-center">
+      <!-- Carousel controls -->
+      <button @click="prevTestimonial" class="absolute left-[-50px] bg-blue-500 text-white p-2 rounded-full shadow hover:bg-blue-600 focus:outline-none">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
+        </svg>
+      </button>
+      <div class="relative w-full overflow-hidden">
+        <transition-group name="testimonial" tag="div" class="flex">
+          <div 
+            v-for="(testimonial, index) in testimonials" 
+            :key="index" 
+            v-show="currentIndex === index" 
+            class="flex-shrink-0 w-full relative overflow-hidden rounded-lg bg-black text-white shadow-lg p-6 transition-all duration-700 ease-in-out">
+            <div class="text-2xl leading-relaxed">&ldquo;{{ testimonial.message }}&rdquo;</div>
+            <div class="mt-4 flex items-center">
+              <img 
+                :src="testimonial.image" 
+                :alt="testimonial.name" 
+                class="h-10 w-10 rounded-full border-2 border-white shadow"
+              />
+              <div class="ml-3">
+                <p class="font-medium text-white">{{ testimonial.name }}</p>
+                <p class="text-sm text-gray-400">{{ testimonial.role }}</p>
+              </div>
+            </div>
+          </div>
+        </transition-group>
+      </div>
+      <button @click="nextTestimonial" class="absolute right-[-50px] bg-blue-500 text-white p-2 rounded-full shadow hover:bg-blue-600 focus:outline-none">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+        </svg>
+      </button>
+    </div>
+  </div>
+</template>
+
+<script setup lang="ts">
+import { ref } from 'vue';
+
+const testimonials = ref([
+  {
+    message: "Buildr transformed our vision into reality, delivering a seamless app that's now essential to our operation. Their team nailed it from strategy to launch.",
+    name: "Vivien",
+    role: "Co-founder, Grabhub",
+    image: "https://randomuser.me/api/portraits/women/44.jpg",
+  },
+  {
+    message: "This is another fantastic testimonial showcasing the quality of service provided by the team.",
+    name: "John",
+    role: "CEO, TechCorp",
+    image: "https://randomuser.me/api/portraits/men/32.jpg",
+  },
+  {
+    message: "Amazing experience! The team was incredibly professional and delivered beyond expectations.",
+    name: "Emma",
+    role: "Manager, BusinessHub",
+    image: "https://randomuser.me/api/portraits/women/12.jpg",
+  },
+]);
+
+const currentIndex = ref(0);
+
+const nextTestimonial = () => {
+  currentIndex.value = (currentIndex.value + 1) % testimonials.value.length;
+};
+
+const prevTestimonial = () => {
+  currentIndex.value = (currentIndex.value - 1 + testimonials.value.length) % testimonials.value.length;
+};
+</script>
+
+<style scoped>
+.testimonial-enter-active, .testimonial-leave-active {
+  transition: transform 0.7s ease-in-out, opacity 0.7s;
+}
+.testimonial-enter-from {
+  opacity: 0;
+  transform: translateX(100%);
+}
+.testimonial-leave-to {
+  opacity: 0;
+  transform: translateX(-100%);
+}
+.testimonial-enter-to {
+  opacity: 1;
+  transform: translateX(0);
+}
+.testimonial-leave-from {
   opacity: 1;
   transform: translateX(0);
 }

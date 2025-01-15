@@ -1,7 +1,7 @@
 <!-- components/TheNavbar.vue -->
 <template>
     <nav  :class="[shade === 'default' ? 'bg-white' : 'from-blue-300 to-blue-600 w-full']" class="w-full fixed w-full z-[999999px] px-4 py-4">
-      <div class="container mx-auto">
+      <div class="mx-auto max-w-7xl sm:px-2 lg:px-4">
         <div class="flex items-center justify-between">
           <!-- Logo and Brand -->
           <button class="flex block items-center space-x-2">

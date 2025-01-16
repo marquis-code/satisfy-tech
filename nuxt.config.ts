@@ -9,9 +9,34 @@ export default defineNuxtConfig({
       autoprefixer: {},
     },
   },
+  app: {
+    head: {
+      title: "Buildr - Build the future of your business",
+      htmlAttrs: { lang: "en" },
+      meta: [
+        { charset: "utf-8" },
+        { name: "viewport", content: "width=device-width, initial-scale=1" },
+        { name: "format-detection", content: "telephone=no" },
+      ],
+      link: [{ rel: "icon", type: "image/x-icon", href: "/favicon.svg" },    {
+        rel: 'stylesheet',
+        href: 'https://fonts.googleapis.com/css2?family=Lexend+Tera:wght@100..900&family=Rethink+Sans:ital,wght@0,400..800;1,400..800&display=swap',
+      },],
+    },
+  },
+
+  googleFonts: {
+    families: {
+      'Lexend+Tera': [400, 500, 700], // Specify font weights as needed
+    },
+    display: 'swap', // Optional: Controls how the font is displayed
+    prefetch: true, // Optional: Prefetch the font for faster loading
+    preconnect: true, // Optional: Preconnect to the font server
+    preload: true, // Optional: Preload the font
+  },
   plugins: ["~/plugins/aos.client.ts"],
   css: ["/assets/css/main.css"],
-  modules: ['@kevinmarrec/nuxt-pwa', "@nuxtjs/tailwindcss"],
+  modules: ['@kevinmarrec/nuxt-pwa', "@nuxtjs/tailwindcss", '@nuxtjs/google-fonts'],
   pwa: {
     workbox: {
       enabled: true

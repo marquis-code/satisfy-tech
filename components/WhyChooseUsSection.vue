@@ -9,7 +9,7 @@
                     >We deliver tailored solutions, seamless collaboration, and unwavering support to bring your vision to life with excellence</p>
     
                     <div data-aos="fade-up" class="pt-8">
-                        <h6 class="text-sm uppercase tracking-wider text-[#7C7C7C]">Why Choose Us</h6>
+                        <h6 class="text-sm uppercase font-semibold tracking-wider text-[#7C7C7C]">Why Choose Us</h6>
                         <h2
                             class="text-2xl md:text-3xl font-medium text-[#EA4335] mt-2"
                         >Reasons why you can trust us</h2>
@@ -27,7 +27,7 @@
                             >
                                 <div class="lg:flex space-y-6 lg:space-y-0 gap-10 justify-between">
                                     <!-- Number and Title -->
-                                    <div class="lg:w-1/4 flex gap-3">
+                                    <div class="lg:w-1/4 flex gap-3 lg:pl-10">
                                         <span class="text-[#FF5757] text-sm font-medium">0{{ idx + 1 }}</span>
                                         <h3
                                             class="text-2xl font-medium text-[#161616]"
@@ -35,7 +35,7 @@
                                     </div>
     
                                     <!-- Description -->
-                                    <div class="lg:w-3/4">
+                                    <div class="lg:w-3/4 lg:pl-44">
                                         <p
                                             class="text-gray-600 text-left leading-relaxed text-[#161616]"
                                         >{{ reason?.content ?? 'Nil' }}</p>

@@ -2,10 +2,10 @@
   <main class="bg-[#DDDEE6]">
     <section class="py-16 px-4 md:px-8">
       <div class="max-w-6xl mx-auto">
-        <!-- Header -->
+
         <div class="text-center mb-16 space-y-4">
           <div data-aos="fade-up" class="pt-8">
-            <h6 class="text-sm uppercase tracking-wider text-[#7C7C7C]">
+            <h6 class="text-sm uppercase font-semibold tracking-wider text-[#7C7C7C]">
               our approach
             </h6>
             <h2 class="text-2xl md:text-3xl font-medium text-[#EA4335] mt-2">
@@ -16,17 +16,17 @@
 
         <section>
           <section class="pb-16 px-4 md:px-8">
-            <div class="max-w-6xl mx-auto space-y-32">
-              <!-- Card -->
+            <div class="max-w-5xl mx-auto space-y-32">
+
               <div
                 data-aos="fade-up"
                 v-for="(reason, idx) in reasonsArray"
                 :key="idx"
                 class="max-w-4xl mx-auto"
               >
-                <div class="lg:flex gap-10 justify-between">
-                  <!-- Left: Number and Title -->
-                  <div class="lg:w-1/3 flex gap-3 items-start">
+                <div class="lg:flex gap-10 space-y-3 lg:space-y-0 justify-between">
+
+                  <div class="lg:w-1/3 flex gap-3 lg:pl-20 items-start">
                     <span class="text-[#FF5757] text-sm font-medium">
                       0{{ idx + 1 }}
                     </span>
@@ -35,8 +35,8 @@
                     </h3>
                   </div>
 
-                  <!-- Right: Description -->
-                  <div class="lg:w-2/3">
+
+                  <div class="lg:w-2/3 lg:pl-44">
                     <p
                       class="text-gray-600 text-left leading-relaxed text-[#161616] max-w-xl"
                     >

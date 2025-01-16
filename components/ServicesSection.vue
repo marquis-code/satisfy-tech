@@ -1,6 +1,6 @@
 <template>
     <section class="bg-white pt-10">
-      <div class="max-w-7xl mx-auto">
+      <div class="">
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 p-5 lg:p-0">
           <!-- Service Cards -->
           <div 

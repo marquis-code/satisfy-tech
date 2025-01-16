@@ -13,7 +13,7 @@
         </button>
 
 
-        <div class="hidden md:flex items-center space-x-4">
+        <div class="hidden md:flex items-center space-x-3">
           <NuxtLink
           v-for="link in navigationLinks"
             :key="link.name"
@@ -137,11 +137,11 @@ const navigationLinks = [
 main {
   padding-top: 96px; /* Adjust to match navbar height */
 }
-
 .router-link-exact-active {
   background-color: #222222;
   color: white;
-  border-radius: 35px;
-  padding: 10px;
+  border-radius: 20px;
+  padding: 8px 20px;
+  font-weight: bold;
 }
 </style>

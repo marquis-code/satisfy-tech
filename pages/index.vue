@@ -1,23 +1,105 @@
 <template>
   <main>
-    <WhiteNav class="mb-10 z-50" shade="default" />
-    <div class="relative isolate overflow-hidden">
+    <div class="">
+  <header class="absolute inset-x-0 top-0 z-50">
+    <nav class="flex items-center justify-between p-6 lg:px-8" aria-label="Global">
+      <div class="flex lg:flex-1">
+        <a href="#" class="-m-1.5 p-1.5">
+          <span class="sr-only">Your Company</span>
+          <img class="h-8 w-auto" src="@/assets/icons/white-logo.svg" alt="">
+        </a>
+      </div>
+      <div class="flex lg:hidden">
+        <button @click="isMenuOpen = true" type="button" class="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-400">
+          <span class="sr-only">Open main menu</span>
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+        </button>
+      </div>
+      <div class="hidden lg:flex lg:gap-x-3">
+        <!-- {{ router.currentRoute.fullPath }} -->
+        <!-- {{ route }} -->
+        <NuxtLink to="/" class="text-sm/6 flex justify-center items-center font-semibold bg-black/50 text-white">Home</NuxtLink>
+        <NuxtLink to="/services" class="text-sm/6 flex px-5 rounded-full justify-center items-center font-semibold bg-black/50 text-white">Services</NuxtLink>
+        <NuxtLink to="/projects" class="text-sm/6 flex px-5 rounded-full justify-center items-center font-semibold bg-black/50 text-white">Projects</NuxtLink>
+        <!-- <a href="#contact-us" class="text-sm/6 font-semibold text-white bg-[#444CE7] contact-link">Contact us</a> -->
+      </div>
+      <!-- <div class="hidden lg:flex lg:flex-1 lg:justify-end">
+        <a href="#" class="text-sm/6 font-semibold text-white">Log in <span aria-hidden="true">&rarr;</span></a>
+      </div> -->
+    </nav>
+    <!-- Mobile menu, show/hide based on menu open state. -->
+    <div v-if="isMenuOpen" class="lg:hidden" role="dialog" aria-modal="true">
+      <!-- Background backdrop, show/hide based on slide-over state. -->
+      <div class="fixed inset-0 z-50"></div>
+      <div class="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-gray-900 px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-white/10">
+        <div class="flex items-center justify-between">
+          <a href="#" class="-m-1.5 p-1.5">
+            <span class="sr-only">Your Company</span>
+            <img class="h-8 w-auto" src="@/assets/icons/white-logo.svg" alt="">
+          </a>
+          <button type="button" class="-m-2.5 rounded-md p-2.5 text-gray-400">
+            <span class="sr-only">Close menu</span>
+            <svg class="size-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
+            </svg>
+          </button>
+        </div>
+        <div class="mt-6 flow-root">
+          <div class="-my-6 divide-y divide-gray-500/25">
+            <div class="space-y-2 py-6">
+              <NuxtLink to="/" class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-white hover:bg-gray-800">Home</NuxtLink>
+              <NuxtLink to="/services" class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-white hover:bg-gray-800">Services</NuxtLink>
+              <NuxtLink to="/projects" class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-white hover:bg-gray-800">Projects</NuxtLink>
+              <!-- <NuxtLink to="/" class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-white hover:bg-gray-800">Contact Us</NuxtLink> -->
+            </div>
+            <!-- <div class="py-6">
+              <a href="#" class="-mx-3 block rounded-lg px-3 py-2.5 text-base/7 font-semibold text-white hover:bg-gray-800">Log in</a>
+            </div> -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <div class="relative isolate overflow-hidden pt-14">
+    <img src="@/assets/img/cta-bg.png" alt="" class="absolute inset-0 -z-10 h-full w-full object-cover">
+    <div class="mx-auto max-w-7xl px-6 lg:px-8">
+      <div class="mx-auto max-w-2xl py-32 sm:py-48 lg:py-56">
+        <div class="text-center">
+          <h1 class="text-balance text-5xl font-semibold tracking-tight text-white">Build the future of your business</h1>
+          <p class="mt-8 text-pretty text-lg font-bold text-white sm:text-xl/8">Your Vision, Our Mission — Together, We’ll Build Exceptional Software</p>
+          <div class="mt-10 flex items-center justify-center gap-x-6">
+            <a
+                href="#contact-us"
+                class="rounded-full bg-[#444CE7] px-6 py-3 text-sm font-semibold text-white shadow-sm focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#444CE7]"
+              >
+                Ready to Build
+              </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+    <!-- <WhiteNav class="mb-10 z-50" shade="default" />
+    <div class="relative isolate overflow-hidden border-4">
       <img
-        src="@/assets/img/column.png"
+        src="@/assets/img/hero-section.png"
         alt=""
-        class="absolute inset-0 -z-10 h-full w-full opacity-40 object-cover"
+        class="absolute inset-0 -z-10 h-full w-screen  object-cover"
       />
       <div class="mx-auto max-w-7xl px-6 lg:px-8">
         <div class="mx-auto max-w-2xl py-32 sm:py-48 lg:py-56">
           <div class="text-center flex justify-center items-center flex-col">
             <h1
               data-aos="fade-up"
-              class="text-balance text-5xl font-semibold tracking-tight text-gray-900"
+              class="text-balance text-5xl font-semibold tracking-tight text-white"
             >
               Build the future of your business
             </h1>
             <p
-              class="mt-8 text-pretty flex justify-center items-center lg:max-w-sm text-center text-lg font-light text-gray-500 sm:text-xl/8"
+              class="text-pretty flex justify-center items-center text-center text-lg text-white sm:text-xl/8"
             >
               Your Vision, Our Mission — Together, We’ll Build Exceptional
               Software
@@ -36,7 +118,7 @@
           </div>
         </div>
       </div>
-    </div>
+    </div> -->
 
     <MarqueeBanner />
 
@@ -52,7 +134,7 @@
           Innovation That Accelerates Your Growth
         </h2>
         <p
-          class="mt-4 text-center text-[#161616] leading-loose max-w-lg mx-auto text-center"
+          class="mt-4 text-center text-semibold text-[#161616] leading-loose max-w-lg mx-auto text-center"
         >
           <span class="hover:text-[#444CE7] transition-colors duration-300"
             >We
@@ -199,6 +281,8 @@
 
 <script setup lang="ts">
 const openNav = ref(false);
+const route = useRoute()
+const router = useRouter()
 const offerings = ref([
   {
     title: "Custom software development",
@@ -220,4 +304,16 @@ const offerings = ref([
                   applications tailored to meet the unique needs of your business`,
   },
 ]);
+
+const isMenuOpen = ref(false);
 </script>
+
+<style scoped>
+.router-link-exact-active {
+  background-color: #444CE7; /* Matches the blue color */
+  color: white; /* White text */
+  border-radius: 20px; /* Rounded edges */
+  font-weight: bold; /* Ensures the text is bold */
+  padding: 8px 20px;
+}
+</style>

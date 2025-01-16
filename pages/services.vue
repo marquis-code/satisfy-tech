@@ -1,8 +1,8 @@
 <template>
   <main>
-    <div class="bg-gradient-to-b to-[#444CE7] via-[#824DF8] from-[#26D1FF] pb-60">
+    <div class="bg-gradient-to-b to-[#444CE7] via-[#824DF8] from-[#26D1FF] pb-32">
       <WhiteNav shade="coloured" />
-      <div class="mx-auto w-full max-w-7xl px-4 z-0 sm:px-6 lg:px-8 pt-44 flex justify-center items-center">
+      <div class="mx-auto w-full max-w-7xl px-4 z-0 sm:px-6 lg:px-8 pt-20 flex justify-center items-center">
         <TextSwitch />
 
         <!-- <img class="h-96" src="@/assets/img/first-iteration.png" />

@@ -1,6 +1,6 @@
 <template>
   <ProductsHeroSection  />
-    <section class="mx-auto w-full max-w-7xl px-4 sm:px-6 lg:px-8 py-12">
+    <section class="mx-auto w-full container px-4 sm:px-6 lg:px-8 py-12">
       <!-- Filter Categories -->
       <div class="flex justify-center items-center flex-wrap gap-4 mb-12 z-10">
         <button 

@@ -1,5 +1,5 @@
 <template>
-    <div class="bg-gradient-to-b to-[#444CE7] via-[#824DF8] from-[#26D1FF] pb-[189px] w-full">
+    <div class="bg-gradient-to-b to-[#824DF8] via-[#444CE7] from-[#26D1FF] pb-[189px] w-full">
       <WhiteNav shade="coloured" />
       <!-- <nav class="container mx-auto px-4 py-6">
         <div class="flex items-center justify-between">

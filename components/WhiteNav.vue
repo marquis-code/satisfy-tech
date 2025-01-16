@@ -5,7 +5,7 @@
       'fixed w-full z-[1000] transition-all duration-300 py-6'
     ]"
   >
-    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+    <div class="mx-auto container px-6">
       <div class="flex items-center justify-between">
 
         <button @click="router.push('/')" class="flex items-center space-x-2">
@@ -13,14 +13,14 @@
         </button>
 
 
-        <div class="hidden md:flex items-center space-x-3">
+        <div class="hidden md:flex items-center">
           <NuxtLink
           v-for="link in navigationLinks"
             :key="link.name"
             :to="link.href"
-            class="text-sm rounded-full px-6 py-2.5 font-semibold transition-colors duration-200"
+            class="text-sm rounded-full px-4 py-2.5 font-semibold transition-colors duration-200"
             :class="{
-              'text-[#222222] bg-gray-50 hover:text-[#222222]':
+              'text-[#222222] bg-gray-50 mx-1 hover:text-[#222222]':
                 isScrolled || shade === 'default',
               'text-[#222222] hover:text-[#222222]': !isScrolled && shade === 'coloured',
               'font-medium': link.name === 'Projects',
@@ -28,12 +28,13 @@
           >
             {{ link.name }}
           </NuxtLink>
-          <a
+          <!-- <a
             href="#contact-us"
             class="px-4 py-2 text-sm text-[#222222] rounded-full font-semibold transition-colors duration-200"
           >
             Contact us
-          </a>
+          </a> -->
+          <button onclick="document.getElementById('contact-us').scrollIntoView({ behavior: 'smooth' });" class="px-4 py-2 text-sm text-[#222222] rounded-full font-semibold transition-colors duration-200">Contact Us</button>
         </div>
 
 

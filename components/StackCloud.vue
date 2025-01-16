@@ -1,10 +1,10 @@
 <template>
   <section class="w-full bg-white py-16 -z-50">
-    <div class="container mx-auto px-4">
+    <div class="container mx-auto px-4 ">
       <!-- Section Header -->
       <div class="text-center mb-12">
-        <p class="text-gray-600 uppercase text-sm tracking-wider mb-2">TOOLS</p>
-        <h2 class="text-2xl md:text-4xl font-semibold text-[#222222]">Tools to Facilitate the Process</h2>
+        <p class="text-gray-600 uppercase text-sm tracking-wider font-semibold mb-2">TOOLS</p>
+        <h2 class="text-2xl md:text-3xl font-semibold text-[#222222]">Tools to Facilitate the Process</h2>
       </div>
 
       <!-- Tools Horizontal Scroll -->

@@ -2,7 +2,7 @@
   <main>
     <div class="">
   <header class="absolute inset-x-0 top-0 z-50">
-    <nav class="flex items-center justify-between p-6 lg:px-8" aria-label="Global">
+    <nav class="flex items-center justify-between p-6 container mx-auto" aria-label="Global">
       <div class="flex lg:flex-1">
         <a href="#" class="-m-1.5 p-1.5">
           <span class="sr-only">Your Company</span>
@@ -22,6 +22,7 @@
         <NuxtLink to="/services" class="text-sm/6 flex px-5 rounded-full justify-center items-center font-semibold bg-black/50 text-white">Services</NuxtLink>
         <NuxtLink to="/projects" class="text-sm/6 flex px-5 rounded-full justify-center items-center font-semibold bg-black/50 text-white">Projects</NuxtLink>
         <!-- <a href="#contact-us" class="text-sm/6 font-semibold text-white bg-[#444CE7] contact-link">Contact us</a> -->
+         <button onclick="document.getElementById('contact-us').scrollIntoView({ behavior: 'smooth' });" class="text-sm/6 flex px-5 rounded-full justify-center items-center font-semibold bg-black/50 text-white">Contact Us</button>
       </div>
       <!-- <div class="hidden lg:flex lg:flex-1 lg:justify-end">
         <a href="#" class="text-sm/6 font-semibold text-white">Log in <span aria-hidden="true">&rarr;</span></a>
@@ -64,11 +65,11 @@
   <div class="relative isolate overflow-hidden pt-14">
     <img src="@/assets/img/cta-bg.png" alt="" class="absolute inset-0 -z-10 h-full w-full object-cover">
     <div class="mx-auto max-w-7xl px-6 lg:px-8">
-      <div class="mx-auto max-w-2xl py-32 sm:py-48 lg:py-56">
+      <div class="mx-auto py-32 sm:py-48 lg:py-56">
         <div class="text-center">
-          <h1 class="text-balance text-5xl font-semibold tracking-tight text-white">Build the future of your business</h1>
-          <p class="mt-8 text-pretty text-lg font-bold text-white sm:text-xl/8">Your Vision, Our Mission — Together, We’ll Build Exceptional Software</p>
-          <div class="mt-10 flex items-center justify-center gap-x-6">
+          <h1 data-aos="fade-up" class="text-balance text-3xl lg:text-7xl font-semibold tracking-tight text-white">Build the future of your business</h1>
+          <p data-aos="fade-up" class="-mt-8 text-pretty text-lg font-bold text-white sm:text-xl/8">Your Vision, Our Mission — Together, We’ll Build Exceptional Software</p>
+          <div data-aos="fade-up" class="mt-10 flex items-center justify-center gap-x-6">
             <a
                 href="#contact-us"
                 class="rounded-full bg-[#444CE7] px-6 py-3 text-sm font-semibold text-white shadow-sm focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#444CE7]"
@@ -122,7 +123,7 @@
 
     <MarqueeBanner />
 
-   <section class="mx-auto w-full max-w-7xl px-4 sm:px-6 lg:px-8">
+   <section class="mx-auto container px-6">
     <div class="bg-white">
       <div
         data-aos="fade-up"
@@ -134,7 +135,7 @@
           Innovation That Accelerates Your Growth
         </h2>
         <p
-          class="mt-4 text-center text-semibold text-[#161616] leading-loose max-w-lg mx-auto text-center"
+          class="mt-4 text-center text-semibold text-[#161616] text-lg leading-loose max-w-lg mx-auto text-center"
         >
           <span class="hover:text-[#444CE7] transition-colors duration-300"
             >We
@@ -272,7 +273,7 @@
     <CaseStudies />
     </section>
    <WhyChooseUsSection />
-  <section class="mx-auto w-full max-w-7xl px-4 sm:px-6 lg:px-8">
+  <section class="mx-auto container px-6 pb-44">
     <TestimonialCarousel />
   </section>
 

@@ -52,6 +52,7 @@
               <NuxtLink to="/services" class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-white hover:bg-gray-800">Services</NuxtLink>
               <NuxtLink to="/projects" class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-white hover:bg-gray-800">Projects</NuxtLink>
               <!-- <NuxtLink to="/" class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-white hover:bg-gray-800">Contact Us</NuxtLink> -->
+              <button onclick="document.getElementById('contact-us').scrollIntoView({ behavior: 'smooth' });" class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-white">Contact Us</button>
             </div>
             <!-- <div class="py-6">
               <a href="#" class="-mx-3 block rounded-lg px-3 py-2.5 text-base/7 font-semibold text-white hover:bg-gray-800">Log in</a>
@@ -68,7 +69,7 @@
       <div class="mx-auto py-32 sm:py-48 lg:py-56">
         <div class="text-center">
           <h1 data-aos="fade-up" class="text-balance text-3xl lg:text-7xl font-semibold tracking-tight text-white">Build the future of your business</h1>
-          <p data-aos="fade-up" class="-mt-8 text-pretty text-lg font-bold text-white sm:text-xl/8">Your Vision, Our Mission — Together, We’ll Build Exceptional Software</p>
+          <p data-aos="fade-up" class="lg:-mt-8 text-pretty text-sm lg:text-lg font-semibold text-white sm:text-xl/8">Your Vision, Our Mission — Together, We’ll Build Exceptional Software</p>
           <div data-aos="fade-up" class="mt-10 flex items-center justify-center gap-x-6">
             <a
                 href="#contact-us"

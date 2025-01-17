@@ -64,10 +64,22 @@
   <div class="relative isolate overflow-hidden pt-14">
     <img src="@/assets/img/cta-bg.png" alt="" class="absolute inset-0 -z-10 h-full w-full object-cover">
     <div class="mx-auto max-w-7xl px-6 lg:px-8">
-      <div class="mx-auto py-32 sm:py-48 lg:py-56">
+      <div class="mx-auto sm:py-32 lg:py-56">
         <div class="text-center">
-          <h1 data-aos="fade-up" class="text-balance text-3xl lg:text-7xl font-semibold tracking-tight text-white">Build the future of your business</h1>
-          <p data-aos="fade-up" class="lg:-mt-8 text-pretty text-sm lg:text-lg font-semibold text-white sm:text-xl/8">Your Vision, Our Mission — Together, We’ll Build Exceptional Software</p>
+          <div class="px-4 sm:px-6 lg:px-8">
+            <h1 
+              data-aos="fade-up" 
+              class="text-balance text-2xl sm:text-3xl md:text-5xl lg:text-7xl font-semibold tracking-tight text-white text-center">
+              Build the future of your business
+            </h1>
+            <p 
+              data-aos="fade-up" 
+              class="mt-4 sm:mt-6 md:mt-8 lg:mt-10 text-sm sm:text-base md:text-lg lg:text-xl font-semibold text-white text-center">
+              Your Vision, Our Mission — Together, We’ll Build Exceptional Software
+            </p>
+          </div>
+          <!-- <h1 data-aos="fade-up" class="text-balance text-3xl lg:text-7xl font-semibold tracking-tight text-white">Build the future of your business</h1>
+          <p data-aos="fade-up" class="lg:-mt-8 text-pretty text-sm lg:text-lg font-semibold text-white sm:text-xl/8">Your Vision, Our Mission — Together, We’ll Build Exceptional Software</p> -->
           <div data-aos="fade-up" class="mt-10 flex items-center justify-center gap-x-6">
             <a
                 href="#contact-us"

@@ -1,5 +1,6 @@
 <template>
-    <main class="mb-20 lg:my-20">
+    <main class="mb-20">
+      <!-- {{ projects }} -->
         <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-y-10 gap-4 max-w-7xl" style="margin-left: 8vw; margin-right: 8vw;">
       <NuxtLink
         v-for="(card, index) in computedCards"
@@ -42,6 +43,10 @@
     limit: {
       type: Number,
       default: 4
+    },
+    projects: {
+       type: Array,
+       default: () => []
     }
   })
 
@@ -85,6 +90,6 @@ const cards = ref([
 ])
 
 const computedCards = computed(() => {
-  return cards.value.slice(0, props.limit)
+  return props.projects.length ? props.projects.length : cards.value.slice(0, props.limit)
 })
 </script>

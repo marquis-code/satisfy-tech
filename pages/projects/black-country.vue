@@ -43,7 +43,7 @@
         </div>
 
         <!-- About Section -->
-        <section class="lg:py-12 py-6 lg:px-44">
+        <section class="lg:py-12 text-xl py-6  lg:px-44">
           <h2 class="lg:text-2xl text-xl font-semibold mb-6 text-[#222222]">About BlackCountry</h2>
           <p class="text-gray-700 leading-relaxed text-[#222222]">
             BlackCountry is a digital platform redefining shared living by
@@ -61,7 +61,7 @@
         </section>
 
         <!-- Challenge Section -->
-        <section class="lg:py-12 py-6 lg:px-44">
+        <section class="lg:py-12 text-xl py-6  lg:px-44">
           <h2 class="lg:text-2xl text-xl font-semibold mb-6 text-[#222222]">The Challenge</h2>
           <p class="text-gray-700 leading-relaxed text-[#222222]">
              BlackCountry set out to tackle the rising cost of housing in
@@ -75,7 +75,7 @@
         </section>
 
         <!-- Solution Section with Images -->
-        <section class="lg:py-12 py-6 lg:px-44">
+        <section class="lg:py-12 text-xl py-6  lg:px-44">
           <h2 class="lg:text-2xl text-xl font-semibold mb-6 text-[#222222]">Product Solution</h2>
           <p class="text-gray-700 leading-relaxed text-[#222222] mb-8">
             Our team collaborated with BlackCountry to architect and launch a
@@ -101,7 +101,7 @@
          </div>
         </section>
 
-        <section class="lg:py-12 py-6 lg:px-44">
+        <section class="lg:py-12 text-xl py-6  lg:px-44">
           <h2 class="lg:text-2xl text-xl font-semibold mb-6 text-[#222222]">The Outcomes</h2>
           <p class="text-gray-700 leading-relaxed text-[#222222]">
             Upon launch, BlackCountry experienced rapid adoption as tenants
@@ -119,7 +119,7 @@
         </section>
 
 
-        <section class="lg:px-44">
+        <section class="lg:py-12 text-xl py-6  lg:px-44">
           <svg width="30" height="30" viewBox="0 0 44 35" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M0 22.23C0 13.26 5.07 5.07 12.22 0L18.33 5.07C14.17 7.54 9.88 12.87 8.97 17.29C9.36 17.16 10.4 16.9 11.18 16.9C15.6 16.9 18.98 20.28 18.98 25.09C18.98 30.03 14.95 34.06 10.14 34.06C4.81 34.06 0 29.77 0 22.23ZM24.05 22.23C24.05 13.26 29.12 5.07 36.27 0L42.38 5.07C38.22 7.54 33.93 12.87 33.02 17.29C33.41 17.16 34.45 16.9 35.23 16.9C39.65 16.9 43.03 20.28 43.03 25.09C43.03 30.03 39 34.06 34.19 34.06C28.86 34.06 24.05 29.77 24.05 22.23Z" fill="#222222"/>
             </svg>

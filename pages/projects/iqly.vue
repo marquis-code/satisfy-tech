@@ -42,7 +42,7 @@
           </div>
   
           <!-- About Section -->
-          <section class="lg:py-12 py-6 lg:px-44">
+          <section class="lg:py-12 text-xl py-6  lg:px-44">
             <h2 class="lg:text-2xl text-xl font-semibold mb-6 text-[#222222]">About IQly</h2>
             <p class="text-gray-700 leading-relaxed text-[#222222]">
               IQly is an AI-powered career advancement platform designed to help job seekers sharpen their skills, boost their confidence, and land their dream roles. The platform offers lifelike mock interviews tailored to users’ fields, an AI-driven resume builder to craft compelling career narratives, and a comprehensive resource library packed with expert advice and industry insights. IQly’s real-time feedback system provides users with targeted insights to improve their performance, while its intuitive design ensures preparation is efficient and effective. With a mission to make career readiness accessible and transformative, IQly empowers individuals to excel in competitive job markets, equipping them with the tools they need to stand out and succeed.
@@ -50,7 +50,7 @@
           </section>
   
           <!-- Challenge Section -->
-          <section class="lg:py-12 py-6 lg:px-44">
+          <section class="lg:py-12 text-xl py-6  lg:px-44">
             <h2 class="lg:text-2xl text-xl font-semibold mb-6 text-[#222222]">The Challenge</h2>
             <p class="text-gray-700 leading-relaxed text-[#222222]">
                IQly set out to develop a comprehensive, AI-powered platform that would help job seekers refine their interview skills, craft standout resumes, and access real-time performance insights. They needed a solution that could deliver realistic mock interviews, instant feedback, and personalized resources—all while remaining simple enough for anyone to use. However, building an intelligent system capable of seamlessly integrating these features posed a significant technical and UX challenge.
@@ -58,7 +58,7 @@
           </section>
   
           <!-- Solution Section with Images -->
-          <section class="lg:py-12 py-6 lg:px-44">
+          <section class="lg:py-12 text-xl py-6  lg:px-44">
             <h2 class="lg:text-2xl text-xl font-semibold mb-6 text-[#222222]">Product Solution</h2>
             <p class="text-gray-700 leading-relaxed text-[#222222] mb-8">
               We stepped in to architect and develop the platform from the ground up. Leveraging our expertise in machine learning, we created an AI engine capable of simulating diverse interview scenarios and providing immediate, targeted feedback. Our front-end specialists designed an intuitive user interface that guided job seekers through every step—from setting up a mock interview session to polishing their résumés with AI-driven suggestions. Simultaneously, we integrated an extensive resource library that automatically tailored its recommendations based on each user’s progress and performance gaps.
@@ -70,7 +70,7 @@
            </div>
           </section>
   
-          <section class="lg:py-12 py-6 lg:px-44">
+          <section class="lg:py-12 text-xl py-6  lg:px-44">
             <h2 class="lg:text-2xl text-xl font-semibold mb-6 text-[#222222]">The Outcomes</h2>
             <p class="text-gray-700 leading-relaxed text-[#222222]">
               IQly has gained traction with early adopters who praised the platform’s user-friendly design and practical insights. Job seekers reported feeling more confident and prepared for real-world interviews after using the AI-based mock interview tool. The AI-powered resume builder accelerated the job application process, allowing candidates to craft compelling résumés in minutes. Overall, the synergy between Buildr’s robust technical foundation and IQly’s vision helped create a transformative platform that empowers users to land their dream jobs.
@@ -89,7 +89,7 @@
           </section>
   
   
-          <section class=" lg:px-44">
+          <section class="lg:py-12 text-xl py-6  lg:px-44">
             <svg width="30" height="30" viewBox="0 0 44 35" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M0 22.23C0 13.26 5.07 5.07 12.22 0L18.33 5.07C14.17 7.54 9.88 12.87 8.97 17.29C9.36 17.16 10.4 16.9 11.18 16.9C15.6 16.9 18.98 20.28 18.98 25.09C18.98 30.03 14.95 34.06 10.14 34.06C4.81 34.06 0 29.77 0 22.23ZM24.05 22.23C24.05 13.26 29.12 5.07 36.27 0L42.38 5.07C38.22 7.54 33.93 12.87 33.02 17.29C33.41 17.16 34.45 16.9 35.23 16.9C39.65 16.9 43.03 20.28 43.03 25.09C43.03 30.03 39 34.06 34.19 34.06C28.86 34.06 24.05 29.77 24.05 22.23Z" fill="#222222"/>
               </svg>

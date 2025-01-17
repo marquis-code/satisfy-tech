@@ -4,9 +4,9 @@
       <div class="lg:max-w-5xl mx-auto px-4">
         <h1 class="text-white text-[22px] sm:text-3xl md:text-6xl font-bold leading-tight">
           Your Vision
-          <span class="text-red-500 mx-1 lg:mx-2">+</span>
+          <span class="text-green-500 mx-1 lg:mx-2">+</span>
           our expertise
-          <span class="text-red-500 mx-2">=</span>
+          <span class="text-green-500 mx-2">=</span>
         </h1>
         <div class="relative mt-2 flex justify-center items-center">
           <div class="relative">
@@ -54,7 +54,7 @@
   const displayedText = ref('')
   const isDeleting = ref(false)
   const currentTextColor = computed(() => 
-    currentWordIndex.value === 0 ? 'text-red-500' : 'text-green-500'
+    currentWordIndex.value === 0 ? 'text-green-500' : 'text-green-500'
   )
   const staticText = computed(() => 
     words[currentWordIndex.value].static

@@ -40,7 +40,7 @@
           </div>
   
           <!-- About Section -->
-          <section class="lg:py-12 py-6 lg:px-44">
+          <section class="lg:py-12 text-xl py-6  lg:px-44">
             <h2 class="lg:text-2xl text-xl font-semibold mb-6 text-[#222222]">About Marketsquare</h2>
             <p class="text-gray-700 leading-relaxed text-[#222222]">
                 MarketSquare aims to transform the way people find and book local services. It is a digital marketplace designed to bridge the gap between service providers and users, making it easier than ever to connect, communicate, and complete tasks. MarketSquare believes in the power of local, and are committed to supporting local professionals by providing a platform where they can showcase their skills, expand their customer base, and grow their business. From plumbers and painters to electricians and personal trainers, the platform welcomes a wide range of service providers. For users, MarketSquare offers unparalleled convenience. No more endless searching, no more uncertainty. With MarketSquare, users can browse through a list of pre-vetted professionals, read reviews, and book services with just a few clicks.
@@ -50,7 +50,7 @@
           </section>
   
           <!-- Challenge Section -->
-          <section class="lg:py-12 py-6 lg:px-44">
+          <section class="lg:py-12 text-xl py-6  lg:px-44">
             <h2 class="lg:text-2xl text-xl font-semibold mb-6 text-[#222222]">The Challenge</h2>
             <p class="text-gray-700 leading-relaxed text-[#222222]">
                  MarketSquare wanted to create an easy-to-use platform that connects local service providers with people who need their services. They needed a reliable website and app where users could find and book services like plumbing, painting, and personal training without hassle. Additionally, MarketSquare aimed to support local professionals by helping them reach more customers and grow their businesses.
@@ -61,7 +61,7 @@
           </section>
   
           <!-- Solution Section with Images -->
-          <section class="lg:py-12 py-6 lg:px-44">
+          <section class="lg:py-12 text-xl py-6  lg:px-44">
             <h2 class="lg:text-2xl text-xl font-semibold mb-6 text-[#222222]">Product Solution</h2>
             <p class="text-gray-700 leading-relaxed text-[#222222] mb-8">
                 The team at Buildr develop a simple and effective digital marketplace. We built a user-friendly website and mobile app where users can browse through a variety of local services, read reviews, and book appointments with just a few clicks.
@@ -78,7 +78,7 @@
            </div>
           </section>
   
-          <section class="lg:py-12 py-6 lg:px-44">
+          <section class="lg:py-12 text-xl py-6  lg:px-44">
             <h2 class="lg:text-2xl text-xl font-semibold mb-6 text-[#222222]">The Outcomes</h2>
             <p class="text-gray-700 leading-relaxed text-[#222222]">
                 After launching the MarketSquare platform, it quickly became a popular choice for both users and service providers. Users appreciated the straightforward way to find and book trusted local services, leading to high satisfaction and repeat bookings. Service providers saw an increase in their customer base and business growth thanks to the platform’s visibility and easy management tools. The seamless connection between users and providers helped build a strong community, making MarketSquare a trusted name in local services.
@@ -91,7 +91,7 @@
           </section>
   
   
-          <section class=" lg:px-44">
+          <section class="lg:py-12 text-xl py-6  lg:px-44">
             <svg width="30" height="30" viewBox="0 0 44 35" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M0 22.23C0 13.26 5.07 5.07 12.22 0L18.33 5.07C14.17 7.54 9.88 12.87 8.97 17.29C9.36 17.16 10.4 16.9 11.18 16.9C15.6 16.9 18.98 20.28 18.98 25.09C18.98 30.03 14.95 34.06 10.14 34.06C4.81 34.06 0 29.77 0 22.23ZM24.05 22.23C24.05 13.26 29.12 5.07 36.27 0L42.38 5.07C38.22 7.54 33.93 12.87 33.02 17.29C33.41 17.16 34.45 16.9 35.23 16.9C39.65 16.9 43.03 20.28 43.03 25.09C43.03 30.03 39 34.06 34.19 34.06C28.86 34.06 24.05 29.77 24.05 22.23Z" fill="#222222"/>
               </svg>

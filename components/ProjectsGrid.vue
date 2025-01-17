@@ -1,7 +1,48 @@
 <template>
   <ProductsHeroSection  />
-    <section class="mx-auto w-full container px-4 sm:px-6 lg:px-8 py-12">
-      <!-- Filter Categories -->
+  <section class="mx-auto w-full container px-4 sm:px-6 lg:px-8 py-12">
+  <!-- Filter Categories -->
+  <div
+    class="flex justify-center gap-4 mb-12 z-10 overflow-x-auto scrollbar-hidden px-4"
+  >
+    <button
+      v-for="category in categories"
+      :key="category"
+      @click="activeCategory = category"
+      :class="[
+        'shrink-0 px-6 py-2 rounded-full text-sm font-medium transition-all',
+        activeCategory === category
+          ? 'bg-[#222222] text-white'
+          : 'bg-gray-100 text-gray-600 hover:bg-gray-200'
+      ]"
+    >
+      {{ category }}
+    </button>
+  </div>
+</section>
+
+  <!-- <section class="mx-auto w-full container px-4 sm:px-6 lg:px-8 py-12">
+  <div
+    class="flex justify-center gap-4 mb-12 z-10 overflow-x-auto scrollbar-hidden"
+  >
+    <button
+      v-for="category in categories"
+      :key="category"
+      @click="activeCategory = category"
+      :class="[
+        'shrink-0 px-6 py-2 rounded-full text-sm font-medium transition-all',
+        activeCategory === category
+          ? 'bg-[#222222] text-white'
+          : 'bg-gray-100 text-gray-600 hover:bg-gray-200'
+      ]"
+    >
+      {{ category }}
+    </button>
+  </div>
+</section> -->
+
+
+    <!-- <section class="mx-auto w-full container px-4 sm:px-6 lg:px-8 py-12">
       <div class="flex justify-center items-center flex-wrap gap-4 mb-12 z-10">
         <button 
           v-for="category in categories" 
@@ -17,7 +58,7 @@
           {{ category }}
         </button>
       </div>
-    </section>
+    </section> -->
 
       <!-- <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
         <CaseStudyCard
@@ -30,7 +71,37 @@
         :studyObj="project"
       />
       </div> -->
-      <AllCaseStudies :limit="6" />
+    <section class="mb-20">
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-y-10 gap-4 max-w-7xl" style="margin-left: 8vw; margin-right: 8vw;">
+      <NuxtLink
+        v-for="(card, index) in filteredProjects"
+        :key="index"
+        :to="card.urlPath"
+        class="relative group rounded-lg overflow-hidden shadow-lg"
+      >
+        <img
+          :src="card.image"
+          alt="Image"
+          class="w-full h-full object-cover"
+        />
+        <div
+          class="absolute inset-0 bg-black bg-opacity-70 group-hover:bg-opacity-30 transition-opacity duration-300"
+        ></div>
+        <div
+          class="absolute top-8 left-4 text-white text-lg font-bold z-10"
+        >
+          {{ card.name }}
+        </div>
+        <div
+          class="absolute bottom-8 left-4 text-white md:text-lg lg:text-2xl z-10"
+        >
+          {{ card.title }}
+        </div>
+      </NuxtLink>
+    </div>
+    </section>
+
+      <!-- <AllCaseStudies :limit="6" /> -->
   </template>
   
   <script setup lang="ts">
@@ -127,3 +198,13 @@
     );
   });
   </script>
+
+  <style scoped>
+.scrollbar-hidden::-webkit-scrollbar {
+  display: none;
+}
+.scrollbar-hidden {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+</style>

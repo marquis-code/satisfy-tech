@@ -40,7 +40,7 @@
           </div>
   
           <!-- About Section -->
-          <section class="lg:py-12 py-6  lg:px-44">
+          <section class="lg:py-12 text-xl py-6  lg:px-44">
             <h2 class="lg:text-2xl text-xl font-semibold mb-6 text-[#222222]">About Grabhub</h2>
             <p class="text-gray-700 leading-relaxed text-[#222222]">
                 Grabhub is a platform dedicated to tackling food waste by connecting retailers with consumers in search of affordable, high-quality groceries and home essentials. Retailers list near-expiry or overstocked items at discounted prices, giving consumers the opportunity to save money while reducing environmental waste. Designed with sustainability at its core, Grabhub addresses one of the world’s pressing issues—food waste—by transforming surplus goods into valuable resources.
@@ -59,7 +59,7 @@
           </section>
   
           <!-- Solution Section with Images -->
-          <section class="lg:py-12 py-6  lg:px-44">
+          <section class="lg:py-12 text-xl py-6  lg:px-44">
             <h2 class="lg:text-2xl text-xl font-semibold mb-6 text-[#222222]">Product Solution</h2>
             <p class="text-gray-700 leading-relaxed text-[#222222] mb-8">
                 Buildr’s team partnered with Grabhub to develop a comprehensive online marketplace tailored to reduce food waste and offer savings to consumers. We designed and built a user-friendly platform that seamlessly connects retailers with consumers, enabling the easy listing and discovery of near-expiry food items, groceries, and home essentials. The platform features intuitive browsing capabilities, secure payment processing, and streamlined logistics management to facilitate smooth transactions. 
@@ -72,7 +72,7 @@
            </div>
           </section>
   
-          <section class="lg:py-12 py-6  lg:px-44">
+          <section class="lg:py-12 text-xl py-6  lg:px-44">
             <h2 class="lg:text-2xl text-xl font-semibold mb-6 text-[#222222]">The Outcomes</h2>
             <p class="text-gray-700 leading-relaxed text-[#222222]">
                  Since launching the Grabhub platform, the collaboration with Buildr has yielded impressive results. Grabhub successfully diverted thousands of pounds of food from landfills, significantly contributing to environmental sustainability efforts in Ontario. Retailers experienced a notable reduction in waste and financial losses, while consumers enjoyed substantial savings on essential items, enhancing their purchasing power. The platform's ease of use and reliability led to high user engagement and repeat transactions, fostering a thriving community committed to reducing food waste and promoting sustainable consumption. Grabhub’s innovative approach not only addressed immediate economic and environmental challenges but also established a scalable model for ongoing impact.
@@ -84,7 +84,7 @@
           </section>
   
   
-          <section class="lg:px-44">
+          <section class="lg:py-12 text-xl py-6  lg:px-44">
             <svg width="30" height="30" viewBox="0 0 44 35" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M0 22.23C0 13.26 5.07 5.07 12.22 0L18.33 5.07C14.17 7.54 9.88 12.87 8.97 17.29C9.36 17.16 10.4 16.9 11.18 16.9C15.6 16.9 18.98 20.28 18.98 25.09C18.98 30.03 14.95 34.06 10.14 34.06C4.81 34.06 0 29.77 0 22.23ZM24.05 22.23C24.05 13.26 29.12 5.07 36.27 0L42.38 5.07C38.22 7.54 33.93 12.87 33.02 17.29C33.41 17.16 34.45 16.9 35.23 16.9C39.65 16.9 43.03 20.28 43.03 25.09C43.03 30.03 39 34.06 34.19 34.06C28.86 34.06 24.05 29.77 24.05 22.23Z" fill="#222222"/>
               </svg>

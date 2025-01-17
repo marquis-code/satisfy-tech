@@ -23,7 +23,7 @@
         <img 
           :src="image" 
           :alt="title"
-          class="w-full h-[400px] object-cover"
+          class="w-full h-[300px] object-cover"
         />
         <div 
           class="absolute inset-0 bg-black/70 transition-all duration-300 group-hover:bg-black/40"

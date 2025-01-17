@@ -45,7 +45,7 @@
           </div>
   
           <!-- About Section -->
-          <section class="lg:py-12 py-6 lg:px-44">
+          <section class="lg:py-12 text-xl py-6  lg:px-44">
             <h2 class="lg:text-2xl text-xl font-semibold mb-6 text-[#222222]">About Storipod</h2>
             <p class="text-gray-700 leading-relaxed text-[#222222]">
                 Storipod is a mobile-first microblogging platform that reimagines traditional blogging by making storytelling as seamless as social media. Designed for storytellers of all levels, Storipod allows users to create, edit, and publish short stories. Readers enjoy discovering bite-sized, visually appealing stories, fostering deeper engagement and community interaction. As Storipod evolves into a creator’s marketplace, it offers writers the opportunity to monetize their content while building their personal brand. With its blend of simplicity and creative flexibility, Storipod is setting a new standard for microblogging and transforming how stories are shared and consumed in the digital age.
@@ -56,7 +56,7 @@
           </section>
   
           <!-- Challenge Section -->
-          <section class="lg:py-12 py-6 lg:px-44">
+          <section class="lg:py-12 text-xl py-6  lg:px-44">
             <h2 class="lg:text-2xl text-xl font-semibold mb-6 text-[#222222]">The Challenge</h2>
             <p class="text-gray-700 leading-relaxed text-[#222222]">
                 Storipod sought to transform traditional blogging by offering a platform that makes storytelling as easy and engaging as social media. Aspiring writers and creators faced barriers to entry in traditional blogging, including the need for technical expertise, complex setups, and desktop-only tools. Additionally, readers craved more interactive and bite-sized content experiences that matched their fast-paced lifestyles. Storipod needed a mobile-first platform that would empower creators to easily share stories, connect with audiences, and build their presence—all without sacrificing creativity or professionalism.
@@ -68,7 +68,7 @@
           </section>
   
           <!-- Solution Section with Images -->
-          <section class="lg:py-12 py-6 lg:px-44">
+          <section class="lg:py-12 text-xl py-6  lg:px-44">
             <h2 class="lg:text-2xl text-xl font-semibold mb-6 text-[#222222]">Product Solution</h2>
             <p class="text-gray-700 leading-relaxed text-[#222222] mb-8">
                  Buildr collaborated with Storipod to design and develop an intuitive microblogging platform optimized for mobile devices. The platform was crafted to simplify the storytelling process, enabling users to create, edit, and publish stories directly from their smartphones. We prioritized user-friendly design, ensuring the app felt as seamless as social media while maintaining the depth required for meaningful storytelling. Features included quick content editing tools, customizable templates, and options for interactive engagement between creators and their audiences. We also integrated a scalable backend infrastructure to support future growth as Storipod expanded into a creator marketplace. By blending simplicity with versatility, the platform made it possible for creators to share content effortlessly and for readers to discover and enjoy stories in a visually appealing, scrollable format.
@@ -82,7 +82,7 @@
            </div>
           </section>
   
-          <section class="lg:py-12 py-6 lg:px-44">
+          <section class="lg:py-12 text-xl py-6  lg:px-44">
             <h2 class="lg:text-2xl text-xl font-semibold mb-6 text-[#222222]">The Outcomes</h2>
             <p class="text-gray-700 leading-relaxed text-[#222222]">
                  Following the launch, Storipod quickly gained traction among both casual storytellers and professional creators. The mobile-first approach allowed users to create content anytime and anywhere, resulting in a surge of new stories and active engagement. Creators reported increased visibility and stronger connections with their audiences, while readers enjoyed discovering fresh content in an easily digestible format. Storipod’s seamless experience has positioned it as a disruptive force in the microblogging space, combining the simplicity of social media with the creative freedom of traditional blogging. As the platform continues to grow, it is evolving into a vibrant creator marketplace, further enabling writers to monetize their content and expand their reach.
@@ -93,7 +93,7 @@
           </section>
   
   
-          <section class=" lg:px-44">
+          <section class="lg:py-12 text-xl py-6  lg:px-44">
             <svg width="30" height="30" viewBox="0 0 44 35" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M0 22.23C0 13.26 5.07 5.07 12.22 0L18.33 5.07C14.17 7.54 9.88 12.87 8.97 17.29C9.36 17.16 10.4 16.9 11.18 16.9C15.6 16.9 18.98 20.28 18.98 25.09C18.98 30.03 14.95 34.06 10.14 34.06C4.81 34.06 0 29.77 0 22.23ZM24.05 22.23C24.05 13.26 29.12 5.07 36.27 0L42.38 5.07C38.22 7.54 33.93 12.87 33.02 17.29C33.41 17.16 34.45 16.9 35.23 16.9C39.65 16.9 43.03 20.28 43.03 25.09C43.03 30.03 39 34.06 34.19 34.06C28.86 34.06 24.05 29.77 24.05 22.23Z" fill="#222222"/>
               </svg>
@@ -110,10 +110,10 @@
             <h2 class="lg:text-2xl text-xl text-[#222222] font-semibold mb-8">More case studies</h2>
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-3">
               <DetailsCaseStudyCard
-                name="Storipod"
-                 href="/projects/storipod"
-                title="Revolutionizing Microblogging for Storytellers"
-                :image="storipod"
+                name="BlackCountry"
+                 href="/projects/black-country"
+                title="Simplifying Shared Living in Nigeria: The BlackCountry Case Study"
+                :image="blackcountry"
                 :tags="[
                   'Entertainment',
                   'Social Media',

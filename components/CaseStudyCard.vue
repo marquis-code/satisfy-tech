@@ -4,7 +4,7 @@
       :to="studyObj.urlPath" 
       class="relative block group overflow-hidden rounded-2xl transition-all duration-300 hover:shadow-xl"
     >
-      <div class="relative h-[400px] w-full">
+      <div class="relative  w-full">
         <img 
           :src="studyObj?.image" 
           :alt="studyObj?.title"

@@ -279,7 +279,7 @@
       </div>
     </div>
 
-    <div class="">
+    <div class="pt-20">
       <AllCaseStudies :limit="4" />
       <!-- <CaseStudies /> -->
     </div>

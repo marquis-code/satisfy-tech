@@ -2,9 +2,9 @@
 <template>
     <!-- <div class="w-full bg-gradient-to-b from-blue-500 to-blue-700 py-16"> -->
       <div class="lg:max-w-5xl mx-auto px-4">
-        <h1 class="text-white text-2xl sm:text-3xl md:text-6xl font-bold leading-tight">
+        <h1 class="text-white text-[22px] sm:text-3xl md:text-6xl font-bold leading-tight">
           Your Vision
-          <span class="text-red-500 mx-2">+</span>
+          <span class="text-red-500 mx-1 lg:mx-2">+</span>
           our expertise
           <span class="text-red-500 mx-2">=</span>
         </h1>
@@ -20,13 +20,13 @@
             <div class="flex items-center">
               <span 
                 ref="typewriterText" 
-                class="text-2xl sm:text-3xl md:text-6xl font-bold z-10 relative"
+                class="text-[22px] sm:text-3xl md:text-6xl font-bold z-10 relative"
                 :class="currentTextColor"
               >
                 {{ displayedText }}
               </span>
               <span 
-                class="text-2xl sm:text-3xl md:text-6xl font-bold ml-3 text-white"
+                class="text-[22px] sm:text-3xl md:text-6xl font-bold ml-3 text-white"
               >
                 {{ staticText }}
               </span>

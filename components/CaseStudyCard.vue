@@ -8,10 +8,10 @@
         <img 
           :src="studyObj?.image" 
           :alt="studyObj?.title"
-          class="w-full h-full object-cover"
+          class="w-full h-[590px] object-cover"
         />
         <div 
-          class="absolute inset-0 bg-black/70 transition-all duration-300 group-hover:bg-black/40"
+          class="absolute inset-0 bg-black/70 transition-all duration-300 group-hover:bg-black/20"
         ></div>
         <p 
           class="text-xl font-bold text-white mb-2 absolute top-7 left-7"

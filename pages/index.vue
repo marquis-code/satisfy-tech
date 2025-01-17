@@ -78,8 +78,6 @@
               Your Vision, Our Mission — Together, We’ll Build Exceptional Software
             </p>
           </div>
-          <!-- <h1 data-aos="fade-up" class="text-balance text-3xl lg:text-7xl font-semibold tracking-tight text-white">Build the future of your business</h1>
-          <p data-aos="fade-up" class="lg:-mt-8 text-pretty text-sm lg:text-lg font-semibold text-white sm:text-xl/8">Your Vision, Our Mission — Together, We’ll Build Exceptional Software</p> -->
           <div data-aos="fade-up" class="mt-10 flex items-center justify-center gap-x-6">
             <a
                 href="#contact-us"

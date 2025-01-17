@@ -1,5 +1,5 @@
 <template>
-  <div class="py-32 px-4 sm:px-6 lg:px-8">
+  <div class="pt-32  lg:px-8">
     <div class="text-center">
       <h4 class="text-sm font-semibold tracking-wide text-gray-500">TESTIMONIALS</h4>
       <h2 class="mt-2 text-3xl font-medium text-[#222222] text-gray-900 sm:text-4xl">What our clients are saying</h2>
@@ -20,11 +20,11 @@
             v-for="(testimonial, index) in testimonials" 
             :key="index" 
             v-show="currentIndex === index" 
-            class="flex-shrink-0 w-full relative overflow-hidden rounded-lg bg-[#161616] text-white shadow-lg px-14 py-8 transition-all duration-700 ease-in-out">
+            class="flex-shrink-0 w-full relative overflow-hidden rounded-lg bg-[#161616] text-white shadow-lg px-6 lg:px-14 py-8 transition-all duration-700 ease-in-out">
             <svg width="40" height="40" viewBox="0 0 44 35" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M0 22.23C0 13.26 5.07 5.07 12.22 0L18.33 5.07C14.17 7.54 9.88 12.87 8.97 17.29C9.36 17.16 10.4 16.9 11.18 16.9C15.6 16.9 18.98 20.28 18.98 25.09C18.98 30.03 14.95 34.06 10.14 34.06C4.81 34.06 0 29.77 0 22.23ZM24.05 22.23C24.05 13.26 29.12 5.07 36.27 0L42.38 5.07C38.22 7.54 33.93 12.87 33.02 17.29C33.41 17.16 34.45 16.9 35.23 16.9C39.65 16.9 43.03 20.28 43.03 25.09C43.03 30.03 39 34.06 34.19 34.06C28.86 34.06 24.05 29.77 24.05 22.23Z" fill="white" fill-opacity="0.6"/>
             </svg>
-            <div class="text-lg leading-relaxed pt-2">&ldquo;{{ testimonial.message }}&rdquo;</div>
+            <div class="lg:text-lg leading-relaxed pt-2">&ldquo;{{ testimonial.message }}&rdquo;</div>
             <div class="mt-4 flex items-center">
               <img 
                 :src="testimonial.image" 

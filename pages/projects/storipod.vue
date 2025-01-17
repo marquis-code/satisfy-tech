@@ -4,7 +4,7 @@
   
       <main class="mx-auto   w-full max-w-7xl">
         <!-- Header Section -->
-        <div class="px-4 md:px-8 py-12">
+        <div class="px-4 md:px-8 lg:py-12 py-6">
           <div class="flex uppercase flex-wrap gap-2 text-[#7C7C7C] text-sm text-gray-600 mb-4">
             <span>storipod </span>
             <span>-</span>
@@ -14,7 +14,7 @@
             <span>/</span>
             <span>Digital Media</span>
           </div>
-          <h1 class="text-2xl font-semibold text-[#222222] mb-12">
+          <h1 class="text-xl lg:text-2xl font-semibold text-[#222222] mb-12">
             Revolutionizing Microblogging for Storytellers
             <!-- Addressing Food Waste with an Innovative Marketplace -->
           </h1>
@@ -30,8 +30,8 @@
           </div>
   
           <!-- Services Section -->
-          <div class="py-12 lg:px-44">
-            <h2 class="text-2xl font-semibold mb-8 text-center">
+          <div class="lg:py-12 pb-6 lg:px-44">
+            <h2 class="lg:text-2xl text-xl font-semibold mb-8 text-center">
               Service Provided
             </h2>
             <div class="flex flex-wrap justify-center gap-4 max-w-xl mx-auto">
@@ -45,8 +45,8 @@
           </div>
   
           <!-- About Section -->
-          <section class="py-12 lg:px-44">
-            <h2 class="text-2xl font-semibold mb-6 text-[#222222]">About Storipod</h2>
+          <section class="lg:py-12 py-6 lg:px-44">
+            <h2 class="lg:text-2xl text-xl font-semibold mb-6 text-[#222222]">About Storipod</h2>
             <p class="text-gray-700 leading-relaxed text-[#222222]">
                 Storipod is a mobile-first microblogging platform that reimagines traditional blogging by making storytelling as seamless as social media. Designed for storytellers of all levels, Storipod allows users to create, edit, and publish short stories. Readers enjoy discovering bite-sized, visually appealing stories, fostering deeper engagement and community interaction. As Storipod evolves into a creator’s marketplace, it offers writers the opportunity to monetize their content while building their personal brand. With its blend of simplicity and creative flexibility, Storipod is setting a new standard for microblogging and transforming how stories are shared and consumed in the digital age.
                 <!-- MarketSquare aims to transform the way people find and book local services. It is a digital marketplace designed to bridge the gap between service providers and users, making it easier than ever to connect, communicate, and complete tasks. MarketSquare believes in the power of local, and are committed to supporting local professionals by providing a platform where they can showcase their skills, expand their customer base, and grow their business. From plumbers and painters to electricians and personal trainers, the platform welcomes a wide range of service providers. For users, MarketSquare offers unparalleled convenience. No more endless searching, no more uncertainty. With MarketSquare, users can browse through a list of pre-vetted professionals, read reviews, and book services with just a few clicks. -->
@@ -56,8 +56,8 @@
           </section>
   
           <!-- Challenge Section -->
-          <section class="py-12 lg:px-44">
-            <h2 class="text-2xl font-semibold mb-6 text-[#222222]">The Challenge</h2>
+          <section class="lg:py-12 py-6 lg:px-44">
+            <h2 class="lg:text-2xl text-xl font-semibold mb-6 text-[#222222]">The Challenge</h2>
             <p class="text-gray-700 leading-relaxed text-[#222222]">
                 Storipod sought to transform traditional blogging by offering a platform that makes storytelling as easy and engaging as social media. Aspiring writers and creators faced barriers to entry in traditional blogging, including the need for technical expertise, complex setups, and desktop-only tools. Additionally, readers craved more interactive and bite-sized content experiences that matched their fast-paced lifestyles. Storipod needed a mobile-first platform that would empower creators to easily share stories, connect with audiences, and build their presence—all without sacrificing creativity or professionalism.
                 <!--  MarketSquare wanted to create an easy-to-use platform that connects local service providers with people who need their services. They needed a reliable website and app where users could find and book services like plumbing, painting, and personal training without hassle. Additionally, MarketSquare aimed to support local professionals by helping them reach more customers and grow their businesses. -->
@@ -68,8 +68,8 @@
           </section>
   
           <!-- Solution Section with Images -->
-          <section class="py-12 lg:px-44">
-            <h2 class="text-2xl font-semibold mb-6 text-[#222222]">Product Solution</h2>
+          <section class="lg:py-12 py-6 lg:px-44">
+            <h2 class="lg:text-2xl text-xl font-semibold mb-6 text-[#222222]">Product Solution</h2>
             <p class="text-gray-700 leading-relaxed text-[#222222] mb-8">
                  Buildr collaborated with Storipod to design and develop an intuitive microblogging platform optimized for mobile devices. The platform was crafted to simplify the storytelling process, enabling users to create, edit, and publish stories directly from their smartphones. We prioritized user-friendly design, ensuring the app felt as seamless as social media while maintaining the depth required for meaningful storytelling. Features included quick content editing tools, customizable templates, and options for interactive engagement between creators and their audiences. We also integrated a scalable backend infrastructure to support future growth as Storipod expanded into a creator marketplace. By blending simplicity with versatility, the platform made it possible for creators to share content effortlessly and for readers to discover and enjoy stories in a visually appealing, scrollable format.
                 <!-- The team at Buildr develop a simple and effective digital marketplace. We built a user-friendly website and mobile app where users can browse through a variety of local services, read reviews, and book appointments with just a few clicks. -->
@@ -82,8 +82,8 @@
            </div>
           </section>
   
-          <section class="py-12 lg:px-44">
-            <h2 class="text-2xl font-semibold mb-6 text-[#222222]">The Outcomes</h2>
+          <section class="lg:py-12 py-6 lg:px-44">
+            <h2 class="lg:text-2xl text-xl font-semibold mb-6 text-[#222222]">The Outcomes</h2>
             <p class="text-gray-700 leading-relaxed text-[#222222]">
                  Following the launch, Storipod quickly gained traction among both casual storytellers and professional creators. The mobile-first approach allowed users to create content anytime and anywhere, resulting in a surge of new stories and active engagement. Creators reported increased visibility and stronger connections with their audiences, while readers enjoyed discovering fresh content in an easily digestible format. Storipod’s seamless experience has positioned it as a disruptive force in the microblogging space, combining the simplicity of social media with the creative freedom of traditional blogging. As the platform continues to grow, it is evolving into a vibrant creator marketplace, further enabling writers to monetize their content and expand their reach.
                 <!-- After launching the MarketSquare platform, it quickly became a popular choice for both users and service providers. Users appreciated the straightforward way to find and book trusted local services, leading to high satisfaction and repeat bookings. Service providers saw an increase in their customer base and business growth thanks to the platform’s visibility and easy management tools. The seamless connection between users and providers helped build a strong community, making MarketSquare a trusted name in local services. -->
@@ -107,7 +107,7 @@
         </div>
       </main>
       <section class="mx-auto  w-full max-w-7xl px-4 sm:px-6 lg:px-8 pb-10">
-            <h2 class="text-2xl text-[#222222] font-semibold mb-8">More case studies</h2>
+            <h2 class="lg:text-2xl text-xl text-[#222222] font-semibold mb-8">More case studies</h2>
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-3">
               <DetailsCaseStudyCard
                 name="Storipod"

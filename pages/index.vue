@@ -129,7 +129,7 @@
         class="max-w-3xl px-6 lg:px-0 mx-auto flex-col items-center flex justify-center items-center w-full mt-20"
       >
         <h2
-          class="text-3xl text-center font-bold tracking-tight text-[#161616]"
+          class="text-2xl lg:text-3xl text-center font-bold tracking-tight text-[#161616]"
         >
           Innovation That Accelerates Your Growth
         </h2>
@@ -250,7 +250,7 @@
                 <h3 class="text-lg font-bold text-gray-900">
                   {{ item.title ?? "Nil" }}
                 </h3>
-                <p class="mt-2 leading-snug text-[#222222]">
+                <p class="mt-2 leading-loose lg:leading-snug text-[#222222]">
                   {{ item.desc }}
                 </p>
               </div>

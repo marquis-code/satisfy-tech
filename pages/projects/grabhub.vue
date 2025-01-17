@@ -3,18 +3,16 @@
       <WhiteNav />
   
       <main class="mx-auto w-full max-w-7xl">
-        <div class="px-4 md:px-8 py-12">
+        <div class="px-4 md:px-8 lg:py-12 py-6">
           <div class="flex uppercase gap-2 text-[#7C7C7C] text-sm text-gray-600 mb-4">
             <span>grabhub</span>
             <span>-</span>
             <span>FoodTech</span>
             <span>/</span>
             <span>E-Commerce</span>
-            <span>/</span>
-            <span>E-Commerce</span>
           </div>
   
-          <h1 class="text-2xl font-semibold text-[#222222] mb-12">
+          <h1 class="text-xl lg:text-2xl font-semibold text-[#222222] mb-12">
             Addressing Food Waste with an Innovative Marketplace
           </h1>
   
@@ -28,7 +26,7 @@
           </div>
   
           <!-- Services Section -->
-          <div class="py-12  lg:px-44">
+          <div class="lg:py-12 pb-6  lg:px-44">
             <h2 class="text-2xl font-semibold mb-8 text-center">
               Service Provided
             </h2>
@@ -42,8 +40,8 @@
           </div>
   
           <!-- About Section -->
-          <section class="py-12  lg:px-44">
-            <h2 class="text-2xl font-semibold mb-6 text-[#222222]">About Grabhub</h2>
+          <section class="lg:py-12 py-6  lg:px-44">
+            <h2 class="lg:text-2xl text-xl font-semibold mb-6 text-[#222222]">About Grabhub</h2>
             <p class="text-gray-700 leading-relaxed text-[#222222]">
                 Grabhub is a platform dedicated to tackling food waste by connecting retailers with consumers in search of affordable, high-quality groceries and home essentials. Retailers list near-expiry or overstocked items at discounted prices, giving consumers the opportunity to save money while reducing environmental waste. Designed with sustainability at its core, Grabhub addresses one of the world’s pressing issues—food waste—by transforming surplus goods into valuable resources.
               <!-- IQly is an AI-powered career advancement platform designed to help job seekers sharpen their skills, boost their confidence, and land their dream roles. The platform offers lifelike mock interviews tailored to users’ fields, an AI-driven resume builder to craft compelling career narratives, and a comprehensive resource library packed with expert advice and industry insights. IQly’s real-time feedback system provides users with targeted insights to improve their performance, while its intuitive design ensures preparation is efficient and effective. With a mission to make career readiness accessible and transformative, IQly empowers individuals to excel in competitive job markets, equipping them with the tools they need to stand out and succeed. -->
@@ -51,8 +49,8 @@
           </section>
   
           <!-- Challenge Section -->
-          <section class="py-12  lg:px-44">
-            <h2 class="text-2xl font-semibold mb-6 text-[#222222]">The Challenge</h2>
+          <section class="lg:py-12 text-xl py-6  lg:px-44">
+            <h2 class="lg:text-2xl text-xl font-semibold mb-6 text-[#222222]">The Challenge</h2>
             <p class="text-gray-700 leading-relaxed text-[#222222]">
                 Grabhub, an Ontario-based company, was determined to combat the significant issue of food waste while also addressing the financial strain it places on both retailers and consumers. Retailers often found themselves with surplus food items and home essentials nearing their best-by dates, leading to considerable losses and contributing to environmental degradation through increased landfill waste. 
               <!--  IQly set out to develop a comprehensive, AI-powered platform that would help job seekers refine their interview skills, craft standout resumes, and access real-time performance insights. They needed a solution that could deliver realistic mock interviews, instant feedback, and personalized resources—all while remaining simple enough for anyone to use. However, building an intelligent system capable of seamlessly integrating these features posed a significant technical and UX challenge. -->
@@ -61,8 +59,8 @@
           </section>
   
           <!-- Solution Section with Images -->
-          <section class="py-12  lg:px-44">
-            <h2 class="text-2xl font-semibold mb-6 text-[#222222]">Product Solution</h2>
+          <section class="lg:py-12 py-6  lg:px-44">
+            <h2 class="lg:text-2xl text-xl font-semibold mb-6 text-[#222222]">Product Solution</h2>
             <p class="text-gray-700 leading-relaxed text-[#222222] mb-8">
                 Buildr’s team partnered with Grabhub to develop a comprehensive online marketplace tailored to reduce food waste and offer savings to consumers. We designed and built a user-friendly platform that seamlessly connects retailers with consumers, enabling the easy listing and discovery of near-expiry food items, groceries, and home essentials. The platform features intuitive browsing capabilities, secure payment processing, and streamlined logistics management to facilitate smooth transactions. 
               <!-- We stepped in to architect and develop the platform from the ground up. Leveraging our expertise in machine learning, we created an AI engine capable of simulating diverse interview scenarios and providing immediate, targeted feedback. Our front-end specialists designed an intuitive user interface that guided job seekers through every step—from setting up a mock interview session to polishing their résumés with AI-driven suggestions. Simultaneously, we integrated an extensive resource library that automatically tailored its recommendations based on each user’s progress and performance gaps. -->
@@ -74,8 +72,8 @@
            </div>
           </section>
   
-          <section class="py-12  lg:px-44">
-            <h2 class="text-2xl font-semibold mb-6 text-[#222222]">The Outcomes</h2>
+          <section class="lg:py-12 py-6  lg:px-44">
+            <h2 class="lg:text-2xl text-xl font-semibold mb-6 text-[#222222]">The Outcomes</h2>
             <p class="text-gray-700 leading-relaxed text-[#222222]">
                  Since launching the Grabhub platform, the collaboration with Buildr has yielded impressive results. Grabhub successfully diverted thousands of pounds of food from landfills, significantly contributing to environmental sustainability efforts in Ontario. Retailers experienced a notable reduction in waste and financial losses, while consumers enjoyed substantial savings on essential items, enhancing their purchasing power. The platform's ease of use and reliability led to high user engagement and repeat transactions, fostering a thriving community committed to reducing food waste and promoting sustainable consumption. Grabhub’s innovative approach not only addressed immediate economic and environmental challenges but also established a scalable model for ongoing impact.
             </p>
@@ -96,7 +94,7 @@
         </div>
       </main>
       <section class="mx-auto  w-full max-w-7xl px-4 sm:px-6 lg:px-8 pb-10">
-            <h2 class="text-2xl text-[#222222] font-semibold mb-8">More case studies</h2>
+            <h2 class="lg:text-2xl text-xl text-[#222222] font-semibold mb-8">More case studies</h2>
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-3">
               <DetailsCaseStudyCard
                 name="Marketsquare"

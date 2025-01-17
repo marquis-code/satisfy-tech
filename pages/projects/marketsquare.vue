@@ -4,7 +4,7 @@
   
       <main class="mx-auto   w-full max-w-7xl">
         <!-- Header Section -->
-        <div class="px-4 md:px-8 py-12">
+        <div class="px-4 md:px-8 lg:py-12 py-6">
           <div class="flex uppercase flex-wrap gap-2 text-[#7C7C7C] text-sm text-gray-600 mb-4">
             <span>marketsquare</span>
             <span>-</span>
@@ -12,7 +12,7 @@
             <span>/</span>
             <span>Marketplaces</span>
           </div>
-          <h1 class="text-2xl font-semibold text-[#222222] mb-12">
+          <h1 class="text-xl lg:text-2xl font-semibold text-[#222222] mb-12">
             Addressing Food Waste with an Innovative Marketplace
           </h1>
   
@@ -26,7 +26,7 @@
           </div>
   
           <!-- Services Section -->
-          <div class="py-12 lg:px-44">
+          <div class="lg:py-12 pb-6 lg:px-44">
             <h2 class="text-2xl font-semibold mb-8 text-center">
               Service Provided
             </h2>
@@ -40,8 +40,8 @@
           </div>
   
           <!-- About Section -->
-          <section class="py-12 lg:px-44">
-            <h2 class="text-2xl font-semibold mb-6 text-[#222222]">About Marketsquare</h2>
+          <section class="lg:py-12 py-6 lg:px-44">
+            <h2 class="lg:text-2xl text-xl font-semibold mb-6 text-[#222222]">About Marketsquare</h2>
             <p class="text-gray-700 leading-relaxed text-[#222222]">
                 MarketSquare aims to transform the way people find and book local services. It is a digital marketplace designed to bridge the gap between service providers and users, making it easier than ever to connect, communicate, and complete tasks. MarketSquare believes in the power of local, and are committed to supporting local professionals by providing a platform where they can showcase their skills, expand their customer base, and grow their business. From plumbers and painters to electricians and personal trainers, the platform welcomes a wide range of service providers. For users, MarketSquare offers unparalleled convenience. No more endless searching, no more uncertainty. With MarketSquare, users can browse through a list of pre-vetted professionals, read reviews, and book services with just a few clicks.
                 <!-- Grabhub is a platform dedicated to tackling food waste by connecting retailers with consumers in search of affordable, high-quality groceries and home essentials. Retailers list near-expiry or overstocked items at discounted prices, giving consumers the opportunity to save money while reducing environmental waste. Designed with sustainability at its core, Grabhub addresses one of the world’s pressing issues—food waste—by transforming surplus goods into valuable resources. -->
@@ -50,8 +50,8 @@
           </section>
   
           <!-- Challenge Section -->
-          <section class="py-12 lg:px-44">
-            <h2 class="text-2xl font-semibold mb-6 text-[#222222]">The Challenge</h2>
+          <section class="lg:py-12 py-6 lg:px-44">
+            <h2 class="lg:text-2xl text-xl font-semibold mb-6 text-[#222222]">The Challenge</h2>
             <p class="text-gray-700 leading-relaxed text-[#222222]">
                  MarketSquare wanted to create an easy-to-use platform that connects local service providers with people who need their services. They needed a reliable website and app where users could find and book services like plumbing, painting, and personal training without hassle. Additionally, MarketSquare aimed to support local professionals by helping them reach more customers and grow their businesses.
                 <!-- Grabhub, an Ontario-based company, was determined to combat the significant issue of food waste while also addressing the financial strain it places on both retailers and consumers. Retailers often found themselves with surplus food items and home essentials nearing their best-by dates, leading to considerable losses and contributing to environmental degradation through increased landfill waste.  -->
@@ -61,8 +61,8 @@
           </section>
   
           <!-- Solution Section with Images -->
-          <section class="py-12 lg:px-44">
-            <h2 class="text-2xl font-semibold mb-6 text-[#222222]">Product Solution</h2>
+          <section class="lg:py-12 py-6 lg:px-44">
+            <h2 class="lg:text-2xl text-xl font-semibold mb-6 text-[#222222]">Product Solution</h2>
             <p class="text-gray-700 leading-relaxed text-[#222222] mb-8">
                 The team at Buildr develop a simple and effective digital marketplace. We built a user-friendly website and mobile app where users can browse through a variety of local services, read reviews, and book appointments with just a few clicks.
                 <!-- Buildr’s team partnered with Grabhub to develop a comprehensive online marketplace tailored to reduce food waste and offer savings to consumers. We designed and built a user-friendly platform that seamlessly connects retailers with consumers, enabling the easy listing and discovery of near-expiry food items, groceries, and home essentials. The platform features intuitive browsing capabilities, secure payment processing, and streamlined logistics management to facilitate smooth transactions.  -->
@@ -78,8 +78,8 @@
            </div>
           </section>
   
-          <section class="py-12 lg:px-44">
-            <h2 class="text-2xl font-semibold mb-6 text-[#222222]">The Outcomes</h2>
+          <section class="lg:py-12 py-6 lg:px-44">
+            <h2 class="lg:text-2xl text-xl font-semibold mb-6 text-[#222222]">The Outcomes</h2>
             <p class="text-gray-700 leading-relaxed text-[#222222]">
                 After launching the MarketSquare platform, it quickly became a popular choice for both users and service providers. Users appreciated the straightforward way to find and book trusted local services, leading to high satisfaction and repeat bookings. Service providers saw an increase in their customer base and business growth thanks to the platform’s visibility and easy management tools. The seamless connection between users and providers helped build a strong community, making MarketSquare a trusted name in local services.
                 <!--  Since launching the Grabhub platform, the collaboration with Buildr has yielded impressive results. Grabhub successfully diverted thousands of pounds of food from landfills, significantly contributing to environmental sustainability efforts in Ontario. Retailers experienced a notable reduction in waste and financial losses, while consumers enjoyed substantial savings on essential items, enhancing their purchasing power. The platform's ease of use and reliability led to high user engagement and repeat transactions, fostering a thriving community committed to reducing food waste and promoting sustainable consumption. Grabhub’s innovative approach not only addressed immediate economic and environmental challenges but also established a scalable model for ongoing impact. -->
@@ -104,7 +104,7 @@
         </div>
       </main>
       <section class="mx-auto  w-full max-w-7xl px-4 sm:px-6 lg:px-8 pb-10">
-            <h2 class="text-2xl text-[#222222] font-semibold mb-8">More case studies</h2>
+            <h2 class="lg:text-2xl text-xl text-[#222222] font-semibold mb-8">More case studies</h2>
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-3">
               <DetailsCaseStudyCard
                 name="Novatoons Inc"

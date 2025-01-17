@@ -74,11 +74,11 @@
       <h2 class="text-3xl font-bold tracking-tight text-[#161616]">What we offer</h2>
     </div>
 
-    <section class="mx-auto w-full container px-6">
+    <section class="mx-auto w-full container lg:px-6">
       <ServicesSection />
     </section>
     <WorkApproachSection class="mt-16" />
-    <section class="mx-auto w-full container px-6 ">
+    <section class="mx-auto w-full container px-0 lg:px-6 ">
       <StackCloud />
     </section>
   </main>

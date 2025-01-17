@@ -4,7 +4,7 @@
   
       <main class="mx-auto   w-full max-w-7xl">
         <!-- Header Section -->
-        <div class="px-4 md:px-8 py-12">
+        <div class="px-4 md:px-8 lg:py-12 py-6">
           <div class="flex uppercase flex-wrap gap-2 text-[#7C7C7C] text-sm text-gray-600 mb-4">
             <span>novatoons</span>
             <span>-</span>
@@ -16,7 +16,7 @@
           </div>
           <!-- novatoons - Entertainment / Digital Media -->
   
-          <h1 class="text-2xl font-semibold text-[#222222] mb-12">
+          <h1 class="text-xl lg:text-2xl font-semibold text-[#222222] mb-12">
             Championing Diverse Narratives: The Novatoons Case Study
             <!-- Simplifying Shared Living in Nigeria: The BlackCountry Case Study -->
           </h1>
@@ -31,8 +31,8 @@
           </div>
   
           <!-- Services Section -->
-          <div class="py-12 lg:px-44">
-            <h2 class="text-2xl font-semibold mb-8 text-center">
+          <div class="lg:py-12 pb-6 lg:px-44">
+            <h2 class="lg:text-2xl text-xl font-semibold mb-8 text-center">
               Service Provided
             </h2>
             <div class="flex flex-wrap justify-center gap-4 max-w-xl mx-auto">
@@ -45,24 +45,24 @@
           </div>
   
           <!-- About Section -->
-          <section class="py-12 lg:px-44">
-            <h2 class="text-2xl font-semibold mb-6 text-[#222222]">About Novatoons</h2>
+          <section class="lg:py-12 py-6 lg:px-44">
+            <h2 class="lg:text-2xl text-xl font-semibold mb-6 text-[#222222]">About Novatoons</h2>
             <p class="text-gray-700 leading-relaxed text-[#222222]">
                 Novatoons is a digital marketplace designed to celebrate diversity in storytelling by connecting comic creators with readers who value representation. Focused on comics featuring Black and people of color characters, the platform offers creators the tools to sell their work, merchandise, and engage with their fan base. For readers, Novatoons provides an immersive browsing experience where they can discover unique stories, connect with like-minded enthusiasts, and support underrepresented artists.
             </p>
           </section>
   
           <!-- Challenge Section -->
-          <section class="py-12 lg:px-44">
-            <h2 class="text-2xl font-semibold mb-6 text-[#222222]">The Challenge</h2>
+          <section class="lg:py-12 py-6 lg:px-44">
+            <h2 class="lg:text-2xl text-xl font-semibold mb-6 text-[#222222]">The Challenge</h2>
             <p class="text-gray-700 leading-relaxed text-[#222222]">
                 Novatoons identified a significant void in the digital comics landscape: the underrepresentation of Black creators and characters of color. Comic artists faced difficulties finding platforms that not only showcased their work but also connected them with an audience eager for diverse storytelling. Simultaneously, readers interested in comics featuring Black and people of color characters struggled to find a centralized marketplace where they could discover, purchase, and engage with content that resonated with their cultural experiences. Existing platforms did not adequately address these specific needs, making it challenging for both creators and readers to thrive in this niche market.
             </p>
           </section>
   
           <!-- Solution Section with Images -->
-          <section class="py-12 lg:px-44">
-            <h2 class="text-2xl font-semibold mb-6 text-[#222222]">Product Solution</h2>
+          <section class="lg:py-12 py-6 lg:px-44">
+            <h2 class="lg:text-2xl text-xl font-semibold mb-6 text-[#222222]">Product Solution</h2>
             <p class="text-gray-700 leading-relaxed text-[#222222] mb-8">
                 To bridge this gap, Buildr partnered with Novatoons to develop an innovative digital marketplace tailored specifically for diverse comic creators and their audiences. Our team meticulously designed a user-friendly platform that seamlessly connects creators with readers, fostering a vibrant community centered around inclusivity and representation. We built robust features that enable creators to easily upload and sell their comics and merchandise, manage their storefronts, and engage directly with their fans through interactive tools.
             </p>
@@ -77,8 +77,8 @@
            </div>
           </section>
   
-          <section class="py-12 lg:px-44">
-            <h2 class="text-2xl font-semibold mb-6 text-[#222222]">The Outcomes</h2>
+          <section class="lg:py-12 py-6 lg:px-44">
+            <h2 class="lg:text-2xl text-xl font-semibold mb-6 text-[#222222]">The Outcomes</h2>
             <p class="text-gray-700 leading-relaxed text-[#222222]">
                  The collaboration between Buildr and Novatoons resulted in the successful launch of a dynamic marketplace that has quickly gained traction among both creators and readers. Novatoons has empowered numerous Black and people of color creators to showcase and monetize their work, significantly increasing their visibility and sales. Readers have embraced the platform for its diverse content offerings and the ease with which they can connect with like-minded enthusiasts.
             </p>
@@ -96,7 +96,7 @@
         </div>
       </main>
       <section class="mx-auto  w-full max-w-7xl px-4 sm:px-6 lg:px-8 pb-10">
-            <h2 class="text-2xl text-[#222222] font-semibold mb-8">More case studies</h2>
+            <h2 class="lg:text-2xl text-xl text-[#222222] font-semibold mb-8">More case studies</h2>
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-3">
                 <DetailsCaseStudyCard
                 name="Storipod"

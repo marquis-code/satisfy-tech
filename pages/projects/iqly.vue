@@ -4,7 +4,7 @@
   
       <main class="mx-auto   w-full max-w-7xl">
         <!-- Header Section -->
-        <div class="px-4  md:px-8 py-12">
+        <div class="px-4  md:px-8 lg:py-12 py-6">
           <div class="flex uppercase flex-wrap gap-2 text-[#7C7C7C] text-sm text-gray-600 mb-4">
             <span>iqly</span>
             <span>-</span>
@@ -15,7 +15,7 @@
             <span>Artificial Intelligence</span>
           </div>
   
-          <h1 class="text-2xl font-semibold text-[#222222] mb-12">
+          <h1 class="text-xl lg:text-2xl font-semibold text-[#222222] mb-12">
             Revolutionizing Job Searches with an AI-Driven Career Platform
           </h1>
   
@@ -29,7 +29,7 @@
           </div>
   
           <!-- Services Section -->
-          <div class="py-12 lg:px-44">
+          <div class="lg:py-12 pb-6 lg:px-44">
             <h2 class="text-2xl font-semibold mb-8 text-center">
               Service Provided
             </h2>
@@ -42,24 +42,24 @@
           </div>
   
           <!-- About Section -->
-          <section class="py-12 lg:px-44">
-            <h2 class="text-2xl font-semibold mb-6 text-[#222222]">About IQly</h2>
+          <section class="lg:py-12 py-6 lg:px-44">
+            <h2 class="lg:text-2xl text-xl font-semibold mb-6 text-[#222222]">About IQly</h2>
             <p class="text-gray-700 leading-relaxed text-[#222222]">
               IQly is an AI-powered career advancement platform designed to help job seekers sharpen their skills, boost their confidence, and land their dream roles. The platform offers lifelike mock interviews tailored to users’ fields, an AI-driven resume builder to craft compelling career narratives, and a comprehensive resource library packed with expert advice and industry insights. IQly’s real-time feedback system provides users with targeted insights to improve their performance, while its intuitive design ensures preparation is efficient and effective. With a mission to make career readiness accessible and transformative, IQly empowers individuals to excel in competitive job markets, equipping them with the tools they need to stand out and succeed.
             </p>
           </section>
   
           <!-- Challenge Section -->
-          <section class="py-12 lg:px-44">
-            <h2 class="text-2xl font-semibold mb-6 text-[#222222]">The Challenge</h2>
+          <section class="lg:py-12 py-6 lg:px-44">
+            <h2 class="lg:text-2xl text-xl font-semibold mb-6 text-[#222222]">The Challenge</h2>
             <p class="text-gray-700 leading-relaxed text-[#222222]">
                IQly set out to develop a comprehensive, AI-powered platform that would help job seekers refine their interview skills, craft standout resumes, and access real-time performance insights. They needed a solution that could deliver realistic mock interviews, instant feedback, and personalized resources—all while remaining simple enough for anyone to use. However, building an intelligent system capable of seamlessly integrating these features posed a significant technical and UX challenge.
             </p>
           </section>
   
           <!-- Solution Section with Images -->
-          <section class="py-12 lg:px-44">
-            <h2 class="text-2xl font-semibold mb-6 text-[#222222]">Product Solution</h2>
+          <section class="lg:py-12 py-6 lg:px-44">
+            <h2 class="lg:text-2xl text-xl font-semibold mb-6 text-[#222222]">Product Solution</h2>
             <p class="text-gray-700 leading-relaxed text-[#222222] mb-8">
               We stepped in to architect and develop the platform from the ground up. Leveraging our expertise in machine learning, we created an AI engine capable of simulating diverse interview scenarios and providing immediate, targeted feedback. Our front-end specialists designed an intuitive user interface that guided job seekers through every step—from setting up a mock interview session to polishing their résumés with AI-driven suggestions. Simultaneously, we integrated an extensive resource library that automatically tailored its recommendations based on each user’s progress and performance gaps.
               <!-- We stepped in to architect and develop the platform from the ground up. Leveraging our expertise in machine learning, we created an AI engine capable of simulating diverse interview scenarios and providing immediate, targeted feedback. Our front-end specialists designed an intuitive user interface that guided job seekers through every step—from setting up a mock interview session to polishing their résumés with AI-driven suggestions. Simultaneously, we integrated an extensive resource library that automatically tailored its recommendations based on each user’s progress and performance gaps. -->
@@ -70,8 +70,8 @@
            </div>
           </section>
   
-          <section class="py-12 lg:px-44">
-            <h2 class="text-2xl font-semibold mb-6 text-[#222222]">The Outcomes</h2>
+          <section class="lg:py-12 py-6 lg:px-44">
+            <h2 class="lg:text-2xl text-xl font-semibold mb-6 text-[#222222]">The Outcomes</h2>
             <p class="text-gray-700 leading-relaxed text-[#222222]">
               IQly has gained traction with early adopters who praised the platform’s user-friendly design and practical insights. Job seekers reported feeling more confident and prepared for real-world interviews after using the AI-based mock interview tool. The AI-powered resume builder accelerated the job application process, allowing candidates to craft compelling résumés in minutes. Overall, the synergy between Buildr’s robust technical foundation and IQly’s vision helped create a transformative platform that empowers users to land their dream jobs.
               <!-- Upon launch, BlackCountry experienced rapid adoption as tenants
@@ -99,7 +99,7 @@
         </div>
       </main>
       <section class="mx-auto  w-full max-w-7xl px-4 sm:px-6 lg:px-8 pb-10">
-            <h2 class="text-2xl text-[#222222] font-semibold mb-8">More case studies</h2>
+            <h2 class="lg:text-2xl text-xl text-[#222222] font-semibold mb-8">More case studies</h2>
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-3">
               <DetailsCaseStudyCard
                 name="Grabhub"

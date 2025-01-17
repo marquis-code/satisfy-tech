@@ -16,7 +16,7 @@
 
         <section>
           <section class="pb-16 px-4 md:px-8">
-            <div class="max-w-5xl mx-auto space-y-32">
+            <div class="max-w-5xl mx-auto space-y-10 lg:space-y-32">
 
               <div
                 data-aos="fade-up"

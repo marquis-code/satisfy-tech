@@ -4,7 +4,7 @@
 
     <main class="mx-auto   w-full max-w-7xl">
       <!-- Header Section -->
-      <div class="px-4 md:px-8 py-12">
+      <div class="px-4 md:px-8 lg:py-12 py-6">
         <div class="flex uppercase flex-wrap gap-2 text-[#7C7C7C] text-sm text-gray-600 mb-4">
           <span>BLACKCOUNTRY</span>
           <span>-</span>
@@ -15,7 +15,7 @@
           <span>SOCIAL ENTERPRISE</span>
         </div>
 
-        <h1 class="text-2xl font-semibold text-[#222222] mb-12">
+        <h1 class="text-xl lg:text-2xl font-semibold text-[#222222] mb-12">
           Simplifying Shared Living in Nigeria: The BlackCountry Case Study
         </h1>
 
@@ -24,12 +24,12 @@
           <img
             src="@/assets/img/cover-details5.png"
             alt="BlackCountry Dashboard"
-            class="w-full object-cover"
+            class="w-full h-full object-cover"
           />
         </div>
 
         <!-- Services Section -->
-        <div class="py-12 lg:px-44">
+        <div class="lg:py-12 pb-6 lg:px-44">
           <h2 class="text-2xl font-semibold mb-8 text-center">
             Service Provided
           </h2>
@@ -43,8 +43,8 @@
         </div>
 
         <!-- About Section -->
-        <section class="py-12 lg:px-44">
-          <h2 class="text-2xl font-semibold mb-6 text-[#222222]">About BlackCountry</h2>
+        <section class="lg:py-12 py-6 lg:px-44">
+          <h2 class="lg:text-2xl text-xl font-semibold mb-6 text-[#222222]">About BlackCountry</h2>
           <p class="text-gray-700 leading-relaxed text-[#222222]">
             BlackCountry is a digital platform redefining shared living by
             connecting tenants in Nigeria with affordable co-living spaces.
@@ -61,8 +61,8 @@
         </section>
 
         <!-- Challenge Section -->
-        <section class="py-12 lg:px-44">
-          <h2 class="text-2xl font-semibold mb-6 text-[#222222]">The Challenge</h2>
+        <section class="lg:py-12 py-6 lg:px-44">
+          <h2 class="lg:text-2xl text-xl font-semibold mb-6 text-[#222222]">The Challenge</h2>
           <p class="text-gray-700 leading-relaxed text-[#222222]">
              BlackCountry set out to tackle the rising cost of housing in
             Nigeria by making shared living spaces more accessible. They needed
@@ -75,8 +75,8 @@
         </section>
 
         <!-- Solution Section with Images -->
-        <section class="py-12 lg:px-44">
-          <h2 class="text-2xl font-semibold mb-6 text-[#222222]">Product Solution</h2>
+        <section class="lg:py-12 py-6 lg:px-44">
+          <h2 class="lg:text-2xl text-xl font-semibold mb-6 text-[#222222]">Product Solution</h2>
           <p class="text-gray-700 leading-relaxed text-[#222222] mb-8">
             Our team collaborated with BlackCountry to architect and launch a
             platform that streamlined the entire housing process. We developed
@@ -101,8 +101,8 @@
          </div>
         </section>
 
-        <section class="py-12 lg:px-44">
-          <h2 class="text-2xl font-semibold mb-6 text-[#222222]">The Outcomes</h2>
+        <section class="lg:py-12 py-6 lg:px-44">
+          <h2 class="lg:text-2xl text-xl font-semibold mb-6 text-[#222222]">The Outcomes</h2>
           <p class="text-gray-700 leading-relaxed text-[#222222]">
             Upon launch, BlackCountry experienced rapid adoption as tenants
             praised the platform’s simplicity and cost-saving potential. Service
@@ -129,7 +129,7 @@
       </div>
     </main>
     <section class="mx-auto  w-full max-w-7xl px-4 sm:px-6 lg:px-8 pb-10">
-          <h2 class="text-2xl text-[#222222] font-semibold mb-8">More case studies</h2>
+          <h2 class="lg:text-2xl text-xl text-[#222222] font-semibold mb-8">More case studies</h2>
           <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-3">
             <DetailsCaseStudyCard
               name="Iqly"

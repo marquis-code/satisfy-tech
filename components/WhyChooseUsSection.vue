@@ -18,14 +18,14 @@
     
                 <section>
                     <section class="pb-16 px-4 md:px-8">
-                        <div class="max-w-6xl mx-auto space-y-32">
+                        <div class="max-w-6xl mx-auto space-y-20 lg:space-y-32">
                             <!-- Card -->
                             <div data-aos="fade-up"
                                 v-for="(reason, idx) in reasonsArray"
                                 :key="idx"
                                 class="max-w-4xl mx-auto"
                             >
-                                <div class="lg:flex space-y-6 lg:space-y-0 gap-10 justify-between">
+                                <div class="lg:flex space-y-3 lg:space-y-0 gap-10 justify-between">
                                     <!-- Number and Title -->
                                     <div class="lg:w-1/4 flex gap-3 lg:pl-10">
                                         <span class="text-[#FF5757] text-sm font-medium">0{{ idx + 1 }}</span>

@@ -1,8 +1,8 @@
 <template>
   <section class="py-16  mx-auto">
     <div class="text-center mb-12">
-      <h2 class="text-sm uppercase tracking-wider text-[#7C7C7C]">PROJECTS</h2>
-      <h1 class="text-3xl font-bold text-[#222222]">Case Study</h1>
+      <h2 class="text-sm uppercase font-semibold tracking-wider text-[#7C7C7C]">PROJECTS</h2>
+      <h1 class="text-2xl lg:text-3xl font-bold text-[#222222]">Case Study</h1>
     </div>
 
     <div class="grid grid-cols-1 md:grid-cols-2 gap-6">

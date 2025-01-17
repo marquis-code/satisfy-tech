@@ -1,96 +1,96 @@
 <template>
   <main>
     <div class="">
-  <header class="absolute inset-x-0 top-0 z-50">
-    <nav class="flex items-center justify-between p-6 container mx-auto" aria-label="Global">
-      <div class="flex lg:flex-1">
-        <a href="#" class="-m-1.5 p-1.5">
-          <span class="sr-only">Your Company</span>
-          <img class="h-8 w-auto" src="@/assets/icons/white-logo.svg" alt="">
-        </a>
-      </div>
-      <div class="flex lg:hidden">
-        <button @click="isMenuOpen = true" type="button" class="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-400">
-          <span class="sr-only">Open main menu</span>
-          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
-        </button>
-      </div>
-      <div class="hidden lg:flex lg:gap-x-3">
-        <!-- {{ router.currentRoute.fullPath }} -->
-        <!-- {{ route }} -->
-        <NuxtLink to="/" class="text-sm/6 flex justify-center items-center font-semibold bg-black/50 text-white">Home</NuxtLink>
-        <NuxtLink to="/services" class="text-sm/6 flex px-5 rounded-full justify-center items-center font-semibold bg-black/50 text-white">Services</NuxtLink>
-        <NuxtLink to="/projects" class="text-sm/6 flex px-5 rounded-full justify-center items-center font-semibold bg-black/50 text-white">Projects</NuxtLink>
-        <!-- <a href="#contact-us" class="text-sm/6 font-semibold text-white bg-[#444CE7] contact-link">Contact us</a> -->
-         <button onclick="document.getElementById('contact-us').scrollIntoView({ behavior: 'smooth' });" class="text-sm/6 flex px-5 rounded-full justify-center items-center font-semibold bg-black/50 text-white">Contact Us</button>
-      </div>
-      <!-- <div class="hidden lg:flex lg:flex-1 lg:justify-end">
-        <a href="#" class="text-sm/6 font-semibold text-white">Log in <span aria-hidden="true">&rarr;</span></a>
-      </div> -->
-    </nav>
-    <!-- Mobile menu, show/hide based on menu open state. -->
-    <div v-if="isMenuOpen" class="lg:hidden" role="dialog" aria-modal="true">
-      <!-- Background backdrop, show/hide based on slide-over state. -->
-      <div class="fixed inset-0 z-50"></div>
-      <div class="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-gray-900 px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-white/10">
-        <div class="flex items-center justify-between">
+    <header class="absolute inset-x-0 top-0 z-50">
+      <nav class="flex items-center justify-between p-6 container mx-auto" aria-label="Global">
+        <div class="flex lg:flex-1">
           <a href="#" class="-m-1.5 p-1.5">
             <span class="sr-only">Your Company</span>
             <img class="h-8 w-auto" src="@/assets/icons/white-logo.svg" alt="">
           </a>
-          <button @click="isMenuOpen = false" type="button" class="-m-2.5 rounded-md p-2.5 text-gray-400">
-            <span class="sr-only">Close menu</span>
-            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+        </div>
+        <div class="flex lg:hidden">
+          <button @click="isMenuOpen = true" type="button" class="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-400">
+            <span class="sr-only">Open main menu</span>
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
           </button>
         </div>
-        <div class="mt-6 flow-root">
-          <div class="-my-6 divide-y divide-gray-500/25">
-            <div class="space-y-2 py-6">
-              <NuxtLink to="/" class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-white hover:bg-gray-800">Home</NuxtLink>
-              <NuxtLink to="/services" class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-white hover:bg-gray-800">Services</NuxtLink>
-              <NuxtLink to="/projects" class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-white hover:bg-gray-800">Projects</NuxtLink>
-              <!-- <NuxtLink to="/" class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-white hover:bg-gray-800">Contact Us</NuxtLink> -->
-              <button onclick="document.getElementById('contact-us').scrollIntoView({ behavior: 'smooth' });" class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-white">Contact Us</button>
+        <div class="hidden lg:flex lg:gap-x-3">
+          <!-- {{ router.currentRoute.fullPath }} -->
+          <!-- {{ route }} -->
+          <NuxtLink to="/" class="text-sm/6 flex justify-center items-center font-semibold bg-black/50 text-white">Home</NuxtLink>
+          <NuxtLink to="/services" class="text-sm/6 flex px-5 rounded-full justify-center items-center font-semibold bg-black/50 text-white">Services</NuxtLink>
+          <NuxtLink to="/projects" class="text-sm/6 flex px-5 rounded-full justify-center items-center font-semibold bg-black/50 text-white">Projects</NuxtLink>
+          <!-- <a href="#contact-us" class="text-sm/6 font-semibold text-white bg-[#444CE7] contact-link">Contact us</a> -->
+          <button onclick="document.getElementById('contact-us').scrollIntoView({ behavior: 'smooth' });" class="text-sm/6 flex px-5 rounded-full justify-center items-center font-semibold bg-black/50 text-white">Contact Us</button>
+        </div>
+        <!-- <div class="hidden lg:flex lg:flex-1 lg:justify-end">
+          <a href="#" class="text-sm/6 font-semibold text-white">Log in <span aria-hidden="true">&rarr;</span></a>
+        </div> -->
+      </nav>
+      <!-- Mobile menu, show/hide based on menu open state. -->
+      <div v-if="isMenuOpen" class="lg:hidden" role="dialog" aria-modal="true">
+        <!-- Background backdrop, show/hide based on slide-over state. -->
+        <div class="fixed inset-0 z-50"></div>
+        <div class="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-gray-900 px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-white/10">
+          <div class="flex items-center justify-between">
+            <a href="#" class="-m-1.5 p-1.5">
+              <span class="sr-only">Your Company</span>
+              <img class="h-8 w-auto" src="@/assets/icons/white-logo.svg" alt="">
+            </a>
+            <button @click="isMenuOpen = false" type="button" class="-m-2.5 rounded-md p-2.5 text-gray-400">
+              <span class="sr-only">Close menu</span>
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+            </button>
+          </div>
+          <div class="mt-6 flow-root">
+            <div class="-my-6 divide-y divide-gray-500/25">
+              <div class="space-y-2 py-6">
+                <NuxtLink to="/" class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-white hover:bg-gray-800">Home</NuxtLink>
+                <NuxtLink to="/services" class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-white hover:bg-gray-800">Services</NuxtLink>
+                <NuxtLink to="/projects" class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-white hover:bg-gray-800">Projects</NuxtLink>
+                <!-- <NuxtLink to="/" class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-white hover:bg-gray-800">Contact Us</NuxtLink> -->
+                <button onclick="document.getElementById('contact-us').scrollIntoView({ behavior: 'smooth' });" class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-white">Contact Us</button>
+              </div>
+              <!-- <div class="py-6">
+                <a href="#" class="-mx-3 block rounded-lg px-3 py-2.5 text-base/7 font-semibold text-white hover:bg-gray-800">Log in</a>
+              </div> -->
             </div>
-            <!-- <div class="py-6">
-              <a href="#" class="-mx-3 block rounded-lg px-3 py-2.5 text-base/7 font-semibold text-white hover:bg-gray-800">Log in</a>
-            </div> -->
           </div>
         </div>
       </div>
-    </div>
-  </header>
+    </header>
 
-  <div class="relative isolate overflow-hidden pt-14">
-    <img src="@/assets/img/cta-bg.png" alt="" class="absolute inset-0 -z-10 h-full w-full object-cover">
-    <div class="mx-auto max-w-7xl px-6 lg:px-8">
-      <div class="mx-auto sm:py-32 lg:py-56">
-        <div class="text-center">
-          <div class="px-4 sm:px-6 lg:px-8">
-            <h1 
-              data-aos="fade-up" 
-              class="text-balance text-2xl sm:text-3xl md:text-5xl lg:text-7xl font-semibold tracking-tight text-white text-center">
-              Build the future of your business
-            </h1>
-            <p 
-              data-aos="fade-up" 
-              class="mt-4 sm:mt-6 md:mt-8 lg:mt-10 text-sm sm:text-base md:text-lg lg:text-xl font-semibold text-white text-center">
-              Your Vision, Our Mission — Together, We’ll Build Exceptional Software
-            </p>
-          </div>
-          <div data-aos="fade-up" class="mt-10 flex items-center justify-center gap-x-6">
-            <a
-                href="#contact-us"
-                class="rounded-full bg-[#444CE7] px-6 py-3 text-sm font-semibold text-white shadow-sm focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#444CE7]"
-              >
-                Ready to Build
-              </a>
+    <div class="relative isolate overflow-hidden pt-14">
+      <img src="@/assets/img/cta-bg.png" alt="" class="absolute inset-0 -z-10 h-full w-full object-cover">
+      <div class="mx-auto max-w-7xl px-6 lg:px-8">
+        <div class="mx-auto py-32 sm:py-32 lg:py-56">
+          <div class="text-center">
+            <div class="px-4 sm:px-6 lg:px-8">
+              <h1 
+                data-aos="fade-up" 
+                class="text-balance text-2xl sm:text-3xl md:text-5xl lg:text-7xl font-semibold tracking-tight text-white text-center">
+                Build the future of your business
+              </h1>
+              <p 
+                data-aos="fade-up" 
+                class="mt-4 sm:mt-6 md:mt-8 lg:mt-10 text-sm sm:text-base md:text-lg lg:text-xl font-semibold text-white text-center">
+                Your Vision, Our Mission — Together, We’ll Build Exceptional Software
+              </p>
+            </div>
+            <div data-aos="fade-up" class="mt-10 flex items-center justify-center gap-x-6">
+              <a
+                  href="#contact-us"
+                  class="rounded-full bg-[#444CE7] px-6 py-3 text-sm font-semibold text-white shadow-sm focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#444CE7]"
+                >
+                  Ready to Build
+                </a>
+            </div>
           </div>
         </div>
       </div>
+      </div>
     </div>
-  </div>
-</div>
 
     <!-- <WhiteNav class="mb-10 z-50" shade="default" />
     <div class="relative isolate overflow-hidden border-4">
@@ -132,7 +132,7 @@
 
     <MarqueeBanner />
 
-   <section class="mx-auto container px-6">
+   <section class="">
     <div class="bg-white">
       <div
         data-aos="fade-up"
@@ -244,7 +244,7 @@
         </h2>
       </div>
 
-      <div class="">
+      <div class="max-w-7xl px-6 mx-auto">
         <div class="">
           <div class="mt-16 grid grid-cols-1 gap-x-6 gap-y-6 lg:grid-cols-3">
             <div
@@ -279,17 +279,26 @@
       </div>
     </div>
 
-    <CaseStudies />
+    <div class="">
+      <AllCaseStudies :limit="4" />
+      <!-- <CaseStudies /> -->
+    </div>
     </section>
    <WhyChooseUsSection />
-  <section class="mx-auto container px-6 pb-44">
+  <!-- <section class="mx-auto container px-6 pb-44">
     <TestimonialCarousel />
-  </section>
+  </section> -->
 
   </main>
 </template>
 
 <script setup lang="ts">
+  import storipod from '@/assets/img/covers/storipod.png'
+  import blackcountry from '@/assets/img/covers/blackcountry.png'
+  import iqly from '@/assets/img/covers/iqly.png'
+  import marketsquare from '@/assets/img/covers/marketsquare.png'
+  import novatoons from '@/assets/img/covers/novatoons.png'
+  import grabhub from '@/assets/img/covers/grabhub.png'
 const openNav = ref(false);
 const route = useRoute()
 const router = useRouter()
@@ -316,6 +325,40 @@ const offerings = ref([
 ]);
 
 const isMenuOpen = ref(false);
+
+
+const cards = ref([
+  {
+    title: "BlackCountry",
+    description: "Simplifying Shared Living in Uganda",
+    image: blackcountry
+  },
+  {
+    title: "IQly",
+    description: "Revolutionizing Job Searches with an AI-Driven Career Platform",
+    image: iqly
+  },
+  {
+    title: "Grabhub",
+    description: "Addressing Food Waste with an Innovative Marketplace",
+    image: grabhub
+  },
+  {
+    title: "Marketsquare",
+    description: "Connecting Local Services with Ease",
+    image: marketsquare
+  },
+  {
+    title: "BlackCountry",
+    description: "Simplifying Shared Living in Nigeria",
+    image: novatoons
+  },
+  {
+    title: "Storipod",
+    description: "Revolutionizing Microblogging for Storytellers",
+    image: storipod
+  },
+])
 </script>
 
 <style scoped>
@@ -326,4 +369,5 @@ const isMenuOpen = ref(false);
   font-weight: bold; /* Ensures the text is bold */
   padding: 8px 20px;
 }
+
 </style>

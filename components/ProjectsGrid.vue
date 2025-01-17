@@ -17,9 +17,9 @@
           {{ category }}
         </button>
       </div>
-  
-      <!-- Projects Grid -->
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+    </section>
+
+      <!-- <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
         <CaseStudyCard
         v-for="project in filteredProjects" 
         :key="project.id"
@@ -29,31 +29,8 @@
         :categories="project.categories"
         :studyObj="project"
       />
-        <!-- <NuxtLink 
-          v-for="project in filteredProjects" 
-          :key="project.id"
-          :to="project.urlPath"
-          class="relative block group overflow-hidden rounded-2xl"
-        >
-
-          <div class="relative group overflow-hidden rounded-2xl transition-all duration-300 hover:shadow-xl">
-      <div class="relative w-full">
-        <img 
-          :src="project?.image" 
-          :alt="project?.title"
-          class=""
-        />
-        <div class="absolute inset-0 bg-black/50"></div>
-        <p class="text-white text-xl font-semibold absolute top-6 left-6 mb-4">{{ project.title }}</p>
-        <div class="absolute bottom-0 left-0 p-8 w-full">
-          <h3 class="text-2xl font-bold text-white mb-2">{{ project?.description }}</h3>
-
-        </div>
-      </div>
-    </div>
-        </NuxtLink> -->
-      </div>
-    </section>
+      </div> -->
+      <AllCaseStudies :limit="6" />
   </template>
   
   <script setup lang="ts">

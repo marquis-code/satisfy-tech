@@ -1,9 +1,10 @@
 <template>
   <main>
-    <div class="bg-gradient-to-b to-[#824DF8] via-[#444CE7] from-[#26D1FF] pb-32">
+    <div class="bg-gradient-to-b to-[#824DF8] via-[#444CE7] from-[#26D1FF] pb-[171px]">
       <WhiteNav shade="coloured" />
       <div class="mx-auto w-full container px-4 z-0 sm:px-6 lg:px-8 pt-20 flex justify-center items-center">
-        <TextSwitch />
+        <TypewriterHero />
+        <!-- <TextSwitch /> -->
 
         <!-- <img class="h-96" src="@/assets/img/first-iteration.png" />
       <img class="h-96" src="@/assets/img/second-iteration.png" /> -->

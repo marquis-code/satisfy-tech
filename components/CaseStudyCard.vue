@@ -4,12 +4,14 @@
       :to="studyObj.urlPath" 
       class="relative block group overflow-hidden rounded-2xl transition-all duration-300 hover:shadow-xl"
     >
-      <div class="relative  w-full">
+      <div class="relative w-full">
+       <div>
         <img 
           :src="studyObj?.image" 
           :alt="studyObj?.title"
           class="w-full h-[590px] object-cover"
         />
+       </div>
         <div 
           class="absolute inset-0 bg-black/70 transition-all duration-300 group-hover:bg-black/20"
         ></div>
@@ -20,9 +22,6 @@
         </p>
         <div class="absolute bottom-0 left-0 p-8 w-full">
           <h3 class="text-2xl font-bold text-white mb-2">{{ studyObj?.title }}</h3>
-          <!-- <p class="text-white/80 text-sm">
-            {{ studyObj?.categories.join(' / ') }}
-          </p> -->
         </div>
       </div>
     </NuxtLink>

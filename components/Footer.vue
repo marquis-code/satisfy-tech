@@ -20,7 +20,7 @@
             </div>
             <div>
               <h3 class="font-medium text-[#E8E8E8] mb-1">Email us</h3>
-              <a href="mailto:example@buildr.com" class="text-[#00BFFF] text-sm hover:underline">example@buildr.com</a>
+              <a href="mailto:hello@gobuildr.i" class="text-[#00BFFF] text-sm hover:underline">hello@gobuildr.io</a>
             </div>
           </div>
 
@@ -35,8 +35,8 @@
             </div>
             <div>
               <h3 class="font-medium text-[#E8E8E8] mb-1">Office</h3>
-              <p class="text-[#00BFFF] text-sm">100 Smith Street</p>
-              <p class="text-[#00BFFF] text-sm">Collingwood VIC 3066 AU</p>
+              <p class="text-[#00BFFF] text-sm">1200 Bay St.Toronto,</p>
+              <p class="text-[#00BFFF] text-sm"> ON M5H 2V1</p>
             </div>
           </div>
 
@@ -50,7 +50,8 @@
             </div>
             <div>
               <h3 class="font-medium text-[#E8E8E8] mb-1">Phone</h3>
-              <p class="text-[#00BFFF] text-sm">+1 (555) 000-0000</p>
+              <a href="tel:+14162508459" class="text-[#00BFFF] text-sm">+1 (416) 250-8459</a>
+              <!-- <a href="" class="text-[#00BFFF] text-sm">+1 (416) 250-8459</a> -->
             </div>
           </div>
         </div>
@@ -104,26 +105,76 @@
               placeholder="you@company.com"
             >
           </div>
-  
+
           <div>
             <label class="block text-sm text-[#E8E8E8] font-medium mb-2">Phone number</label>
             <div class="flex">
-              <select
-                v-model="form.countryCode"
-                class="px-3 py-4 text-sm bg-[#252526] rounded-l-lg text-gray-300 border-r border-gray-600 focus:ring-2 focus:ring-blue-500 outline-none"
-              >
-                <option value="+1">+1</option>
-                <option value="+44">+44</option>
-                <option value="+61">+61</option>
-              </select>
+              <div class="relative">
+                <select
+                  v-model="selectedCountry"
+                  class="px-3 py-4 text-sm bg-[#252526] rounded-l-lg text-gray-300 border-r border-gray-600 focus:ring-2 focus:ring-blue-500 outline-none appearance-none pr-8"
+                  required
+                >
+                  <option v-for="country in countries" 
+                          :key="country.code" 
+                          :value="country"
+                          class="py-2"
+                  >
+                    {{ country.flag }} {{ country.dialCode }}
+                  </option>
+                </select>
+                <div class="absolute right-2 top-1/2 transform -translate-y-1/2 pointer-events-none">
+                  <svg class="w-4 h-4 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                  </svg>
+                </div>
+              </div>
               <input
-                v-model="formData.phoneNumber"
+                v-model="phoneInput"
                 type="tel"
+                @input="validatePhoneNumber"
                 class="flex-1 px-4 py-3 bg-[#252526] rounded-r-lg text-gray-300 focus:ring-2 focus:ring-blue-500 outline-none"
-                placeholder="+1 (000) 000-0000"
+                :placeholder="selectedCountry.example"
+                required
               >
             </div>
+            <span v-if="phoneError" class="text-red-500 text-xs mt-1">{{ phoneError }}</span>
           </div>
+<!--   
+          <div>
+            <label class="block text-sm text-[#E8E8E8] font-medium mb-2">Phone number</label>
+            <div class="flex">
+              <div class="relative">
+                <select
+                  v-model="selectedCountry"
+                  class="px-3 py-4 text-sm bg-[#252526] rounded-l-lg text-gray-300 border-r border-gray-600 focus:ring-2 focus:ring-blue-500 outline-none appearance-none pr-8"
+                  required
+                >
+                  <option v-for="country in countries" 
+                          :key="country.code" 
+                          :value="country"
+                          class="py-2"
+                  >
+                    {{ country.flag }} {{ country.dialCode }}
+                  </option>
+                </select>
+                <div class="absolute right-2 top-1/2 transform -translate-y-1/2 pointer-events-none">
+                  <svg class="w-4 h-4 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                  </svg>
+                </div>
+              </div>
+              <input
+               v-model="phoneInput"
+               @input="validatePhoneNumber"
+                type="tel"
+                class="flex-1 px-4 py-3 bg-[#252526] rounded-r-lg text-gray-300 focus:ring-2 focus:ring-blue-500 outline-none"
+                :placeholder="selectedCountry.example"
+                required
+              >
+              <span v-if="phoneError" class="text-red-500 text-xs mt-1">{{ phoneError }}</span>
+            </div>
+          </div> -->
   
           <div>
             <label class="block text-sm text-[#E8E8E8] font-medium mb-2">Message</label>
@@ -148,8 +199,8 @@
   
           <button
             type="submit" 
-             :disabled="!isFormEmpty || processing"
-            class="w-full disabled:cursor-not-allowed disabled:opacity-100 bg-[#0072C6] rounded-full text-white py-3.5 px-6 transition-colors focus:ring-2 focus:ring-offset-2 focus:ring-blue-500"
+             :disabled="!isFormValid || processing"
+            class="w-full disabled:cursor-not-allowed disabled:opacity-250 bg-[#0072C6] rounded-full text-white py-3.5 px-6 transition-colors focus:ring-2 focus:ring-offset-2 focus:ring-blue-500"
           >
           {{ processing ? 'processing' : 'Send message' }}
           </button>
@@ -190,7 +241,212 @@
  </div>
 </template>
 
+<script setup lang="ts">
+import { countries, Country } from '@/types/country';
+
+// Sort countries alphabetically but move Nigeria to the top
+const sortedCountries = computed(() => {
+  return [...countries].sort((a, b) => {
+    if (a.code === 'NG') return -1;
+    if (b.code === 'NG') return 1;
+    return a.name.localeCompare(b.name);
+  });
+});
+
+const form = ref({
+  privacyPolicy: false
+});
+
+const processing = ref(false);
+const phoneError = ref('');
+const phoneInput = ref('');
+const selectedCountry = ref(countries.find(c => c.code === 'NG') || countries[0]);
+
+const formData = ref({
+  firstName: '',
+  lastName: '',
+  email: '',
+  phoneNumber: '',
+  tell_us_more_about_your_project: ''
+});
+
+// Format phone number as user types based on country pattern
+const formatPhoneNumber = (value: string, country: Country) => {
+  // Remove all non-digit characters
+  const numbers = value.replace(/\D/g, '');
+  
+  // Format based on country
+  let formatted = numbers;
+  switch(country.code) {
+    case 'NG':
+      // Nigeria: XXX XXX XXXX
+      if (numbers.length <= 10) {
+        formatted = numbers.replace(/(\d{3})(\d{3})?(\d{4})?/, function(_, p1, p2, p3) {
+          let output = p1;
+          if (p2) output += ' ' + p2;
+          if (p3) output += ' ' + p3;
+          return output;
+        });
+      }
+      break;
+    case 'US':
+    case 'CA':
+      // North America: (XXX) XXX-XXXX
+      if (numbers.length <= 10) {
+        formatted = numbers.replace(/(\d{3})(\d{3})?(\d{4})?/, function(_, p1, p2, p3) {
+          let output = '(' + p1 + ')';
+          if (p2) output += ' ' + p2;
+          if (p3) output += '-' + p3;
+          return output;
+        });
+      }
+      break;
+    default:
+      // Default format: XXX XXX XXXX
+      if (numbers.length <= 10) {
+        formatted = numbers.replace(/(\d{3})(\d{3})?(\d{4})?/, function(_, p1, p2, p3) {
+          let output = p1;
+          if (p2) output += ' ' + p2;
+          if (p3) output += ' ' + p3;
+          return output;
+        });
+      }
+  }
+  return formatted;
+};
+
+// Watch for changes in phone input to format number
+watch([phoneInput, selectedCountry], ([newPhone, newCountry]) => {
+  if (phoneInput.value !== formatPhoneNumber(newPhone, newCountry)) {
+    phoneInput.value = formatPhoneNumber(newPhone, newCountry);
+  }
+});
+
+const validatePhoneNumber = () => {
+  const pattern = selectedCountry.value.pattern;
+  if (!pattern.test(phoneInput.value)) {
+    phoneError.value = `Please enter a valid phone number in the format: ${selectedCountry.value.example}`;
+    return false;
+  }
+  phoneError.value = '';
+  return true;
+};
+
+const isFormValid = computed(() => {
+  return !!(
+    formData.value.firstName &&
+    formData.value.lastName &&
+    formData.value.email &&
+    phoneInput.value &&
+    formData.value.tell_us_more_about_your_project &&
+    form.value.privacyPolicy &&
+    !phoneError.value
+  );
+});
+
+const formatPhoneForSubmission = () => {
+  // Remove any formatting and combine country code with phone number
+  const cleanPhone = phoneInput.value.replace(/\D/g, '');
+  return `${selectedCountry.value.dialCode}${cleanPhone}`;
+};
+
+async function handleSubmit() {
+  if (!isFormValid.value) return;
+  
+  processing.value = true;
+  const url = 'https://buildr-backend.onrender.com/api/auth/signup';
+  
+  try {
+    const submissionData = {
+      ...formData.value,
+      phoneNumber: formatPhoneForSubmission(),
+      countryCode: selectedCountry.value.code
+    };
+
+    const response = await fetch(url, {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json'
+      },
+      body: JSON.stringify(submissionData)
+    });
+
+    if (!response.ok) {
+      throw new Error('Network response was not ok');
+    }
+
+    const result = await response.json();
+    showModal.value = true;
+    
+    // Reset form
+    formData.value = {
+      firstName: '',
+      lastName: '',
+      email: '',
+      phoneNumber: '',
+      tell_us_more_about_your_project: ''
+    };
+    phoneInput.value = '';
+    form.value.privacyPolicy = false;
+    
+  } catch (error) {
+    if (process.client) {
+      useNuxtApp().$toast('Error submitting form');
+    }
+  } finally {
+    processing.value = false;
+  }
+}
+
+const capitalizeFirstLetter = (string: string) => {
+    if (!string) return string;
+    return string.charAt(0).toUpperCase() + string.slice(1);
+}
+
+const showModal = ref(false);
+</script>
+
 <!-- <script setup lang="ts">
+interface Country {
+  name: string;
+  dialCode: string;
+  code: string;
+  flag: string;
+  example: string;
+  pattern: RegExp;
+}
+const countries: Country[] = [
+  {
+    name: 'United States',
+    dialCode: '+1',
+    code: 'US',
+    flag: '🇺🇸',
+    example: '(555) 555-5555',
+    pattern: /^\(\d{3}\) \d{3}-\d{4}$/
+  },
+  {
+    name: 'United Kingdom',
+    dialCode: '+44',
+    code: 'GB',
+    flag: '🇬🇧',
+    example: '7911 123456',
+    pattern: /^7\d{3} \d{6}$/
+  },
+  {
+    name: 'Canada',
+    dialCode: '+1',
+    code: 'CA',
+    flag: '🇨🇦',
+    example: '(555) 555-5555',
+    pattern: /^\(\d{3}\) \d{3}-\d{4}$/
+  },
+  // Add more countries here...
+];
+
+const form = ref({
+  privacyPolicy: false
+});
+
 const form = ref({
   firstName: '',
   lastName: '',
@@ -252,9 +508,9 @@ const capitalizeFirstLetter = (string: string) => {
 }
 
 const showModal = ref(false);
-</script> -->
+</script>  -->
 
-<script setup lang="ts">
+<!-- <script setup lang="ts">
 const form = ref({
   firstName: '',
   lastName: '',
@@ -333,4 +589,4 @@ ${formData.value.tell_us_more_about_your_project}
         processing.value = false;
     }
 }
-</script>
+</script> -->

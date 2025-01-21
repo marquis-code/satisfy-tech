@@ -2,7 +2,7 @@
   <main>
     <div class="bg-gradient-to-b to-[#824DF8] via-[#444CE7] from-[#26D1FF] pb-[171px]">
       <WhiteNav shade="coloured" />
-      <div class="mx-auto w-full container px-4 z-0 sm:px-6 lg:px-8 pt-20 flex justify-center items-center">
+      <div class="mx-auto w-full mx-auto max-w-7xl px-4 z-0 sm:px-6 lg:px-8 pt-20 flex justify-center items-center">
         <TypewriterHero />
         <!-- <TextSwitch /> -->
 

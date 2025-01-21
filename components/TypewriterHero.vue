@@ -1,12 +1,12 @@
 <!-- components/HeroSection.vue -->
 <template>
     <!-- <div class="w-full bg-gradient-to-b from-blue-500 to-blue-700 py-16"> -->
-      <div class="lg:max-w-5xl mx-auto px-4">
+      <div class="">
         <h1 class="text-white text-[22px] sm:text-3xl md:text-6xl font-bold leading-tight">
           Your Vision
-          <span class="text-green-500 mx-1 lg:mx-2">+</span>
+          <span class="text-[#EA4335] mx-1 lg:mx-2">+</span>
           our expertise
-          <span class="text-green-500 mx-2">=</span>
+          <span class="text-[#EA4335] mx-2">=</span>
         </h1>
         <div class="relative mt-2 flex justify-center items-center">
           <div class="relative">

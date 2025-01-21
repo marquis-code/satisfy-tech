@@ -190,7 +190,7 @@
  </div>
 </template>
 
-<script setup lang="ts">
+<!-- <script setup lang="ts">
 const form = ref({
   firstName: '',
   lastName: '',
@@ -252,4 +252,85 @@ const capitalizeFirstLetter = (string: string) => {
 }
 
 const showModal = ref(false);
+</script> -->
+
+<script setup lang="ts">
+const form = ref({
+  firstName: '',
+  lastName: '',
+  email: '',
+  countryCode: '+1',
+  phone: '',
+  message: '',
+  privacyPolicy: false
+});
+
+const processing = ref(false)
+const formData = ref({
+    firstName: '',
+    lastName: '',
+    email: '',
+    phoneNumber: '',
+    countryCode: '',
+    tell_us_more_about_your_project: ''
+});
+
+const showModal = ref(false);
+
+const isFormEmpty = computed(() => {
+    return !!(formData.value.firstName && 
+              formData.value.lastName && 
+              formData.value.email && 
+              formData.value.phoneNumber && 
+              formData.value.tell_us_more_about_your_project)
+})
+
+const capitalizeFirstLetter = (string: string) => {
+    if (!string) return string;
+    return string.charAt(0).toUpperCase() + string.slice(1);
+}
+
+function handleSubmit() {
+    if (!isFormEmpty.value) return;
+    
+    processing.value = true;
+    try {
+        // Format the email body
+        const emailBody = `
+New Contact Form Submission
+
+From: ${formData.value.firstName} ${formData.value.lastName}
+Email: ${formData.value.email}
+Phone: ${formData.value.countryCode}${formData.value.phoneNumber}
+
+Message:
+${formData.value.tell_us_more_about_your_project}
+        `.trim();
+
+        // Create mailto URL
+        const mailtoUrl = `mailto:abahmarquis@gmail.com?subject=New Contact Form Submission&body=${encodeURIComponent(emailBody)}`;
+
+        // Open email client
+        window.location.href = mailtoUrl;
+
+        // Show success modal
+        // showModal.value = true;
+        
+        // Reset form
+        formData.value = {
+            firstName: '',
+            lastName: '',
+            email: '',
+            phoneNumber: '',
+            countryCode: '',
+            tell_us_more_about_your_project: ''
+        };
+    } catch (error) {
+        if (process.client) {
+            useNuxtApp().$toast('Error opening email client');
+        }
+    } finally {
+        processing.value = false;
+    }
+}
 </script>

@@ -109,7 +109,7 @@
               <DetailsCaseStudyCard
                 name="Novatoons Inc"
                  href="/projects/novatoons"
-                title="Addressing Food Waste with an Innovative Marketplace"
+                title="Championing Diverse Narratives: The Novatoons Case Study"
                 :image="novatoons"
                 :tags="['FoodTech', 'E-Commerce', 'Marketplaces']"
               />

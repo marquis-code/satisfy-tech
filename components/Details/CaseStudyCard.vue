@@ -34,10 +34,7 @@
           {{ name ?? 'Nil' }}
         </p>
         <div class="absolute bottom-0 left-0 p-4 w-full">
-          <h3 class="text-lg font-bold text-white mb-2">{{ title }}</h3>
-          <!-- <p class="text-white/80 text-sm">
-            {{ studyObj?.categories.join(' / ') }}
-          </p> -->
+          <h3 class="text-base lg:text-md font-bold text-white mb-2">{{ title }}</h3>
         </div>
       </div>
     </NuxtLink>

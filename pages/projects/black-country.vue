@@ -152,14 +152,14 @@
             <DetailsCaseStudyCard
               name="Marketsquare"
                href="/projects/marketsquare"
-              title="Addressing Food Waste with an Innovative Marketplace"
+              title="Connecting Local Services with Ease"
               :image="marketsquare"
               :tags="['FoodTech', 'E-Commerce', 'Marketplaces']"
             />
             <DetailsCaseStudyCard
               name="Novatoons Inc"
                href="/projects/novatoons"
-              title="Addressing Food Waste with an Innovative Marketplace"
+              title="Championing Diverse Narratives: The Novatoons Case Study"
               :image="novatoons"
               :tags="['FoodTech', 'E-Commerce', 'Marketplaces']"
             />

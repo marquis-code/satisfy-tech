@@ -61,15 +61,15 @@
       </div>
     </header>
 
-    <div class="relative isolate overflow-hidden pt-14">
+    <div class="relative isolate overflow-hidden pt-32 pb-[171px]">
       <img src="@/assets/img/cta-bg.png" alt="" class="absolute inset-0 -z-10 h-full w-full object-cover">
       <div class="mx-auto max-w-7xl px-6 lg:px-8">
-        <div class="mx-auto py-32 sm:py-32 lg:py-56">
+        <div class="mx-auto">
           <div class="text-center">
             <div class="px-4 sm:px-6 lg:px-8">
               <h1 
                 data-aos="fade-up" 
-                class="text-balance text-2xl sm:text-3xl md:text-5xl lg:text-7xl font-semibold tracking-tight text-white text-center">
+                class="text-balance text-3xl sm:text-3xl md:text-5xl lg:text-6xl font-semibold tracking-tight text-white text-center">
                 Build the future of your business
               </h1>
               <p 
@@ -281,13 +281,20 @@
 
     <div class="pt-20">
       <AllCaseStudies :limit="4" />
-      <!-- <CaseStudies /> -->
     </div>
+    <div class="text-center my-20">
+          <NuxtLink
+            to="/projects"
+            class="bg-[#444CE7] hover:bg-[#3A40C9] transition text-white px-8 py-3.5 rounded-full font-medium transition-colors duration-300"
+          >
+            View more
+          </NuxtLink>
+        </div>
     </section>
    <WhyChooseUsSection />
-  <!-- <section class="mx-auto container px-6 pb-44">
+  <section class="mx-auto container px-6 pb-44">
     <TestimonialCarousel />
-  </section> -->
+  </section>
 
   </main>
 </template>

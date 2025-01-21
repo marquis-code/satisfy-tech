@@ -5,10 +5,10 @@
                 <!-- Header -->
                 <div class="text-center mb-16 space-y-4">
                     <p data-aos="fade-up"
-                        class="text-lg md:text-xl text-gray-800 max-w-2xl mx-auto leading-relaxed"
+                        class="text-lg md:text-xl font-medium text-gray-800 max-w-lg mx-auto leading-loose"
                     >We deliver tailored solutions, seamless collaboration, and unwavering support to bring your vision to life with excellence</p>
     
-                    <div data-aos="fade-up" class="pt-8">
+                    <div data-aos="fade-up" class="pt-28">
                         <h6 class="text-sm uppercase font-semibold tracking-wider text-[#7C7C7C]">Why Choose Us</h6>
                         <h2
                             class="text-2xl md:text-3xl font-medium text-[#EA4335] mt-2"
@@ -16,9 +16,9 @@
                     </div>
                 </div>
     
-                <section>
-                    <section class="pb-16 px-4 md:px-8">
-                        <div class="max-w-6xl mx-auto space-y-20 lg:space-y-32">
+                <!-- <section> -->
+                    <section class="py-3 px-4 md:px-8">
+                        <div class="max-w-6xl mx-auto space-y-16 lg:space-y-24">
                             <!-- Card -->
                             <div data-aos="fade-up"
                                 v-for="(reason, idx) in reasonsArray"
@@ -37,14 +37,14 @@
                                     <!-- Description -->
                                     <div class="lg:w-3/4 lg:pl-44">
                                         <p
-                                            class="text-gray-600 text-left leading-relaxed text-[#161616]"
+                                            class="text-gray-600 text-left leading-loose text-[#161616]"
                                         >{{ reason?.content ?? 'Nil' }}</p>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </section>
-                </section>
+                <!-- </section> -->
             </div>
         </section>
     </main>

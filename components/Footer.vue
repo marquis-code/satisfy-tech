@@ -74,7 +74,7 @@
       </div>
     </div>
     <div class="bg-[#161616] lg:col-span-2 py-16 flex justify-center items-center">
-      <form @submit.prevent="handleSubmit" class="space-y-6 w-full px-8 lg:max-w-lg mx-auto">
+      <form @submit.prevent="sendMessage" class="space-y-6 w-full px-8 lg:max-w-lg mx-auto">
           <div class="grid md:grid-cols-2 gap-6">
             <div>
               <label class="block text-sm text-[#E8E8E8] font-medium mb-2">First name</label>
@@ -179,7 +179,7 @@
           <div>
             <label class="block text-sm text-[#E8E8E8] font-medium mb-2">Message</label>
             <textarea
-              v-model="formData.tell_us_more_about_your_project"
+              v-model="formData.message"
               rows="4"
               class="w-full px-4 py-4 text-sm bg-[#252526] text-gray-300 resize-none rounded-lg focus:ring-2 focus:ring-blue-500 outline-none"
               placeholder="Enter a message..."
@@ -199,10 +199,10 @@
   
           <button
             type="submit" 
-             :disabled="!isFormValid || processing"
+             :disabled="!isFormValid || loading"
             class="w-full disabled:cursor-not-allowed disabled:opacity-250 bg-[#0072C6] rounded-full text-white py-3.5 px-6 transition-colors focus:ring-2 focus:ring-offset-2 focus:ring-blue-500"
           >
-          {{ processing ? 'processing' : 'Send message' }}
+          {{ loading ? 'processing' : 'Send message' }}
           </button>
         </form>
     </div>
@@ -242,7 +242,10 @@
 </template>
 
 <script setup lang="ts">
+import { useCustomToast } from '@/composables/core/useCustomToast'
 import { countries, Country } from '@/types/country';
+
+const { } = useCustomToast()
 
 // Sort countries alphabetically but move Nigeria to the top
 const sortedCountries = computed(() => {
@@ -267,8 +270,10 @@ const formData = ref({
   lastName: '',
   email: '',
   phoneNumber: '',
-  tell_us_more_about_your_project: ''
+  message: ''
 });
+
+const loading = ref(false); // Loading state
 
 // Format phone number as user types based on country pattern
 const formatPhoneNumber = (value: string, country: Country) => {
@@ -338,7 +343,7 @@ const isFormValid = computed(() => {
     formData.value.lastName &&
     formData.value.email &&
     phoneInput.value &&
-    formData.value.tell_us_more_about_your_project &&
+    formData.value.message &&
     form.value.privacyPolicy &&
     !phoneError.value
   );
@@ -384,7 +389,7 @@ async function handleSubmit() {
       lastName: '',
       email: '',
       phoneNumber: '',
-      tell_us_more_about_your_project: ''
+      message: ''
     };
     phoneInput.value = '';
     form.value.privacyPolicy = false;
@@ -404,189 +409,121 @@ const capitalizeFirstLetter = (string: string) => {
 }
 
 const showModal = ref(false);
-</script>
 
-<!-- <script setup lang="ts">
-interface Country {
-  name: string;
-  dialCode: string;
-  code: string;
-  flag: string;
-  example: string;
-  pattern: RegExp;
-}
-const countries: Country[] = [
-  {
-    name: 'United States',
-    dialCode: '+1',
-    code: 'US',
-    flag: '🇺🇸',
-    example: '(555) 555-5555',
-    pattern: /^\(\d{3}\) \d{3}-\d{4}$/
-  },
-  {
-    name: 'United Kingdom',
-    dialCode: '+44',
-    code: 'GB',
-    flag: '🇬🇧',
-    example: '7911 123456',
-    pattern: /^7\d{3} \d{6}$/
-  },
-  {
-    name: 'Canada',
-    dialCode: '+1',
-    code: 'CA',
-    flag: '🇨🇦',
-    example: '(555) 555-5555',
-    pattern: /^\(\d{3}\) \d{3}-\d{4}$/
-  },
-  // Add more countries here...
-];
 
-const form = ref({
-  privacyPolicy: false
-});
+//Email service
 
-const form = ref({
-  firstName: '',
-  lastName: '',
-  email: '',
-  countryCode: '+1',
-  phone: '',
-  message: '',
-  privacyPolicy: false
-});
+  // Response message and its color
+  const responseMessage = ref('');
+  const responseMessageColor = ref('');
+  
+  // Send message function
+  // const sendMessage = async () => {
+  //   const payload = {
+  //     service_id: 'service_cnhmvpe',
+  //     template_id: 'template_oh23w83',
+  //     user_id: 'lMgU7zkiVtC-oLaxE',
+  //     template_params: {
+  //       firstName: formData.value.lastName,
+  //       lastName: formData.value.firstName,
+  //       phoneNumber: formatPhoneForSubmission(),
+  //       email: formData.value.email,
+  //       message: formData.value.message,
+  //       to_email: 'abahmarquis@gmail.com',
+  //     },
+  //   };
+  
+  //   try {
+  //     const response = await fetch('https://api.emailjs.com/api/v1.0/email/send', {
+  //       method: 'POST',
+  //       headers: {
+  //         'Content-Type': 'application/json',
+  //       },
+  //       body: JSON.stringify(payload),
+  //     });
+  
+  //     if (response.ok) {
+  //       const result = await response.json();
+  //       responseMessage.value = 'Message sent successfully!';
+  //       responseMessageColor.value = 'text-green-600';
+  //       // Reset form after success
+  //       formData.value.name = '';
+  //       formData.value.email = '';
+  //       formData.value.message = '';
+  //     } else {
+  //       responseMessage.value = 'Error sending message. Try again.';
+  //       responseMessageColor.value = 'text-red-600';
+  //     }
+  //   } catch (error) {
+  //     responseMessage.value = 'Error sending message. Try again.';
+  //     responseMessageColor.value = 'text-red-600';
+  //   }
+  // };
 
-const processing = ref(false)
-const formData = ref({
-    firstName: '',
-    lastName: '',
-    email: '',
-    phoneNumber: '',
-    tell_us_more_about_your_project: ''
-});
+  // Send message function
+const sendMessage = async () => {
+  // Set loading state to true
+  loading.value = true;
 
-async function handleSubmit() {
-    processing.value = true
-    const url = 'https://buildr-backend.onrender.com/api/auth/signup';  // Your API endpoint
-    try {
-        const response = await fetch(url, {
-            method: 'POST',
-            headers: {
-                'Content-Type': 'application/json'
-            },
-            body: JSON.stringify(formData.value)
+  const payload = {
+    service_id: 'service_cnhmvpe',
+    template_id: 'template_oh23w83',
+    user_id: 'lMgU7zkiVtC-oLaxE',
+    template_params: {
+      firstName: formData.value.lastName,
+      lastName: formData.value.firstName,
+      phoneNumber: formatPhoneForSubmission(),
+      email: formData.value.email,
+      message: formData.value.message,
+      to_email: 'abahmarquis@gmail.com',
+    },
+  };
+
+  try {
+    const response = await fetch('https://api.emailjs.com/api/v1.0/email/send', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify(payload),
+    });
+
+    if (response.ok) {
+      responseMessage.value = 'Message sent successfully!';
+      responseMessageColor.value = 'text-green-600';
+      // Reset form after success
+      formData.value.firstName = '';
+      formData.value.lastName = '';
+      formData.value.email = '';
+      formData.value.message = '';
+      showToast({
+          title: "Success",
+          message:  'Message sent successfully!',
+          toastType: "success",
         });
-
-        if (!response.ok) {
-            throw new Error('Network response was not ok.');
-        }
-
-        const result = await response.json();
-        showModal.value = true
-        formData.value.firstName = ''
-        formData.value.lastName = ''
-        formData.value.email = ''
-        formData.value.phoneNumber = ''
-        formData.value.tell_us_more_about_your_project = ''
-    } catch (error) {
-        if (process.client) {
-            useNuxtApp().$toast('Error submitting form');
-        }
-    } finally {
-        processing.value = false
+        showModal.value = true;
+    } else {
+      showToast({
+          title: "Error",
+          message: 'Error sending message. Try again.',
+          toastType: "error",
+          duration: 3000,
+        });
+      responseMessage.value = 'Error sending message. Try again.';
+      responseMessageColor.value = 'text-red-600';
     }
-}
-
-const isFormEmpty = computed(() => {
-    return !!(formData.value.firstName && formData.value.lastName && formData.value.email && formData.value.phoneNumber && formData.value.tell_us_more_about_your_project)
-})
-
-const capitalizeFirstLetter = (string: string) => {
-    if (!string) return string; // Handle null, undefined, or empty string
-    return string.charAt(0).toUpperCase() + string.slice(1);
-}
-
-const showModal = ref(false);
-</script>  -->
-
-<!-- <script setup lang="ts">
-const form = ref({
-  firstName: '',
-  lastName: '',
-  email: '',
-  countryCode: '+1',
-  phone: '',
-  message: '',
-  privacyPolicy: false
-});
-
-const processing = ref(false)
-const formData = ref({
-    firstName: '',
-    lastName: '',
-    email: '',
-    phoneNumber: '',
-    countryCode: '',
-    tell_us_more_about_your_project: ''
-});
-
-const showModal = ref(false);
-
-const isFormEmpty = computed(() => {
-    return !!(formData.value.firstName && 
-              formData.value.lastName && 
-              formData.value.email && 
-              formData.value.phoneNumber && 
-              formData.value.tell_us_more_about_your_project)
-})
-
-const capitalizeFirstLetter = (string: string) => {
-    if (!string) return string;
-    return string.charAt(0).toUpperCase() + string.slice(1);
-}
-
-function handleSubmit() {
-    if (!isFormEmpty.value) return;
-    
-    processing.value = true;
-    try {
-        // Format the email body
-        const emailBody = `
-New Contact Form Submission
-
-From: ${formData.value.firstName} ${formData.value.lastName}
-Email: ${formData.value.email}
-Phone: ${formData.value.countryCode}${formData.value.phoneNumber}
-
-Message:
-${formData.value.tell_us_more_about_your_project}
-        `.trim();
-
-        // Create mailto URL
-        const mailtoUrl = `mailto:abahmarquis@gmail.com?subject=New Contact Form Submission&body=${encodeURIComponent(emailBody)}`;
-
-        // Open email client
-        window.location.href = mailtoUrl;
-
-        // Show success modal
-        // showModal.value = true;
-        
-        // Reset form
-        formData.value = {
-            firstName: '',
-            lastName: '',
-            email: '',
-            phoneNumber: '',
-            countryCode: '',
-            tell_us_more_about_your_project: ''
-        };
-    } catch (error) {
-        if (process.client) {
-            useNuxtApp().$toast('Error opening email client');
-        }
-    } finally {
-        processing.value = false;
-    }
-}
-</script> -->
+  } catch (error) {
+    showToast({
+          title: "Error",
+          message: 'Error sending message. Try again.',
+          toastType: "error",
+          duration: 3000,
+        });
+    responseMessage.value = 'Error sending message. Try again.';
+    responseMessageColor.value = 'text-red-600';
+  } finally {
+    // Set loading state to false
+    loading.value = false;
+  }
+};
+</script>

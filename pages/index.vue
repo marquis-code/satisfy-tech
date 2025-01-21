@@ -244,6 +244,9 @@
         </h2>
       </div>
 
+      <!-- <CoreContact /> -->
+       <!-- <CoreTestContact /> -->
+
       <div class="max-w-7xl px-6 mx-auto">
         <div class="">
           <div class="mt-16 grid grid-cols-1 gap-x-6 gap-y-6 lg:grid-cols-3">

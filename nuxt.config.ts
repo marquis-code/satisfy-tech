@@ -21,7 +21,13 @@ export default defineNuxtConfig({
       link: [{ rel: "icon", type: "image/x-icon", href: "/favicon.svg" },    {
         rel: 'stylesheet',
         href: 'https://fonts.googleapis.com/css2?family=Lexend+Tera:wght@100..900&family=Rethink+Sans:ital,wght@0,400..800;1,400..800&display=swap',
-      },],
+      }],
+      script: [
+        {
+          src: "https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js",
+          type: "text/javascript",
+        },
+      ],
     },
   },
 

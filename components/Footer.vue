@@ -140,41 +140,6 @@
             </div>
             <span v-if="phoneError" class="text-red-500 text-xs mt-1">{{ phoneError }}</span>
           </div>
-<!--   
-          <div>
-            <label class="block text-sm text-[#E8E8E8] font-medium mb-2">Phone number</label>
-            <div class="flex">
-              <div class="relative">
-                <select
-                  v-model="selectedCountry"
-                  class="px-3 py-4 text-sm bg-[#252526] rounded-l-lg text-gray-300 border-r border-gray-600 focus:ring-2 focus:ring-blue-500 outline-none appearance-none pr-8"
-                  required
-                >
-                  <option v-for="country in countries" 
-                          :key="country.code" 
-                          :value="country"
-                          class="py-2"
-                  >
-                    {{ country.flag }} {{ country.dialCode }}
-                  </option>
-                </select>
-                <div class="absolute right-2 top-1/2 transform -translate-y-1/2 pointer-events-none">
-                  <svg class="w-4 h-4 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
-                  </svg>
-                </div>
-              </div>
-              <input
-               v-model="phoneInput"
-               @input="validatePhoneNumber"
-                type="tel"
-                class="flex-1 px-4 py-3 bg-[#252526] rounded-r-lg text-gray-300 focus:ring-2 focus:ring-blue-500 outline-none"
-                :placeholder="selectedCountry.example"
-                required
-              >
-              <span v-if="phoneError" class="text-red-500 text-xs mt-1">{{ phoneError }}</span>
-            </div>
-          </div> -->
   
           <div>
             <label class="block text-sm text-[#E8E8E8] font-medium mb-2">Message</label>
@@ -248,10 +213,17 @@ import { countries, Country } from '@/types/country';
 const { } = useCustomToast()
 
 // Sort countries alphabetically but move Nigeria to the top
+// const sortedCountries = computed(() => {
+//   return [...countries].sort((a, b) => {
+//     if (a.code === 'NG') return -1;
+//     if (b.code === 'NG') return 1;
+//     return a.name.localeCompare(b.name);
+//   });
+
 const sortedCountries = computed(() => {
   return [...countries].sort((a, b) => {
-    if (a.code === 'NG') return -1;
-    if (b.code === 'NG') return 1;
+    if (a.code === 'US') return -1;
+    if (b.code === 'US') return 1;
     return a.name.localeCompare(b.name);
   });
 });
@@ -466,16 +438,16 @@ const sendMessage = async () => {
   loading.value = true;
 
   const payload = {
-    service_id: 'service_cnhmvpe',
-    template_id: 'template_oh23w83',
-    user_id: 'lMgU7zkiVtC-oLaxE',
+    service_id: 'service_5gsppio',
+    template_id: 'template_4oqi6yg',
+    user_id: '4J9L23-9Siwi2SQ_U',
     template_params: {
       firstName: formData.value.lastName,
       lastName: formData.value.firstName,
       phoneNumber: formatPhoneForSubmission(),
       email: formData.value.email,
       message: formData.value.message,
-      to_email: 'abahmarquis@gmail.com',
+      to_email: 'eneaba@gmail.com', 
     },
   };
 

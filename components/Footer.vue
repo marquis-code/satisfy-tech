@@ -210,15 +210,7 @@
 import { useCustomToast } from '@/composables/core/useCustomToast'
 import { countries, Country } from '@/types/country';
 
-const { } = useCustomToast()
-
-// Sort countries alphabetically but move Nigeria to the top
-// const sortedCountries = computed(() => {
-//   return [...countries].sort((a, b) => {
-//     if (a.code === 'NG') return -1;
-//     if (b.code === 'NG') return 1;
-//     return a.name.localeCompare(b.name);
-//   });
+const { showToast } = useCustomToast()
 
 const sortedCountries = computed(() => {
   return [...countries].sort((a, b) => {
@@ -316,7 +308,7 @@ const isFormValid = computed(() => {
     formData.value.email &&
     phoneInput.value &&
     formData.value.message &&
-    form.value.privacyPolicy &&
+    // form.value.privacyPolicy &&
     !phoneError.value
   );
 });

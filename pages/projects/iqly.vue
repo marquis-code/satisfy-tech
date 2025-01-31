@@ -74,13 +74,6 @@
             <h2 class="lg:text-2xl text-xl font-semibold mb-6 text-[#222222]">The Outcomes</h2>
             <p class="text-gray-700 leading-relaxed text-[#222222]">
               IQly has gained traction with early adopters who praised the platform’s user-friendly design and practical insights. Job seekers reported feeling more confident and prepared for real-world interviews after using the AI-based mock interview tool. The AI-powered resume builder accelerated the job application process, allowing candidates to craft compelling résumés in minutes. Overall, the synergy between Buildr’s robust technical foundation and IQly’s vision helped create a transformative platform that empowers users to land their dream jobs.
-              <!-- Upon launch, BlackCountry experienced rapid adoption as tenants
-              praised the platform’s simplicity and cost-saving potential. Service
-              providers found it easier to coordinate maintenance tasks, while
-              agents benefitted from more efficient property listings and shorter
-              vacancy periods. By focusing on affordability and ease of use,
-              BlackCountry successfully addressed a critical need for accessible
-              shared living in Nigeria. -->
             </p>
            <div>
             <img src="@/assets/img/iqly02.png" class=" mt-6" alt="Property View" />

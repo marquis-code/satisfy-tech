@@ -388,49 +388,7 @@ const showModal = ref(false);
   // Response message and its color
   const responseMessage = ref('');
   const responseMessageColor = ref('');
-  
-  // Send message function
-  // const sendMessage = async () => {
-  //   const payload = {
-  //     service_id: 'service_cnhmvpe',
-  //     template_id: 'template_oh23w83',
-  //     user_id: 'lMgU7zkiVtC-oLaxE',
-  //     template_params: {
-  //       firstName: formData.value.lastName,
-  //       lastName: formData.value.firstName,
-  //       phoneNumber: formatPhoneForSubmission(),
-  //       email: formData.value.email,
-  //       message: formData.value.message,
-  //       to_email: 'abahmarquis@gmail.com',
-  //     },
-  //   };
-  
-  //   try {
-  //     const response = await fetch('https://api.emailjs.com/api/v1.0/email/send', {
-  //       method: 'POST',
-  //       headers: {
-  //         'Content-Type': 'application/json',
-  //       },
-  //       body: JSON.stringify(payload),
-  //     });
-  
-  //     if (response.ok) {
-  //       const result = await response.json();
-  //       responseMessage.value = 'Message sent successfully!';
-  //       responseMessageColor.value = 'text-green-600';
-  //       // Reset form after success
-  //       formData.value.name = '';
-  //       formData.value.email = '';
-  //       formData.value.message = '';
-  //     } else {
-  //       responseMessage.value = 'Error sending message. Try again.';
-  //       responseMessageColor.value = 'text-red-600';
-  //     }
-  //   } catch (error) {
-  //     responseMessage.value = 'Error sending message. Try again.';
-  //     responseMessageColor.value = 'text-red-600';
-  //   }
-  // };
+
 
   // Send message function
 const sendMessage = async () => {

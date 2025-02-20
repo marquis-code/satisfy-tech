@@ -10,7 +10,7 @@
 
 
         <div class="space-y-8">
-          <!-- Email -->
+
           <div class="flex items-start gap-4">
             <div class="text-[#3B82F6] mt-1">
               <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -24,7 +24,7 @@
             </div>
           </div>
 
-          <!-- Office -->
+
           <div class="flex items-start gap-4">
             <div class="text-[#3B82F6] mt-1">
               <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -51,7 +51,7 @@
             <div>
               <h3 class="font-medium text-[#E8E8E8] mb-1">Phone</h3>
               <a href="tel:+14162508459" class="text-[#00BFFF] text-sm">+1 (416) 250-8459</a>
-              <!-- <a href="" class="text-[#00BFFF] text-sm">+1 (416) 250-8459</a> -->
+
             </div>
           </div>
         </div>
@@ -190,7 +190,7 @@
                         }},</h2>
 
                     <p class="mt-2 leading-loose text-gray-800 text-sm">
-                        Thank you for contacting Buildr! We’re thrilled to hear from you and are eager to learn more
+                        Thank you for contacting CodeRed! We’re thrilled to hear from you and are eager to learn more
                         about how we can accelerate your digital journey. A member of our team will be in touch within
                         the next 24 hours to discuss your needs and how we can help your business innovate and grow. We
                         look forward to working together to create something amazing.
@@ -198,7 +198,7 @@
 
                     <p class="mt-2 text-gray-800 text-sm">
                         Best regards, <br>
-                        The Buildr Team
+                        The CodeRed Team
                     </p>
                 </main>
             </section>

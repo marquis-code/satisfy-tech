@@ -340,7 +340,7 @@ const isMenuOpen = ref(false);
 const cards = ref([
   {
     title: "BlackCountry",
-    description: "Simplifying Shared Living in Uganda",
+    description: "Simplifying Shared Living in Nigeria",
     image: blackcountry
   },
   {

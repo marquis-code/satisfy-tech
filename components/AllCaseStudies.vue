@@ -53,7 +53,7 @@
 const cards = ref([
   {
     title: "BlackCountry",
-    description: "Simplifying Shared Living in Uganda",
+    description: "Simplifying Shared Living in Nigeria",
     urlPath: '/projects/black-country',
     image: blackcountry
   },

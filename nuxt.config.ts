@@ -1,7 +1,7 @@
 import { defineNuxtConfig } from "nuxt/config";
 
 export default defineNuxtConfig({
-  target: 'static',
+  ssr: false,
   postcss: {
     plugins: {
       "postcss-import": {},

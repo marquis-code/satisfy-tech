@@ -47,22 +47,26 @@
               <NavItem 
                 :icon="LayoutGrid" 
                 label="Dashboard" 
+                path="/dashboard"
                 :is-active="true"
                 :is-collapsed="isCollapsed"
               />
               <NavItem 
                 :icon="User" 
                 label="Profile" 
+                path=""
                 :is-collapsed="isCollapsed"
               />
               <NavItem 
                 :icon="FileText" 
                 label="Food Categories" 
+                path="/dashboard/categories"
                 :is-collapsed="isCollapsed"
               />
               <NavItem 
                 :icon="List" 
                 label="Menu List" 
+                path="/dashboard/menu"
                 :is-collapsed="isCollapsed"
               />
               
@@ -96,11 +100,13 @@
                 >
                   <NavItem 
                     label="Today Orders" 
+                    path="/dashboard/orders"
                     :is-collapsed="isCollapsed"
                     class="py-1.5"
                   />
                   <NavItem 
                     label="All Orders" 
+                    path="/dashboard/orders"
                     :is-collapsed="isCollapsed"
                     class="py-1.5"
                   />
@@ -137,16 +143,19 @@
                 >
                   <NavItem 
                     label="Sales Overview" 
+                    path="/dashboard/analysis"
                     :is-collapsed="isCollapsed"
                     class="py-1.5"
                   />
                   <NavItem 
                     label="Monthly Reports" 
+                    path="/dashboard/analysis"
                     :is-collapsed="isCollapsed"
                     class="py-1.5"
                   />
                   <NavItem 
                     label="Customer Analytics" 
+                    path="/dashboard/analysis"
                     :is-collapsed="isCollapsed"
                     class="py-1.5"
                   />
@@ -156,16 +165,19 @@
               <NavItem 
                 :icon="Clock" 
                 label="Working Hours" 
+                path="/dashboard/working-hours"
                 :is-collapsed="isCollapsed"
               />
               <NavItem 
                 :icon="BarChart2" 
+                path="/dashboard/promotions"
                 label="Brand Promotion" 
                 :is-collapsed="isCollapsed"
               />
               <NavItem 
                 :icon="CreditCard" 
                 label="Transactions" 
+                path="/dashboard/transactions"
                 :is-collapsed="isCollapsed"
               />
               <NavItem 

@@ -1,6 +1,6 @@
 <template>
-    <a 
-      href="#" 
+    <NuxtLink 
+      :to="path" 
       :class="[
         'flex items-center px-4 py-2 text-gray-300 hover:bg-gray-700 hover:text-white transition-colors',
         isActive && 'bg-gray-700 text-white',
@@ -10,7 +10,7 @@
     >
       <component :is="icon" v-if="icon" size="20" />
       <span v-if="!isCollapsed" class="ml-3">{{ label }}</span>
-    </a>
+    </NuxtLink>
   </template>
   
   <script setup lang="ts">
@@ -22,6 +22,10 @@
       default: null
     },
     label: {
+      type: String,
+      required: true
+    },
+    path: {
       type: String,
       required: true
     },
